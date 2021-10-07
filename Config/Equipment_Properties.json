@@ -24,15 +24,15 @@
 		"armorComponentRear": "22"
 	},
 	"HARJEL_II": {
-		"armorComponentFrontMultiplier": "1.1",
-		"armorComponentRearMultiplier": "1.1",
-		"selfRepairComponentValue": "10",
+		"armorComponentFrontMulti": "1.1",
+		"armorComponentRearMulti": "1.1",
+		"selfRepairComponentValue": "4",
 		"selfRepairComponentDuration": "5"
 	},
 	"HARJEL_III": {
-		"armorComponentFrontMultiplier": "1.1",
-		"armorComponentRearMultiplier": "1.1",
-		"selfRepairComponentValue": "20",
+		"armorComponentFrontMulti": "1.1",
+		"armorComponentRearMulti": "1.1",
+		"selfRepairComponentValue": "8",
 		"selfRepairComponentDuration": "5"
 	}
 }
