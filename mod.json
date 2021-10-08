@@ -1,14 +1,14 @@
 {
 	"displayName": "HarJel",
 	"version": "1.0",
-	"buildNumber": 1,
+	"buildNumber": 2,
 	"description": "Adds additional armor upgrades: Modular Armor and Self-Repair equipment.",
 	"author": "truegerich",
 	"authorURL": "",
-	"defaultLoadOrder": 0,
+	"defaultLoadOrder": 6,
 	"gameVersion": "1.1.0",
 	"manifest": [
-		"/Game/Objects/Mechs/DerivedMech.uasset"
+		"/Game/Objects/Mechs/AbstractMech.uasset"
 	],
 	"steamPublishedFileId": 0,
 	"steamLastSubmittedBuildNumber": 0,
