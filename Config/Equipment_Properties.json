@@ -26,13 +26,15 @@
 	"HARJEL_II": {
 		"armorComponentFrontMulti": "1.1",
 		"armorComponentRearMulti": "1.1",
-		"selfRepairComponentValue": "4",
+		"selfRepairComponentArmor": "4",
+		"selfRepairComponentStructure": "2",
 		"selfRepairComponentDuration": "5"
 	},
 	"HARJEL_III": {
 		"armorComponentFrontMulti": "1.1",
 		"armorComponentRearMulti": "1.1",
-		"selfRepairComponentValue": "8",
+		"selfRepairComponentArmor": "8",
+		"selfRepairComponentStructure": "4",
 		"selfRepairComponentDuration": "5"
 	}
 }
