@@ -23,6 +23,13 @@
 	"MODULAR_ARMOR_MK4_REAR": {
 		"armorComponentRear": "22"
 	},
+	"HARJEL_I": {
+		"armorComponentFrontMulti": "1.1",
+		"armorComponentRearMulti": "1.1",
+		"selfRepairComponentArmor": "1",
+		"selfRepairComponentStructure": "0.5",
+		"selfRepairComponentDuration": "5"
+	},
 	"HARJEL_II": {
 		"armorComponentFrontMulti": "1.1",
 		"armorComponentRearMulti": "1.1",
