@@ -1,6 +1,7 @@
 {
 	"MODULAR_ARMOR_MK1_FRONT": {
-		"armorComponentFront": "8"
+		"armorComponentFront": "8",
+		"maxTonnage": "35"
 	},
 	"MODULAR_ARMOR_MK2_FRONT": {
 		"armorComponentFront": "16"
@@ -9,7 +10,8 @@
 		"armorComponentFront": "24"
 	},
 	"MODULAR_ARMOR_MK4_FRONT": {
-		"armorComponentFront": "32"
+		"armorComponentFront": "32",
+		"minTonnage": "80"
 	},
 	"MODULAR_ARMOR_MK1_REAR": {
 		"armorComponentRear": "8"
@@ -28,20 +30,41 @@
 		"armorComponentRearMulti": "1.1",
 		"selfRepairComponentArmor": "1",
 		"selfRepairComponentStructure": "0.5",
-		"selfRepairComponentDuration": "5"
+		"selfRepairComponentDuration": "5",
+		"mechPartConflicts": [
+			"HARJEL_I"
+		],
+		"mechConflicts": [
+			"HARJEL_II",
+			"HARJEL_III"
+		]
 	},
 	"HARJEL_II": {
 		"armorComponentFrontMulti": "1.1",
 		"armorComponentRearMulti": "1.1",
 		"selfRepairComponentArmor": "2",
 		"selfRepairComponentStructure": "1",
-		"selfRepairComponentDuration": "5"
+		"selfRepairComponentDuration": "5",
+		"mechPartConflicts": [
+			"HARJEL_II"
+		],
+		"mechConflicts": [
+			"HARJEL_I",
+			"HARJEL_III"
+		]
 	},
 	"HARJEL_III": {
 		"armorComponentFrontMulti": "1.1",
 		"armorComponentRearMulti": "1.1",
 		"selfRepairComponentArmor": "4",
 		"selfRepairComponentStructure": "2",
-		"selfRepairComponentDuration": "5"
+		"selfRepairComponentDuration": "5",
+		"mechPartConflicts": [
+			"HARJEL_III"
+		],
+		"mechConflicts": [
+			"HARJEL_I",
+			"HARJEL_II"
+		]
 	}
 }
