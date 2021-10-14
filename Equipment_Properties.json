@@ -1,29 +1,73 @@
 {
 	"MODULAR_ARMOR_MK1_FRONT": {
 		"armorComponentFront": "8",
-		"maxTonnage": "35"
+		"maxTonnage": "35",
+		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
+		"category": "equipment.internal"
 	},
 	"MODULAR_ARMOR_MK2_FRONT": {
-		"armorComponentFront": "16"
+		"armorComponentFront": "16",
+		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
+		"category": "equipment.internal"
 	},
 	"MODULAR_ARMOR_MK3_FRONT": {
-		"armorComponentFront": "24"
+		"armorComponentFront": "24",
+		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
+		"category": "equipment.internal"
 	},
 	"MODULAR_ARMOR_MK4_FRONT": {
 		"armorComponentFront": "32",
-		"minTonnage": "80"
+		"minTonnage": "80",
+		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
+		"category": "equipment.internal"
 	},
 	"MODULAR_ARMOR_MK1_REAR": {
-		"armorComponentRear": "8"
+		"armorComponentRear": "8",
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
+		"category": "equipment.internal"
 	},
 	"MODULAR_ARMOR_MK2_REAR": {
-		"armorComponentRear": "16"
+		"armorComponentRear": "16",
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
+		"category": "equipment.internal"
 	},
 	"MODULAR_ARMOR_MK3_REAR": {
-		"armorComponentRear": "24"
+		"armorComponentRear": "24",
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
+		"category": "equipment.internal"
 	},
 	"MODULAR_ARMOR_MK4_REAR": {
-		"armorComponentRear": "32"
+		"armorComponentRear": "32",
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
+		"category": "equipment.internal"
 	},
 	"HARJEL_I": {
 		"armorComponentFrontMulti": "1.1",
@@ -37,7 +81,12 @@
 		"mechConflicts": [
 			"HARJEL_II",
 			"HARJEL_III"
-		]
+		],
+		"invalidMechParts": [
+			"Head"
+		],
+		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
+		"category": "equipment.internal"
 	},
 	"HARJEL_II": {
 		"armorComponentFrontMulti": "1.1",
@@ -51,7 +100,12 @@
 		"mechConflicts": [
 			"HARJEL_I",
 			"HARJEL_III"
-		]
+		],
+		"invalidMechParts": [
+			"Head"
+		],
+		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
+		"category": "equipment.internal"
 	},
 	"HARJEL_III": {
 		"armorComponentFrontMulti": "1.1",
@@ -65,6 +119,20 @@
 		"mechConflicts": [
 			"HARJEL_I",
 			"HARJEL_II"
-		]
+		],
+		"invalidMechParts": [
+			"Head"
+		],
+		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
+		"category": "equipment.internal"
+	},
+	"PATCHWORK_T1": {
+		"category": "equipment.internal"
+	},
+	"PATCHWORK_T2": {
+		"category": "equipment.internal"
+	},
+	"PATCHWORK_T3": {
+		"category": "equipment.internal"
 	}
 }
