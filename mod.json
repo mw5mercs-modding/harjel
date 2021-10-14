@@ -13,5 +13,8 @@
 	],
 	"steamPublishedFileId": 0,
 	"steamLastSubmittedBuildNumber": 0,
-	"steamModVisibility": "Private"
+	"steamModVisibility": "Private",
+	"Requires": [
+		"Yet Another Mechlab"
+	]
 }
