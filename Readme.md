@@ -2,9 +2,9 @@
 
 This mod adds additional armor upgrades to the game which can be installed into individual locations.
 
-- Modular Armor Mk1 - Mk4: Armor upgrades which add a fixed amount of armor to their installation location. Variants for rear armor are included.
-- HarJel I, II, III - Self-Repair systems. Upon taking damage they will repair armor and structure in their install location for a certain amount of time. Install a total of 7 HarJel systems to make the entire mech self-repair.
-- Patchwork T1 to T3 which provide a small amount of weight in exchange for some slots.
+- **HarJel I, II, III** - Self-Repair systems. Upon taking damage they will repair armor and structure in their install location for a certain amount of time. Install a total of 7 HarJel systems to make the entire mech self-repair. Different HarJel tiers cannot be combined, also they cannot be installed in the head (lore forbids it!).
+- **Modular Armor Mk1 - Mk4**: Armor upgrades which add a fixed amount of armor to their installation location. Variants for rear armor are included. Different tiers for different weight classes.
+- **Patchwork T1 - T3**: provide a small amount of weight in exchange for some slots. Because Patchwork is awesome.
 
 ## Requirements
 
@@ -28,7 +28,7 @@ YAML by itself already provides the following properties:
 |`minTonnage`|This equipment can only be equipped to a mech whose tonnage matches at least this value.|`"80"`|
 |`color`|Set the color of the equipment in the market and mechlab as an RGBA value.|`"(R=0.59,G=0.03,B=0.11,A=1)"`|
 |`category`|Allows to set the category of the equipment. One would typically use this on equipments which have the "generic" type `Heatsink.Single`. Can be one of: `equipment.misc`, `equipment.engine`, `equipment.internal` and `equipment.ammo`. Be aware that setting the category this way means that the equipment will always be shown, independent of the value of the "valid only" checkbox.|`"equipment.internal"`|
-|`invalidMechParts`|A list of mech parts the equipment can not be installed in. Possible values are: `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc..|`[ "CenterTorso" ]`|
+|`invalidMechParts`|A list of mech parts the equipment can not be installed in. Possible values are: `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, `RearLeftTorso`, etc..|`[ "CenterTorso" ]`|
 |`mechPartConflicts`|A list of equipments which cannot be installed in the same location as this equipment.|`["HARJEL_II", "HARHEL_III"]`|
 |`mechConflicts`|A list of equipments which cannot be installed in the mech in combination with this equipment.|`["HARJEL_II", "HARHEL_III"]`|
 |`armorComponentFront`|An absolute value that is added to the mech part's front armor.|`"35"`|
@@ -73,6 +73,8 @@ In addition to the equipment properties provided by YAML the HarJel mod adds the
 	}
 }
 ```
+
+If you read until here, congrats, you can now go ahead and make your own self-repair equipment which can only be installed in the left leg, adds a total armor of 400, repairs 42 points of armor every 10 seconds for 2 hours, and is presented in a bright unicorn pink in the mechlab.
 
 ## TODO
 - Harjel equipment destruction should set self-repair values to 0. Probably not that important since a damaged harjel will blow up, most likely taking the component with it. But still...
