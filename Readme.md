@@ -11,6 +11,10 @@ This mod adds additional armor upgrades to the game which can be installed into 
 The HarJel mod depends on YetAnotherMechLab (YAML). It makes use of the extended equipment property system provided by YAML. In fact, the requirements I
 had for Harjel let me to develop the equipment properties system in the first place. See below for details.
 
+## Mod Compatibility
+
+HarJel overrides `AbstractMech` in order to trigger the self-repair when taking damage. Thus, it is incompatible with any mod changing it as well.
+
 ## Developer Notes
 
 ### Equipment Configuration

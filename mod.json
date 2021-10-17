@@ -4,7 +4,7 @@
 	"buildNumber": 2,
 	"description": "Adds additional armor upgrades: Modular Armor and Self-Repair equipment.",
 	"author": "truegerich",
-	"authorURL": "",
+	"authorURL": "https://github.com/mw5mercs-modding/harjel",
 	"defaultLoadOrder": 6,
 	"gameVersion": "1.1.0",
 	"manifest": [
