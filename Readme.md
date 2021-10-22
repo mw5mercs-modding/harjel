@@ -37,8 +37,8 @@ YAML by itself already provides the following properties:
 |`mechConflicts`|A list of equipments which cannot be installed in the mech in combination with this equipment.|`["HARJEL_II", "HARHEL_III"]`|
 |`armorComponentFront`|An absolute value that is added to the mech part's front armor.|`"35"`|
 |`armorComponentRear`|An absolute value that is added to the mech part's rear armor.|`"35"`|
-|`armorComponentMultiFront`|A multiplier that is applied to the mech part's front armor.|`"1.1"`|
-|`armorComponentMultiRear`|A multiplier that is applied to the mech part's rear armor.|`"1.2"`|
+|`armorComponentFrontMulti`|A multiplier that is applied to the mech part's front armor.|`"1.1"`|
+|`armorComponentRearMulti`|A multiplier that is applied to the mech part's rear armor.|`"1.2"`|
 |`armorMulti`|A multiplier that is applied to the entire mech's armor.|`"2.0"`|
 
 
