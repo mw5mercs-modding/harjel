@@ -1,7 +1,6 @@
 {
 	"MODULAR_ARMOR_MK1_FRONT": {
 		"armorComponentFront": "8",
-		"maxTonnage": "35",
 		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
 		"category": "equipment.internal"
 	},
@@ -17,7 +16,6 @@
 	},
 	"MODULAR_ARMOR_MK4_FRONT": {
 		"armorComponentFront": "32",
-		"minTonnage": "80",
 		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
 		"category": "equipment.internal"
 	},
