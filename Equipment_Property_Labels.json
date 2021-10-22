@@ -1,0 +1,17 @@
+{
+	"selfRepairArmor": {
+		"label": "Armor repair value"
+	},
+	"selfRepairStructure": {
+		"label": "Structure repair value"
+	},
+	"selfRepairDuration": {
+		"label": "Self-repair duration"
+	},
+	"selfRepairInterval": {
+		"label": "Self-repair interval"
+	},
+	"selfRepairScope": {
+		"label": "Self-repair scope"
+	}
+}
