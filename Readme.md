@@ -28,18 +28,25 @@ YAML by itself already provides the following properties:
 
 |Property|Description|Example|
 |---|---|---|
+|`description`|Because it is annoying to edit the desciption in the asset all the time, and also: newlines!|`"One line\nanother line."`|
 |`maxTonnage`|This equipment can only be equipped to a mech whose tonnage does not exceed this value.|`"35"`|
 |`minTonnage`|This equipment can only be equipped to a mech whose tonnage matches at least this value.|`"80"`|
 |`color`|Set the color of the equipment in the market and mechlab as an RGBA value.|`"(R=0.59,G=0.03,B=0.11,A=1)"`|
 |`category`|Allows to set the category of the equipment. One would typically use this on equipments which have the "generic" type `Heatsink.Single`. Can be one of: `equipment.misc`, `equipment.engine`, `equipment.internal` and `equipment.ammo`. Be aware that setting the category this way means that the equipment will always be shown, independent of the value of the "valid only" checkbox.|`"equipment.internal"`|
-|`invalidMechParts`|A list of mech parts the equipment can not be installed in. Possible values are: `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, `RearLeftTorso`, etc..|`[ "CenterTorso" ]`|
+|`invalidMechParts`|A list of mech parts the equipment can not be installed in. Possible values are: `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc..|`[ "CenterTorso" ]`|
 |`mechPartConflicts`|A list of equipments which cannot be installed in the same location as this equipment.|`["HARJEL_II", "HARHEL_III"]`|
 |`mechConflicts`|A list of equipments which cannot be installed in the mech in combination with this equipment.|`["HARJEL_II", "HARHEL_III"]`|
-|`armorComponentFront`|An absolute value that is added to the mech part's front armor.|`"35"`|
-|`armorComponentRear`|An absolute value that is added to the mech part's rear armor.|`"35"`|
-|`armorComponentFrontMulti`|A multiplier that is applied to the mech part's front armor.|`"1.1"`|
-|`armorComponentRearMulti`|A multiplier that is applied to the mech part's rear armor.|`"1.2"`|
+|`armorComponentFront`|An absolute value that is added to the armor of the mech part the equipment is installed in.|`"35"`|
+|`armorComponentRear`|An absolute value that is added to the rear armor of the mech part the equipment is installed in..|`"35"`|
+|`armorComponentFrontMulti`|A multiplier that is applied to the mech front armor of the mech part the equipment is installed in.|`"1.1"`|
+|`armorComponentRearMulti`|A multiplier that is applied to the rear armor of the mech part the equipment is installed in.|`"1.2"`|
 |`armorMulti`|A multiplier that is applied to the entire mech's armor.|`"2.0"`|
+|`structureComponent`|An absolute value that is added to the structure of the mech part the equipment is installed in.|`"35"`|
+|`structureComponentMulti`|A multiplier that is applied to the structure of the mech part the equipment is installed in.|`"1.1"`|
+|`structureMulti`|A multiplier that is applied to the entire mech's structure.|`"2.0"`|
+|`relativeWeight`|Sets the equipment weight to a multiple of the mech's max tonnage. This should be paired with a 0 weight in the equipment asset.|`"0.05"`|
+|`armorWeightMulti`|A multiplicator for an armor upgrade. Does only make sense for armor equipments (type tags starting with `Internal.Armor`) and is typically combined with `armorMulti`. An example would be Hardened armor which uses a multi of `2.0` in combination with ab `armorMulti` of `2.0`.|`"2.0"`|
+|`structureWeightMulti`|A multiplicator for a structure upgrade. Does only make sense for structure equipments (type tags starting with `Internal.Structure`) and is typically combined with `structureMulti`. An example would be Endosteel which uses a multi of `0.5` to reduce the weight of the structure by 50%.|`"0.5"`|
 
 
 In addition to the equipment properties provided by YAML the HarJel mod adds the following:
