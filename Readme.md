@@ -32,6 +32,7 @@ YAML by itself already provides the following properties:
 |---|---|---|
 |`description`|Because it is annoying to edit the desciption in the asset all the time, and also: newlines!|`"One line\nanother line."`|
 |`loreAccurate`|States whether the equipment can be found in the lore. If not and configuration entry `loreAbidingCitizen` is `true` then the equipment will never show up in markets. Defaults to `true`|`false`|
+|`rarity`|Define the rarity of an equipment between 0 and 1. The rarity directly sets the probability the item will show up in markets.|`0.2`|
 |`maxTonnage`|This equipment can only be equipped to a mech whose tonnage does not exceed this value.|`"35"`|
 |`minTonnage`|This equipment can only be equipped to a mech whose tonnage matches at least this value.|`"80"`|
 |`color`|Set the color of the equipment in the market and mechlab as an RGBA value.|`"(R=0.59,G=0.03,B=0.11,A=1)"`|
