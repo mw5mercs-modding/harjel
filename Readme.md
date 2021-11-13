@@ -5,7 +5,7 @@ This mod adds additional equipments to the game which can be installed into indi
 - **HarJel I, II, III** - Self-Repair systems. Upon taking damage they will repair armor and structure in their install location for a certain amount of time. Install a total of 7 HarJel systems to make the entire mech self-repair. Different HarJel tiers cannot be combined, also they cannot be installed in the head (lore forbids it!).
 - **Modular Armor Mk1 - Mk4** - Armor upgrades which add a fixed amount of armor to their installation location. Variants for rear armor are included. Different tiers for different weight classes.
 - **Patchwork T1 - T3** - provide a small amount of weight in exchange for some slots. Because Patchwork is awesome.
-- **Black Carapace** - Find it, cover in its presence.
+- **Black Carapace** - Find it, cower in its presence.
 - **Advanced Targetting Computers** - TC upgrades which weigh a ton but add considerable upgrades for different weapon systems.
 
 ## Requirements
