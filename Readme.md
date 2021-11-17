@@ -108,20 +108,8 @@ If you read until here, congrats, you can now go ahead and make your own self-re
 ## TODO
 - Harjel equipment destruction should set self-repair values to 0. Probably not that important since a damaged harjel will blow up, most likely taking the component with it. But still...
   - EquipmentData has HealthState - maybe check that whenever taking damage
-- Use categories and colors in market window.
-  - NewMarketItemWidget/SetEquipmentDetails to set equipment color
-- keep armor traits in mind when changing armor in mechlab, see MechComponentHeader/IncreaseArmor
-- additional properties
-  - armorWeightMulti (for ferro or hardened)
-  - structureWeightMulti (for endo etc)
 
 ## YAML notes
 - armor cleanup:
-  - DLC Get Installed Internals - special handling of techlevel for hardended, etc. NEVER USER FOR ARMOR!
-  - MechlabWidget/UpdateArmorButtons might need changes if we consider armor upgrades in the mechlab
-  - fcnt79/Get Current Mech Tonnage calculates ENDO etc
-  - mech without anything, ie. structure only is always tonnage/10
-  - why use armor traits when calculating weight for mechlab? That seems incorrect.
-  - armor traits are actually applied in the mechlab!
 - Format Text can be used to replace things like {string}. Maybe interesting for equip prop labels
 - DerivedMech Setup inventory and stuff sets health trait multi to -0.5 for endo. Does that mean endo makes it so we have less structure??
