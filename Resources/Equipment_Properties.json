@@ -154,6 +154,7 @@
 		"rarity": 0.05
 	},
 	"BLACK_CARAPACE": {
+		"description": "The Black Carapace is the result of a secret research project which integrated the HarJel self-repair system directly into the armor plates. As a result the armor is slightly more bulky and heavier but the self-repait effect makes more than up for this.\nHowever, due to the compact build weapon heat can be vented less effectively.\n\nReserves 1 slot per Location except Head and CenterTorso.",
 		"selfRepairArmor": "2",
 		"selfRepairStructure": "1",
 		"selfRepairDuration": "8",
@@ -177,6 +178,11 @@
 			"ballisticHeatMulti": 1.10,
 			"missleHeatMulti": 1.10
 		},
+		"mechConflicts": [
+			"HARJEL_I",
+			"HARJEL_II",
+			"HARJEL_III"
+		],
 		"rarity": 0.02
 	},
 	"TCOMP_MISSLE_ADVANCED": {
