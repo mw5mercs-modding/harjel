@@ -161,7 +161,6 @@
 		"selfRepairInterval": "1",
 		"selfRepairScope": "mech",
 		"fillerSlots": {
-			"CenterTorso": "1",
 			"LeftTorso": "1",
 			"RightTorso": "1",
 			"LeftLeg": "1",
