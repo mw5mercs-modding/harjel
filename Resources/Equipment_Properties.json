@@ -175,7 +175,7 @@
 		"weapons": {
 			"traceHeatMulti": 1.10,
 			"ballisticHeatMulti": 1.10,
-			"missleHeatMulti": 1.10
+			"missileHeatMulti": 1.10
 		},
 		"mechConflicts": [
 			"HARJEL_I",
@@ -186,11 +186,11 @@
 	},
 	"TCOMP_MISSLE_ADVANCED": {
 		"weapons": {
-			"missleSpreadRadiusMulti": 0.6,
-			"missleSpreadDistanceMulti": 0.6,
-			"missleSpeedMulti": 1.2,
-			"missleDamageMulti": 1.3,
-			"missleCooldownMulti": 0.8,
+			"missileSpreadRadiusMulti": 0.6,
+			"missileSpreadDistanceMulti": 0.6,
+			"missileSpeedMulti": 1.2,
+			"missileDamageMulti": 1.3,
+			"missileCooldownMulti": 0.8,
 			"lockonTimeMulti": 0.7
 		},
 		"rarity": 0.1
@@ -217,7 +217,7 @@
 		"weapons": {
 			"traceHeatMulti": 0.9,
 			"ballisticHeatMulti": 0.9,
-			"missleHeatMulti": 0.9
+			"missileHeatMulti": 0.9
 		},
 		"rarity": 0.1
 	}
