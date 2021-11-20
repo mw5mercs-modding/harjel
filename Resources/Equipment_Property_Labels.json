@@ -6,10 +6,12 @@
 		"label": "Structure repair value"
 	},
 	"selfRepairDuration": {
-		"label": "Self-repair duration"
+		"label": "Self-repair duration",
+		"unit": "sec"
 	},
 	"selfRepairInterval": {
-		"label": "Self-repair interval"
+		"label": "Self-repair interval",
+		"unit": "sec"
 	},
 	"selfRepairScope": {
 		"label": "Self-repair scope"
