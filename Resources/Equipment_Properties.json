@@ -189,7 +189,7 @@
 			"missileSpreadRadiusMulti": 0.6,
 			"missileSpreadDistanceMulti": 0.6,
 			"missileSpeedMulti": 1.2,
-			"missileDamageMulti": 1.3,
+			"missileDamageMulti": 1.15,
 			"missileCooldownMulti": 0.8,
 			"lockonTimeMulti": 0.7
 		},
@@ -200,15 +200,25 @@
 			"ballisticSpreadRadiusMulti": 0.6,
 			"ballisticSpreadDistanceMulti": 0.6,
 			"ballisticSpeedMulti": 1.2,
-			"ballisticDamageMulti": 1.3,
+			"ballisticDamageMulti": 1.15,
 			"ballisticCooldownMulti": 0.8
+		},
+		"rarity": 0.1
+	},
+	"TCOMP_PPC_ADVANCED": {
+		"weapons": {
+			"ppcSpreadRadiusMulti": 0.6,
+			"ppcDistanceMulti": 0.6,
+			"ppcSpeedMulti": 1.2,
+			"ppcDamageMulti": 1.15,
+			"ppcCooldownMulti": 0.8
 		},
 		"rarity": 0.1
 	},
 	"TCOMP_TRACE_ADVANCED": {
 		"weapons": {
 			"traceDurationMulti": 0.7,
-			"traceDamageMulti": 1.3,
+			"traceDamageMulti": 1.15,
 			"traceCooldownMulti": 0.8
 		},
 		"rarity": 0.1
@@ -217,7 +227,8 @@
 		"weapons": {
 			"traceHeatMulti": 0.9,
 			"ballisticHeatMulti": 0.9,
-			"missileHeatMulti": 0.9
+			"missileHeatMulti": 0.9,
+			"ppcHeatMulti": 0.9
 		},
 		"rarity": 0.1
 	}
