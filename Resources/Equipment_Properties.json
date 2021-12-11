@@ -182,7 +182,9 @@
 			"HARJEL_II",
 			"HARJEL_III"
 		],
-		"rarity": 0.02
+		"rarity": 0.02,
+		"installCost": 78000,
+		"installCostScaling": 10
 	},
 	"TCOMP_MISSLE_ADVANCED": {
 		"weapons": {
@@ -231,5 +233,65 @@
 			"ppcHeatMulti": 0.9
 		},
 		"rarity": 0.1
+	},
+	"COMPOSITE_STRUCTURE": {
+		"structureMulti": 0.5,
+		"structureWeightMulti": "0.5",
+		"minTonnage": "0",
+		"maxTonnage": "100",
+		"rarity": 0.2,
+		"installCost": 35000,
+		"installCostScaling": 10
+	},
+	"ENDO_COMPOSITE_STRUCTURE": {
+		"structureWeightMulti": "0.75",
+		"minTonnage": "0",
+		"maxTonnage": "100",
+		"rarity": 0.08,
+		"installCost": 45000,
+		"installCostScaling": 10
+	},
+	"HEAVY_FERRO": {
+		"armorMulti": 1.24,
+		"armorWeightMulti": 1,
+		"fillerSlots": {
+			"dynamic": 21
+		},
+		"minTonnage": "0",
+		"maxTonnage": "100",
+		"rarity": 0.3,
+		"installCost": 20000,
+		"installCostScaling": 10
+	},
+	"STEALTH_ARMOR": {
+		"stealth": true,
+		"armorPerTon": 32,
+		"fillerSlots": {
+			"LeftTorso": "2",
+			"RightTorso": "2",
+			"LeftLeg": "2",
+			"RightLeg": "2",
+			"LeftArm": "2",
+			"RightArm": "2"
+		},
+		"mechRequirements": [
+			"GuardianECM"
+		],
+		"color": "(R=0.27,G=0.3176,B=0.3216,A=1)",
+		"minTonnage": 0,
+		"maxTonnage": 100,
+		"rarity": 0.05
+	},
+	"GYRO_XL_MONSTER": {
+		"fillerSlots": {
+			"CenterTorso": 2
+		},
+		"relativeWeight": 0.5,
+		"rarity": 0.08,
+		"installCostScaling": 10,
+		"topSpeedMulti": 1.05,
+		"turnSpeedMulti": 1.05,
+		"accelerationMulti": 1.05,
+		"torsoTwistRateMulti": 1.05
 	}
 }
