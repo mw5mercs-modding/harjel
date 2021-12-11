@@ -189,7 +189,7 @@
 	"TCOMP_MISSLE_ADVANCED": {
 		"weapons": {
 			"missileSpreadRadiusMulti": 0.6,
-			"missileSpreadDistanceMulti": 0.6,
+			"missileSpreadDistanceMulti": 1.4,
 			"missileSpeedMulti": 1.2,
 			"missileDamageMulti": 1.15,
 			"missileCooldownMulti": 0.8,
@@ -200,7 +200,7 @@
 	"TCOMP_BALLISTIC_ADVANCED": {
 		"weapons": {
 			"ballisticSpreadRadiusMulti": 0.6,
-			"ballisticSpreadDistanceMulti": 0.6,
+			"ballisticSpreadDistanceMulti": 1.4,
 			"ballisticSpeedMulti": 1.2,
 			"ballisticDamageMulti": 1.15,
 			"ballisticCooldownMulti": 0.8
@@ -210,7 +210,7 @@
 	"TCOMP_PPC_ADVANCED": {
 		"weapons": {
 			"ppcSpreadRadiusMulti": 0.6,
-			"ppcDistanceMulti": 0.6,
+			"ppcDistanceMulti": 1.4,
 			"ppcSpeedMulti": 1.2,
 			"ppcDamageMulti": 1.15,
 			"ppcCooldownMulti": 0.8
