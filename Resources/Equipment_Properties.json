@@ -1,26 +1,23 @@
 {
-	"MODULAR_ARMOR_MK1_FRONT": {
-		"armorComponentFront": "8",
+	"Equipment.Upgrades.Armor": {
 		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
 		"category": "equipment.internal",
+		"installCostScaling": 10
+	},
+	"MODULAR_ARMOR_MK1_FRONT": {
+		"armorComponentFront": "8",
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK2_FRONT": {
 		"armorComponentFront": "16",
-		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
-		"category": "equipment.internal",
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK3_FRONT": {
 		"armorComponentFront": "24",
-		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
-		"category": "equipment.internal",
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK4_FRONT": {
 		"armorComponentFront": "32",
-		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
-		"category": "equipment.internal",
 		"rarity": 0.05
 	},
 	"MODULAR_ARMOR_MK1_REAR": {
@@ -32,8 +29,6 @@
 			"LeftLeg",
 			"RightLeg"
 		],
-		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
-		"category": "equipment.internal",
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK2_REAR": {
@@ -45,8 +40,6 @@
 			"LeftLeg",
 			"RightLeg"
 		],
-		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
-		"category": "equipment.internal",
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK3_REAR": {
@@ -58,8 +51,6 @@
 			"LeftLeg",
 			"RightLeg"
 		],
-		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
-		"category": "equipment.internal",
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK4_REAR": {
@@ -71,9 +62,12 @@
 			"LeftLeg",
 			"RightLeg"
 		],
-		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
-		"category": "equipment.internal",
 		"rarity": 0.05
+	},
+	"Equipment.Harjel": {
+		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
+		"category": "equipment.internal",
+		"installCostScaling": 10
 	},
 	"HARJEL_I": {
 		"armorComponentFrontMulti": "1.1",
@@ -93,8 +87,6 @@
 		"invalidMechParts": [
 			"Head"
 		],
-		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
-		"category": "equipment.internal",
 		"rarity": 0.1
 	},
 	"HARJEL_II": {
@@ -115,8 +107,6 @@
 		"invalidMechParts": [
 			"Head"
 		],
-		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
-		"category": "equipment.internal",
 		"rarity": 0.1
 	},
 	"HARJEL_III": {
@@ -137,21 +127,35 @@
 		"invalidMechParts": [
 			"Head"
 		],
-		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
-		"category": "equipment.internal",
 		"rarity": 0.05
+	},
+	"Equipment.Upgrades.Patchwork": {
+		"category": "equipment.internal",
+		"installCostScaling": 10		
 	},
 	"PATCHWORK_T1": {
-		"category": "equipment.internal",
-		"rarity": 0.08
+		"rarity": 0.08,
+		"installCost": 70000,
+		"mechPartConflicts": [
+			"PATCHWORK_T2",
+			"PATCHWORK_T3"
+		]
 	},
 	"PATCHWORK_T2": {
-		"category": "equipment.internal",
-		"rarity": 0.06
+		"rarity": 0.06,
+		"installCost": 100000,
+		"mechPartConflicts": [
+			"PATCHWORK_T1",
+			"PATCHWORK_T3"
+		]
 	},
 	"PATCHWORK_T3": {
-		"category": "equipment.internal",
-		"rarity": 0.05
+		"rarity": 0.05,
+		"installCost": 150000,
+		"mechPartConflicts": [
+			"PATCHWORK_T1",
+			"PATCHWORK_T2"
+		]
 	},
 	"BLACK_CARAPACE": {
 		"description": "The Black Carapace is the result of a secret research project which integrated the HarJel self-repair system directly into the armor plates. As a result the armor is slightly more bulky and heavier but the self-repait effect makes more than up for this.\nHowever, due to the compact build weapon heat can be vented less effectively.\n\nReserves 1 slot per Location except Head and CenterTorso.",
@@ -173,9 +177,10 @@
 		"minTonnage": 0,
 		"maxTonnage": 100,
 		"weapons": {
-			"traceHeatMulti": 1.10,
-			"ballisticHeatMulti": 1.10,
-			"missileHeatMulti": 1.10
+			"Weapon": {
+				"weaponGroupName": "Weapon",
+				"heatMulti": 1.1
+			}
 		},
 		"mechConflicts": [
 			"HARJEL_I",
@@ -227,10 +232,10 @@
 	},
 	"TCOMP_HEAT": {
 		"weapons": {
-			"traceHeatMulti": 0.9,
-			"ballisticHeatMulti": 0.9,
-			"missileHeatMulti": 0.9,
-			"ppcHeatMulti": 0.9
+			"Weapon": {
+				"weaponGroupName": "Weapon",
+				"heatMulti": 0.9
+			}
 		},
 		"rarity": 0.1
 	},
@@ -282,16 +287,21 @@
 		"maxTonnage": 100,
 		"rarity": 0.05
 	},
-	"GYRO_XL_MONSTER": {
+	"GYRO_XL_TITAN": {
 		"fillerSlots": {
 			"CenterTorso": 2
 		},
 		"relativeWeight": 0.5,
 		"rarity": 0.08,
 		"installCostScaling": 10,
-		"topSpeedMulti": 1.05,
-		"turnSpeedMulti": 1.05,
-		"accelerationMulti": 1.05,
-		"torsoTwistRateMulti": 1.05
+		"weapons": {
+			"Weapon": {
+				"weaponGroupName": "Weapon",
+				"jamChanceMulti": 0.6
+			}
+		}
+	},
+	"SENSORS_PROBE": {
+		"category": "equipment.internal"
 	}
 }
