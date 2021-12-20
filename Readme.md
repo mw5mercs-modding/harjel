@@ -32,49 +32,61 @@ Originally the properties were designed for equipments only. Since then some hav
 
 YAML by itself already provides the following properties:
 
-|Property|Description|Example|E|W|
-|---|---|---|---|---|
-|`description`|Because it is annoying to edit the desciption in the asset all the time, and also: newlines!|`"One line\nanother line."`|x||
-|`rarity`|Define the rarity of an equipment between 0 and 1. The rarity directly sets the probability the item will show up in markets.|`0.2`|x||
-|`loreAccurate`|States whether the equipment can be found in the lore. If not and configuration entry `loreAbidingCitizen` is `true` then the equipment will never show up in markets. Defaults to `true`|`false`|x||
-|`maxTonnage`|This equipment can only be equipped to a mech whose tonnage does not exceed this value.|`"35"`|x||
-|`minTonnage`|This equipment can only be equipped to a mech whose tonnage matches at least this value.|`"80"`|x||
-|`color`|Set the color of the equipment in the market and mechlab as an RGBA value.|`"(R=0.59,G=0.03,B=0.11,A=1)"`|x||
-|`category`|Allows to set the category of the equipment. One would typically use this on equipments which have the "generic" type `Heatsink.Single`. Can be one of: `equipment.misc`, `equipment.engine`, `equipment.internal` and `equipment.ammo`. Be aware that setting the category this way means that the equipment will always be shown, independent of the value of the "valid only" checkbox.|`"equipment.internal"`|x||
-|`invalidMechParts`|A list of mech parts the equipment can not be installed in. Possible values are: `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc..|`[ "CenterTorso" ]`|x|x|
-|`mechPartConflicts`|A list of equipments which cannot be installed in the same location as this equipment.|`["HARJEL_II", "HARHEL_III"]`|x|x|
-|`mechConflicts`|A list of equipments which cannot be installed in the mech in combination with this equipment.|`["HARJEL_II", "HARHEL_III"]`|x|x|
-|`mechPartRequirements`|A list of equipments which need to be installed in the same location as this equipment. This can be either equipment names or tag names.|`GuardianECM` or `Equipment.ECM`|x|x|
-|`mechRequirements`|A list of equipments which need to be installed in the mech in combination with this equipment. This can be either equipment names or tag names.|`GuardianECM` or `Equipment.ECM`|x|x|
-|`armorComponentFront`|An absolute value that is added to the armor of the mech part the equipment is installed in.|`"35"`|x||
-|`armorComponentRear`|An absolute value that is added to the rear armor of the mech part the equipment is installed in..|`"35"`|x||
-|`armorComponentFrontMulti`|A multiplier that is applied to the mech front armor of the mech part the equipment is installed in.|`"1.1"`|x||
-|`armorComponentRearMulti`|A multiplier that is applied to the rear armor of the mech part the equipment is installed in.|`"1.2"`|x||
-|`armorMulti`|A multiplier that is applied to the entire mech's armor.|`"2.0"`|x||
-|`structureComponent`|An absolute value that is added to the structure of the mech part the equipment is installed in.|`"35"`|x||
-|`structureComponentMulti`|A multiplier that is applied to the structure of the mech part the equipment is installed in.|`"1.1"`|x||
-|`structureMulti`|A multiplier that is applied to the entire mech's structure.|`"2.0"`|x||
-|`relativeWeight`|Sets the equipment weight to a multiple of the mech's max tonnage. This should be paired with a 0 weight in the equipment asset. Special case: Gyros, here the multiplicator refers to the weight of a standard Gyro.|`"0.05"`|x||
-|`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton.|`0.1`|x||
-|`armorWeightMulti`|A multiplicator for an armor upgrade. Does only make sense for armor equipments (type tags starting with `Internal.Armor`) and is typically combined with `armorMulti`. An example would be Hardened armor which uses a multi of `2.0` in combination with ab `armorMulti` of `2.0`. Alternatively `armorPerTon` can be used.|`2.0`|x||
-|`armorPerTon`|The amount of armor points one ton yields. Does only make sense for armor equipments (type tags starting with `Internal.Armor`). An example would be Hardened armor which uses a value of `64` in combination with ab `armorMulti` of `2.0`. An alternative to `armorWeightMulti` with a higher priority.|`64`|x||
-|`structureWeightMulti`|A multiplicator for a structure upgrade. Does only make sense for structure equipments (type tags starting with `Internal.Structure`) and is typically combined with `structureMulti`. An example would be Endosteel which uses a multi of `0.5` to reduce the weight of the structure by 50%.|`"0.5"`|x||
-|`fillerSlots`|Allows to define the dynamic and fixed fillers an equipment requires. The value is a map which contains any of the following keys: `dynamic` refers to the number of dynamic fillers which can be placed anywhere (a typical example is endo). `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc. refer to the fixed fillers required in specific mech parts. One example is 2 slots in the center torso for an XL Gyro.|`{ "CenterTorso": 2 }`|x||
-|`torsoTwistAngleMulti`|Changes the torso twist angle (how far can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|x||
-|`torsoTwistRateMulti`|Changes the torso twist rate (how fast can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|x||
-|`topSpeedMulti`|Change the top speed of the mech by this multiplier.|`1.1`|x||
-|`topSpeedReverseMulti`|Change the top reverse speed of the mech by this multiplier (or slower).|`1.1`|x||
-|`accelerationMulti`|Change the acceleration for the mech by this multiplier. Get fast faster (or slower).|`1.1`|x||
-|`decelerationMulti`|Change the deceleration for the mech by this multiplier. Get slow faster (or slower).|`1.1`|x||
-|`turnSpeedMulti`|Change the turn speed of the mech by this multiplier. Turn corners faster (or slower).|`1.1`|x||
-|`sensorRangeBonus`|A fixed bonus to the sensor range in meters.|`2000`|x||
-|`sensorRangeMulti`|A multiplier for the sensor range.|`1.5`|x||
-|`sensorFov`|The value of the sensor's field of view in degrees. Use `360` for the ultimate sensor upgrade.|`360`|x||
-|`maxJumpJetsMulti`|A multiplicator for the maximum number of jump jets. Only useful on jumpjet equipment. Caution: the first encountered value will be used. Thus, make sure jump jets with different max multis cannot be combined (using `mechConflicts`). An example would be `1.5` for improved jump jets.|`1.5`|x||
-|`installCost`|Overwrites the install cost defined in the asset.|`20000`|x||
-|`removeCost`|Overwrites the remove cost defined in the asset.|`20000`|x||
-|`installCostScaling`|Defines an installation (and removal) cost scaling based on the max mech tonnage. The value defines the multiplier for a 100 ton mech while a 20 ton mech will always set a multiplier of 1.|`10`|x||
-|`weapons`|A json object containing weapon bonus properties as described below.||x||
+|Property|Description|Example|E|W|M|
+|---|---|---|---|---|---|
+|`name`|Rename an equipment. Might be useful. Example: the HeatSinkKit mod uses it to rename the "Engine Double Heat Sinks" to "Double Heat Sink Kit".||x|||
+|`description`|Because it is annoying to edit the desciption in the asset all the time, and also: newlines!|`"One line\nanother line."`|x|||
+|`rarity`|Define the rarity of an equipment between 0 and 1. The rarity directly sets the probability the item will show up in markets.|`0.2`|x|||
+|`loreAccurate`|States whether the equipment can be found in the lore. If not and configuration entry `loreAbidingCitizen` is `true` then the equipment will never show up in markets. Defaults to `true`|`false`|x|||
+|`maxTonnage`|This equipment can only be equipped to a mech whose tonnage does not exceed this value.|`"35"`|x|||
+|`minTonnage`|This equipment can only be equipped to a mech whose tonnage matches at least this value.|`"80"`|x|||
+|`color`|Set the color of the equipment in the market and mechlab as an RGBA value.|`"(R=0.59,G=0.03,B=0.11,A=1)"`|x|||
+|`category`|Allows to set the category of the equipment. One would typically use this on equipments which have the "generic" type `Heatsink.Single`. Can be one of: `equipment.misc`, `equipment.engine`, `equipment.internal` and `equipment.ammo`. Be aware that setting the category this way means that the equipment will always be shown, independent of the value of the "valid only" checkbox.|`"equipment.internal"`|x|||
+|`invalidMechParts`|A list of mech parts the equipment can not be installed in. Possible values are: `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc..|`[ "CenterTorso" ]`|x|x||
+|`mechPartConflicts`|A list of equipments which cannot be installed in the same location as this equipment.|`["HARJEL_II", "HARHEL_III"]`|x|x||
+|`mechConflicts`|A list of equipments which cannot be installed in the mech in combination with this equipment.|`["HARJEL_II", "HARHEL_III"]`|x|x||
+|`mechPartRequirements`|A list of equipments which need to be installed in the same location as this equipment. This can be either equipment names or tag names.|`GuardianECM` or `Equipment.ECM`|x|x||
+|`mechRequirements`|A list of equipments which need to be installed in the mech in combination with this equipment. This can be either equipment names or tag names.|`GuardianECM` or `Equipment.ECM`|x|x||
+|`armorComponentFront`|An absolute value that is added to the armor of the mech part the equipment is installed in.|`"35"`|x|||
+|`armorComponentRear`|An absolute value that is added to the rear armor of the mech part the equipment is installed in..|`"35"`|x|||
+|`armorComponentFrontMulti`|A multiplier that is applied to the mech front armor of the mech part the equipment is installed in.|`"1.1"`|x|||
+|`armorComponentRearMulti`|A multiplier that is applied to the rear armor of the mech part the equipment is installed in.|`"1.2"`|x|||
+|`armorMulti`|A multiplier that is applied to the entire mech's armor.|`"2.0"`|x|||
+|`armorBonus`|Absolute armor bonus values for each mech surface. The value is a json object which can contain one entry for each surface (`Head`, `CenterTorso`, `RearCenterTorso`, etc).|`{ "RightTorso": 20 }`|||x|
+|`structureComponent`|An absolute value that is added to the structure of the mech part the equipment is installed in.|`"35"`|x|||
+|`structureComponentMulti`|A multiplier that is applied to the structure of the mech part the equipment is installed in.|`"1.1"`|x|||
+|`structureMulti`|A multiplier that is applied to the entire mech's structure.|`"2.0"`|x|||
+|`structureBonus`|Absolute structure bonus values for each mech surface. The value is a json object which can contain one entry for each surface (`Head`, `CenterTorso`, `RearCenterTorso`, etc).|`{ "RightTorso": 20 }`|||x|
+|`relativeWeight`|Sets the equipment weight to a multiple of the mech's max tonnage. This should be paired with a 0 weight in the equipment asset. Special case: Gyros, here the multiplicator refers to the weight of a standard Gyro.|`"0.05"`|x|||
+|`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton.|`0.1`|x|||
+|`armorWeightMulti`|A multiplicator for an armor upgrade. Does only make sense for armor equipments (type tags starting with `Internal.Armor`) and is typically combined with `armorMulti`. An example would be Hardened armor which uses a multi of `2.0` in combination with ab `armorMulti` of `2.0`. Alternatively `armorPerTon` can be used.|`2.0`|x|||
+|`armorPerTon`|The amount of armor points one ton yields. Does only make sense for armor equipments (type tags starting with `Internal.Armor`). An example would be Hardened armor which uses a value of `64` in combination with ab `armorMulti` of `2.0`. An alternative to `armorWeightMulti` with a higher priority.|`64`|x|||
+|`structureWeightMulti`|A multiplicator for a structure upgrade. Does only make sense for structure equipments (type tags starting with `Internal.Structure`) and is typically combined with `structureMulti`. An example would be Endosteel which uses a multi of `0.5` to reduce the weight of the structure by 50%.|`"0.5"`|x|||
+|`fillerSlots`|Allows to define the dynamic and fixed fillers an equipment requires. The value is a map which contains any of the following keys: `dynamic` refers to the number of dynamic fillers which can be placed anywhere (a typical example is endo). `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc. refer to the fixed fillers required in specific mech parts. One example is 2 slots in the center torso for an XL Gyro.|`{ "CenterTorso": 2 }`|x|||
+|`torsoTwistAngleMulti`|Changes the torso twist angle (how far can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|x||x|
+|`torsoTwistRateMulti`|Changes the torso twist rate (how fast can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|x||x|
+|`armTwistAngleMulti`|Changes the arm twist angle (how far can the arms turn) via a multiplier. This is typically used on Gyros.|`1.10`|x||x|
+|`armTwistRateMulti`|Changes the arm twist rate (how fast can the arms turn) via a multiplier. This is typically used on Gyros.|`1.10`|x||x|
+|`topSpeedMulti`|Change the top speed of the mech by this multiplier.|`1.1`|x||x|
+|`topSpeedReverseMulti`|Change the top reverse speed of the mech by this multiplier (or slower).|`1.1`|x||x|
+|`accelerationMulti`|Change the acceleration for the mech by this multiplier. Get fast faster (or slower).|`1.1`|x||x|
+|`decelerationMulti`|Change the deceleration for the mech by this multiplier. Get slow faster (or slower).|`1.1`|x||x|
+|`turnSpeedMulti`|Change the turn speed of the mech by this multiplier. Turn corners faster (or slower).|`1.1`|x||x|
+|`sensorRangeBonus`|A fixed bonus to the sensor range in meters.|`2000`|x||x|
+|`sensorRangeMulti`|A multiplier for the sensor range.|`1.5`|x||x|
+|`sensorFov`|The value of the sensor's field of view in degrees. Use `360` for the ultimate sensor upgrade.|`360`|x||x|
+|`maxJumpJetsMulti`|A multiplicator for the maximum number of jump jets. Only useful on jumpjet equipment. Caution: the first encountered value will be used. Thus, make sure jump jets with different max multis cannot be combined (using `mechConflicts`). An example would be `1.5` for improved jump jets.|`1.5`|x|||
+|`installCost`|Overwrites the install cost defined in the asset.|`20000`|x|||
+|`removeCost`|Overwrites the remove cost defined in the asset.|`20000`|x|||
+|`installCostScaling`|Defines an installation (and removal) cost scaling based on the max mech tonnage. The value defines the multiplier for a 100 ton mech while a 20 ton mech will always set a multiplier of 1.|`10`|x|||
+|`jumpJetXyAccelMulti`|Raise (or lower) the horizontal acceleration when jumping.|`1.1`|x||x|
+|`jumpJetZAccelMulti`|Raise (or lower) the vertical acceleration when jumping.|`1.1`|x||x|
+|`jumpJetInitialZVelocityMulti`|Raise (or lower) the initial vertical velocity when jumping.|`1.1`|x||x|
+|`jumpJetFuelBurnTimeMulti`|Raise (or lower) the time jump jet fuel burns. Values above 1 mean that the mech can jump higher.|`1.1`|x||x|
+|`jumpJetFuelRegenTimeMulti`|Lower (or raise) the time it takes to regenerate the jump jet fuel. Values below 1 mean faster regen.|`0.9`|x||x|
+|`jumpJetHeatMulti`|Lower (or raise) the heat produced by jump jet usage. Values below 1 mean less heat production.|`0.9`|x||x|
+|`weapons`|A json object containing weapon bonus properties as described below.||x||x|
+
 
 In addition to the equipment properties provided by YAML the HarJel mod adds the following:
 
@@ -128,6 +140,15 @@ The following bonus properties can be specified in the `weapons` section of an e
 |`missileMinRangeMulti`||``|
 |`missileOptimalRangeMulti`||``|
 |`missileMaxRangeMulti`||``|
+|`meleeDamageMulti`||``|
+|`meleeCooldownMulti`||``|
+|`meleeHeatMulti`||``|
+|`meleeOptimalRangeMulti`||``|
+|`meleeMaxRangeMulti`||``|
+|`amsMissilesDestroyedMulti`||``|
+|`amsRofMulti`||``|
+|`amsOptimalRangeMulti`||``|
+|`amsMaxRangeMulti`||``|
 |`lockonTimeMulti`||``|
 
 ### Example
