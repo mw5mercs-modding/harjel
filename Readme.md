@@ -54,7 +54,16 @@ YAML by itself already provides the following properties:
 |---|---|---|---|---|---|
 |`installCost`|Overwrites the install cost defined in the asset.|`20000`|E|||
 |`removeCost`|Overwrites the remove cost defined in the asset.|`20000`|E|||
+|`repairCost`|Overwrites the repair cost defined in the asset.|`20000`|E|||
 |`installCostScaling`|Defines an installation (and removal) cost scaling based on the max mech tonnage. The value defines the multiplier for a 100 ton mech while a 20 ton mech will always set a multiplier of 1.|`10`|E|||
+|`installDays`|Overwrites the install days defined in the asset.|`2`|E|||
+|`removeDays`|Overwrites the remove days defined in the asset.|`2`|E|||
+|`repairDays`|Overwrites the repair days defined in the asset.|`2`|E|||
+|`installDaysScaling`|Defines an installation (and removal) days scaling based on the max mech tonnage. The value defines the multiplier for a 100 ton mech while a 20 ton mech will always set a multiplier of 1.|`10`|E|||
+|`structureRepairCostMulti`|A multiplier on all structure repairs on the mech. This can for example be used on Endosteel to make it more expensive to repair.|`2`|E||M|
+|`structureRepairDaysMulti`|A multiplier on all structure repairs on the mech. This can for example be used on Endosteel to make it take longer to repair.|`2`|E||M|
+|`armorRepairCostMulti`|A multiplier on all armor repairs on the mech. This can for example be used on Hardened to make it more expensive to repair.|`2`|E||M|
+|`armorRepairDaysMulti`|A multiplier on all armor repairs on the mech. This can for example be used on Hardened to make it take longer to repair.|`2`|E||M|
 
 ##### Installation Restrition Properties
 |Property|Description|Example|E|W|M|
