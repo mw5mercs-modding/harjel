@@ -135,7 +135,7 @@
 	},
 	"PATCHWORK_T1": {
 		"rarity": 0.08,
-		"installCost": 70000,
+		"installCost": 20000,
 		"mechPartConflicts": [
 			"PATCHWORK_T2",
 			"PATCHWORK_T3"
@@ -143,7 +143,7 @@
 	},
 	"PATCHWORK_T2": {
 		"rarity": 0.06,
-		"installCost": 100000,
+		"installCost": 30000,
 		"mechPartConflicts": [
 			"PATCHWORK_T1",
 			"PATCHWORK_T3"
@@ -151,7 +151,7 @@
 	},
 	"PATCHWORK_T3": {
 		"rarity": 0.05,
-		"installCost": 150000,
+		"installCost": 50000,
 		"mechPartConflicts": [
 			"PATCHWORK_T1",
 			"PATCHWORK_T2"
@@ -177,10 +177,11 @@
 		"minTonnage": 0,
 		"maxTonnage": 100,
 		"weapons": {
-			"Weapon": {
+			"groups": [{
 				"weaponGroupName": "Weapon",
+				"tags": [ "Weapon" ],
 				"heatMulti": 1.1
-			}
+			}]
 		},
 		"mechConflicts": [
 			"HARJEL_I",
@@ -232,10 +233,11 @@
 	},
 	"TCOMP_HEAT": {
 		"weapons": {
-			"Weapon": {
+			"groups": [{
 				"weaponGroupName": "Weapon",
+				"tags": [ "Weapon" ],
 				"heatMulti": 0.9
-			}
+			}]
 		},
 		"rarity": 0.1
 	},
