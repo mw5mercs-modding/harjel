@@ -287,20 +287,6 @@
 		"maxTonnage": 100,
 		"rarity": 0.05
 	},
-	"GYRO_XL_TITAN": {
-		"fillerSlots": {
-			"CenterTorso": 2
-		},
-		"relativeWeight": 0.5,
-		"rarity": 0.08,
-		"installCostScaling": 10,
-		"weapons": {
-			"Weapon": {
-				"weaponGroupName": "Weapon",
-				"jamChanceMulti": 0.6
-			}
-		}
-	},
 	"SENSORS_PROBE": {
 		"category": "equipment.internal"
 	}
