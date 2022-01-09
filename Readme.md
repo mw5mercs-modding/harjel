@@ -15,7 +15,7 @@ had for Harjel let me to develop the equipment properties system in the first pl
 
 ## Mod Compatibility
 
-HarJel overrides `AbstractMech` in order to trigger the self-repair when taking damage. Thus, it is incompatible with any mod changing it as well.
+Starting with 0.16 the AbstractMech override was dropped which means it should be compatible with any mod that does not mess up YAML's DerivedMech.
 
 ## Developer Notes
 
