@@ -1,0 +1,7 @@
+[
+{
+	"name": "harjel",
+	"type": "mech",
+	"actorClassPath": "/harjel/MechExtensions/HarjelHandler.HarjelHandler_C"
+}
+]
