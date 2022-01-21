@@ -1,14 +1,15 @@
 {
    "displayName" : "The Equipment Collection Formerly Known as HarJel",
    "version" : "1.0",
-   "buildNumber" : 26,
+   "buildNumber" : 96,
    "description" : "Adds additional mech upgrades: Modular Armor and Self-Repair equipment, advanced targeting computers.",
    "author" : "truegerich",
    "authorURL" : "https://github.com/mw5mercs-modding/harjel",
    "defaultLoadOrder" : 6,
    "gameVersion" : "1.1.0",
    "manifest" : [
-      
+      "/Game/Objects/Projectiles/_common/Projectile.uasset",
+      "/Game/Objects/Projectiles/_common/Ray.uasset"
    ],
    "steamPublishedFileId" : 0,
    "steamLastSubmittedBuildNumber" : 0,
