@@ -279,5 +279,80 @@
 	},
 	"SENSORS_PROBE": {
 		"category": "equipment.internal"
+	},
+	"ARMOR_GLAZED": {
+		"description": "Also known as Laser Reflevtive or Reflec armor, the first batch of Glazed Armor was created by accident on a Ferro-Fibrous armor production line.\nGlazed Armor dissipates energy weapon attacks 50% more efficiently than other armor types, reducing the amount of damage taken by the 'Mech mounting it. Despite the name, Laser Reflective Armor is effective against all energy weapons, not just lasers. PPCs, Flamers, and Plasma Rifles and Cannons are all less effective against it.",
+		"fillerSlots": {
+			"dynamic": 10
+		},
+		"minTonnage": "0",
+		"maxTonnage": "100",
+		"armorWeightMulti": 1,
+		"rarity": 0.15,
+		"installCost": 20000,
+		"installCostScaling": 10,
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Energy",
+				"tags": ["Weapon.Energy"],
+				"armorDamageMulti": 0.5,
+				"scope": "mech"
+			}]
+		},
+		"armorRepairCostMulti": 1.5,
+		"armorRepairDaysMulti": 1.5
+	},
+	"ARMOR_REACTIVE": {
+		"fillerSlots": {
+			"dynamic": 10
+		},
+		"minTonnage": "0",
+		"maxTonnage": "100",
+		"armorWeightMulti": 1,
+		"rarity": 0.15,
+		"installCost": 20000,
+		"installCostScaling": 10,
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Missile and Artillery",
+				"tags": [
+					"Weapon.Missile",
+					"Weapon.ArtemisMissile",
+					"Weapon.Ballistic.Artillery",
+					"Weapon.Ballistic.AutoCannon.Standard.AC20.LongTom.Artillery",
+					"Weapon.Ballistic.AutoCannon.Standard.AC20.Sniper.Artillery",
+					"Weapon.Ballistic.AutoCannon.Standard.AC20.Thumper.Artillery"
+				],
+				"armorDamageMulti": 0.5,
+				"scope": "mech"
+			}]
+		},
+		"armorRepairCostMulti": 1.5,
+		"armorRepairDaysMulti": 1.5
+	},
+	"ARMOR_BALLISTIC_REINFORCED":{
+		"fillerSlots": {
+			"dynamic": 10
+		},
+		"minTonnage": "0",
+		"maxTonnage": "100",
+		"armorPerTon": 24,
+		"rarity": 0.15,
+		"installCost": 20000,
+		"installCostScaling": 10,
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Missile and Ballistic",
+				"tags": [
+					"Weapon.Missile",
+					"Weapon.ArtemisMissile",
+					"Weapon.Ballistic"
+				],
+				"armorDamageMulti": 0.5,
+				"scope": "mech"
+			}]
+		},
+		"armorRepairCostMulti": 2,
+		"armorRepairDaysMulti": 2
 	}
 }
