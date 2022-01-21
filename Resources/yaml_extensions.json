@@ -2,6 +2,16 @@
 {
 	"name": "harjel",
 	"type": "mech",
-	"actorClassPath": "/harjel/MechExtensions/HarjelHandler.HarjelHandler_C"
+	"actorClassPath": "/harjel/Extensions/HarjelHandler.HarjelHandler_C"
+},
+{
+	"name": "incomingdmg",
+	"type": "mech",
+	"actorClassPath": "/harjel/Extensions/IncomingDmgHandler.IncomingDmgHandler_C"
+},
+{
+	"name": "incomingdmgprops",
+	"type": "properties",
+	"actorClassPath": "/harjel/Extensions/IncomingDmgPropertyExtension.IncomingDmgPropertyExtension_C"
 }
 ]
