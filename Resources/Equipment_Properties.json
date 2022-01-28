@@ -146,6 +146,7 @@
 		"installCost": 50000
 	},
 	"BLACK_CARAPACE": {
+		"loreAccurate": false,
 		"description": "The Black Carapace is the result of a secret research project which integrated the HarJel self-repair system directly into the armor plates. As a result the armor is slightly more bulky and heavier but the self-repair effect makes more than up for this.\nHowever, due to the compact build weapon heat can be vented less effectively.\n\nReserves 1 slot per Location except Head and CenterTorso.",
 		"selfRepairArmor": 2,
 		"selfRepairStructure": 1,
@@ -354,5 +355,29 @@
 		},
 		"armorRepairCostMulti": 2,
 		"armorRepairDaysMulti": 2
+	},
+	"ARMOR_SPALL_LINER":{
+		"loreAccurate": false,
+		"fillerSlots": {
+			"dynamic": 2
+		},
+		"minTonnage": "0",
+		"maxTonnage": "100",
+		"armorWeightMulti": 1.15,
+		"rarity": 0.05,
+		"installCost": 20000,
+		"installCostScaling": 10,
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Weapon",
+				"tags": [
+					"Weapon"
+				],
+				"armorDamageMulti": 0.85,
+				"scope": "mech"
+			}]
+		},
+		"armorRepairCostMulti": 1.2,
+		"armorRepairDaysMulti": 1.2
 	}
 }
