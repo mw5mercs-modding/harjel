@@ -356,7 +356,7 @@
 		"armorRepairCostMulti": 2,
 		"armorRepairDaysMulti": 2
 	},
-	"ARMOR_SPALL_LINER":{
+	"ARMOR_SPALL_LINER": {
 		"loreAccurate": false,
 		"fillerSlots": {
 			"dynamic": 2
@@ -379,5 +379,5 @@
 		},
 		"armorRepairCostMulti": 1.2,
 		"armorRepairDaysMulti": 1.2
-	}
+	}	
 }

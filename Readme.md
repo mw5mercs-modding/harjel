@@ -42,14 +42,16 @@ YAML by itself already provides the following properties:
 |`name`|Rename an equipment. Might be useful. Example: the HeatSinkKit mod uses it to rename the "Engine Double Heat Sinks" to "Double Heat Sink Kit".||E|||
 |`description`|Because it is annoying to edit the desciption in the asset all the time, and also: newlines!|`"One line\nanother line."`|E|||
 |`color`|Set the color of the equipment in the market and mechlab as an RGBA value.|`"(R=0.59,G=0.03,B=0.11,A=1)"`|E|||
-|`category`|Allows to set the category of the equipment. One would typically use this on equipments which have the "generic" type `Heatsink.Single`. Can be one of: `equipment.misc`, `equipment.engine`, `equipment.internal` and `equipment.ammo`. Be aware that setting the category this way means that the equipment will always be shown, independent of the value of the "valid only" checkbox.|`"equipment.internal"`|E|||
+|`category`|Allows to set the category of the equipment. One would typically use this on equipments which have the "generic" type `Heatsink.Single`. Can be one of: `equipment.ammo`, `equipment.cooling`, `equipment.mobility`, `equipment.electronics`, `equipment.internal`, `equipment.misc`, `equipment.enginestd`, `equipment.enginelight`, `equipment.enginexl` and `equipment.enginexxl`. Be aware that setting the category this way means that the equipment will always be shown, independent of the value of the "valid only" checkbox.|`"equipment.internal"`|E|||
 |`rarity`|Define the rarity of an equipment between 0 and 1. The rarity directly sets the probability the item will show up in markets.|`0.2`|E|||
 |`loreAccurate`|States whether the equipment can be found in the lore. If not and configuration entry `loreAbidingCitizen` is `true` then the equipment will never show up in markets. Defaults to `true`|`false`|E|||
-|`relativeWeight`|Sets the equipment weight to a multiple of the mech's max tonnage. This should be paired with a 0 weight in the equipment asset. Special case: Gyros, here the multiplicator refers to the weight of a standard Gyro.|`"0.05"`|E|||
+|`relativeWeight`|Sets the equipment weight to a multiple of the mech's max tonnage, rounded to quarter tons (with a minumum weight of 0.25 tons). This should be paired with a 0 weight in the equipment asset. Special case: Gyros, here the multiplicator refers to the weight of a standard Gyro.|`"0.05"`|E|||
 |`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton.|`0.1`|x|||
 |`fillerSlots`|Allows to define the dynamic and fixed fillers an equipment requires. The value is a map which contains any of the following keys: `dynamic` refers to the number of dynamic fillers which can be placed anywhere (a typical example is endo). `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc. refer to the fixed fillers required in specific mech parts. One example is 2 slots in the center torso for an XL Gyro.|`{ "CenterTorso": 2 }`|E|||
+|`fixed`|If `true` the equipment cannot be removed and is considered a fixed equipment. It will not show up in the inventory. This should be combined with an intro date of 9999, autoamtic repair for the equipment asset and a salvage probability of 0. Fixed items can be used to create custom mech variants.|`true`|E|||
+|`introYear`|Override the introduction year of an equipment. This is mostly interesting for mods which support both vanilla and YAML to hide equipment in vanilla.|`3078`|E|||
 
-##### Refit Cost Properties 
+##### Financial Properties 
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
 |`installCost`|Overwrites the install cost defined in the asset.|`20000`|E|||
@@ -64,6 +66,7 @@ YAML by itself already provides the following properties:
 |`structureRepairDaysMulti`|A multiplier on all structure repairs on the mech. This can for example be used on Endosteel to make it take longer to repair.|`2`|E||M|
 |`armorRepairCostMulti`|A multiplier on all armor repairs on the mech. This can for example be used on Hardened to make it more expensive to repair.|`2`|E||M|
 |`armorRepairDaysMulti`|A multiplier on all armor repairs on the mech. This can for example be used on Hardened to make it take longer to repair.|`2`|E||M|
+|`upkeepCostMulti`|A multiplier on the recurring upkeep cost for both active 'mechs and those in cold storage.|`0.8`|||M|
 
 ##### Installation Restrition Properties
 |Property|Description|Example|E|W|M|
@@ -123,6 +126,16 @@ YAML by itself already provides the following properties:
 |`jumpJetFuelBurnTimeMulti`|Raise (or lower) the time jump jet fuel burns. Values above 1 mean that the mech can jump higher.|`1.1`|E||M|
 |`jumpJetFuelRegenTimeMulti`|Lower (or raise) the time it takes to regenerate the jump jet fuel. Values below 1 mean faster regen.|`0.9`|E||M|
 |`jumpJetHeatMulti`|Lower (or raise) the heat produced by jump jet usage. Values below 1 mean less heat production.|`0.9`|E||M|
+
+#### Misc Properties
+|Property|Description|Example|E|W|M|
+|---|---|---|-----|-----|---|
+|`engineHeatsinkMulti`|Normally any engine above a 250 comes with external engine heatsinks. This multiplier can be used to modify that number.|`0`|E||M|
+
+##### Special Properties
+|Property|Description|Example|E|W|M|
+|---|---|---|-----|-----|---|
+|`predictiveTargeting`|A boolean property which can be used to enable predictive targeting, ie. a target recticle which points to where one has to shoot, accouting for things like drop-off and target speed.|`true`|E||M|
 
 ##### Weapon Modifier Properties
 The special property `weapons` allows to define a multitude of weapon modifiers ranging from a simple PPC range upgrade to cooldown modifiers for SRM6 launchers.
