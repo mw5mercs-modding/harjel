@@ -15,5 +15,8 @@
 	},
 	"selfRepairScope": {
 		"label": "Self-repair scope"
+	},
+	"heat": {
+		"label": "Heat/sec"
 	}
 }

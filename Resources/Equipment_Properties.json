@@ -230,6 +230,16 @@
 		},
 		"rarity": 0.1
 	},
+	"TCOMP_NOVA": {
+		"weapons": {
+			"groups": [{
+				"weaponGroupName": "Laser",
+				"tags": [ "Weapon.Energy.Laser" ],
+				"heatMulti": 0.85
+			}]
+		},
+		"rarity": 0.1
+	},
 	"COMPOSITE_STRUCTURE": {
 		"structureMulti": 0.5,
 		"structureWeightMulti": "0.5",
@@ -279,7 +289,34 @@
 		"rarity": 0.05
 	},
 	"SENSORS_PROBE": {
-		"category": "equipment.internal"
+		"rarity": 0.1
+	},
+	"ARMOR_NSS": {
+		"armorPerTon": 32,
+		"fillerSlots": {
+			"LeftTorso": 1,
+			"RightTorso": 1,
+			"LeftArm": 1,
+			"RightArm": 1,
+			"LeftLeg": 1,
+			"RightLeg": 1
+		},
+		"mechRequirements": [
+			"Equipment.ECM"
+		],
+		"minTonnage": 0,
+		"maxTonnage": 100,
+		"rarity": 0.02,
+		"heat": 0.35,
+		"weapons": {
+			"groups": [{
+				"weaponGroupName": "Weapon",
+				"tags": [ "Weapon" ],
+				"heatMulti": 1.15
+			}]
+		},
+		"armorRepairCostMulti": 1.4,
+		"armorRepairDaysMulti": 1.4
 	},
 	"ARMOR_GLAZED": {
 		"description": "Also known as Laser Reflevtive or Reflec armor, the first batch of Glazed Armor was created by accident on a Ferro-Fibrous armor production line.\nGlazed Armor dissipates energy weapon attacks 50% more efficiently than other armor types, reducing the amount of damage taken by the 'Mech mounting it. Despite the name, Laser Reflective Armor is effective against all energy weapons, not just lasers. PPCs, Flamers, and Plasma Rifles and Cannons are all less effective against it.",
@@ -379,5 +416,24 @@
 		},
 		"armorRepairCostMulti": 1.2,
 		"armorRepairDaysMulti": 1.2
-	}	
+	},
+	"LASER_INSULATOR": {
+		"description": "The  Laser Insulators were an advanced heat sink first used in the SLDF's Chippewa fighter. They have been adjusted to be used in battlemechs to specifically cool down laser weapons.\n\nNeeds to be installed in a location with a laser.",
+		"weapons": {
+			"groups": [
+				{
+					"weaponGroupName": "Laser",
+					"tags": [
+						"Weapon.Energy.Laser"
+					],
+					"heatMulti": 0.95
+				}
+			]
+		},
+		"loreAccurate": false,
+		"rarity": 0.02,
+		"mechPartRequirements": [
+			"Weapon.Energy.Laser"
+		]
+	}
 }
