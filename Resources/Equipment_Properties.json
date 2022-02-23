@@ -435,5 +435,112 @@
 		"mechPartRequirements": [
 			"Weapon.Energy.Laser"
 		]
+	},
+	"SHOULDER_ARMORED": {
+		"relativeWeight": 0.01,
+		"rarity": 0.02,
+		"armorComponentFrontMulti": 1.1,
+		"loreAccurate": false
+	},
+	"UPPER_MELEE": {
+		"relativeWeight": 0.01,
+		"rarity": 0.02,
+		"weapons": {
+			"groups": [
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 1.1
+				}
+			]
+		},
+		"loreAccurate": false
+	},
+	"UPPER_ARMORED": {
+		"relativeWeight": 0.01,
+		"rarity": 0.02,
+		"armorComponentFrontMulti": 1.1,
+		"loreAccurate": false
+	},
+	"UPPER_HARDENED": {
+		"relativeWeight": 0.01,
+		"rarity": 0.01,
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Weapon",
+				"tags": ["Weapon"],
+				"armorDamageMulti": 0.95,
+				"strutureDamageMulti": 0.95,
+				"scope": "component"
+			}]
+		},
+		"loreAccurate": false
+	},
+	"LOWER_MELEE": {
+		"relativeWeight": 0.01,
+		"rarity": 0.02,
+		"weapons": {
+			"groups": [
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 1.15
+				}
+			]
+		},
+		"loreAccurate": false
+	},
+	"CLAWS": {
+		"description": "A BattleMech Claw is a melee weapon most frequently used in the arena fighting on Solaris. The Claw consists of a series of hardened steel blades mounted on reinforced tungsten frames.\n\nRequires Hands.",
+		"relativeWeight": 0.02,
+		"rarity": 0.02,
+		"invalidMechParts": [
+			"Head",
+			"CenterTorso",
+			"LeftTorso",
+			"RightTorso",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"mechPartConflicts": [
+			"CLAWS"
+		],
+		"mechPartRequirements": [
+			"Weapon.Melee.Punch.Hand"
+		],
+		"weapons": {
+			"groups": [
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 1.2
+				}
+			]
+		},
+		"loreAccurate": false
+	},
+	"WEAPON_MOUNT_RECOIL": {
+		"relativeWeight": 0.01,
+		"rarity": 0.01,
+		"loreAccurate": false,
+		"weapons": {
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"jamChanceMulti": 0.85,
+					"spreadRadiusMulti": 0.9,
+					"spreadDistanceMulti": 1.1
+				}
+			]
+		}
 	}
 }
