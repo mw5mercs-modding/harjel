@@ -420,6 +420,7 @@
 	"LASER_INSULATOR": {
 		"description": "The  Laser Insulators were an advanced heat sink first used in the SLDF's Chippewa fighter. They have been adjusted to be used in battlemechs to specifically cool down laser weapons.\n\nNeeds to be installed in a location with a laser.",
 		"weapons": {
+			"scope": "component",
 			"groups": [
 				{
 					"weaponGroupName": "Laser",
@@ -446,6 +447,7 @@
 		"relativeWeight": 0.01,
 		"rarity": 0.02,
 		"weapons": {
+			"scope": "component",
 			"groups": [
 				{
 					"weaponGroupName": "Melee",
@@ -482,6 +484,7 @@
 		"relativeWeight": 0.01,
 		"rarity": 0.02,
 		"weapons": {
+			"scope": "component",
 			"groups": [
 				{
 					"weaponGroupName": "Melee",
@@ -513,6 +516,7 @@
 			"Weapon.Melee.Punch.Hand"
 		],
 		"weapons": {
+			"scope": "component",
 			"groups": [
 				{
 					"weaponGroupName": "Melee",
@@ -530,6 +534,7 @@
 		"rarity": 0.01,
 		"loreAccurate": false,
 		"weapons": {
+			"scope": "component",
 			"groups": [
 				{
 					"weaponGroupName": "Weapon",
