@@ -1,7 +1,7 @@
 {
 	"displayName": "The Equipment Collection Formerly Known as HarJel",
-	"version": "0.18",
-	"buildNumber": 117,
+	"version": "0.18.1",
+	"buildNumber": 123,
 	"description": "Adds additional mech upgrades: Modular Armor and Self-Repair equipment, advanced targeting computers.",
 	"author": "truegerich",
 	"authorURL": "https://github.com/mw5mercs-modding/harjel",
@@ -16,6 +16,6 @@
 		"/Game/Objects/Weapons/Melee/MechHandMedium_MeleeWeaponDataAsset.uasset"
 	],
 	"steamPublishedFileId": 2734262706,
-	"steamLastSubmittedBuildNumber": 117,
+	"steamLastSubmittedBuildNumber": 123,
 	"steamModVisibility": "Public"
 }
