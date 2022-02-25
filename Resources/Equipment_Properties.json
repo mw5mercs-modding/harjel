@@ -464,7 +464,7 @@
 		"armorComponentFrontMulti": 1.1,
 		"loreAccurate": false
 	},
-	"UPPER_HARDENED": {
+	"UPPER_HARD_ENED": {
 		"relativeWeight": 0.01,
 		"rarity": 0.01,
 		"incomingDamage": {
