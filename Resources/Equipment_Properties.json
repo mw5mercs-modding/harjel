@@ -510,7 +510,10 @@
 			"RightLeg"
 		],
 		"mechPartConflicts": [
-			"CLAWS"
+			"CLAWS",
+			"BATTLE_FIST",
+			"BATTLE_FIST_MK2",
+			"BATTLE_FIST_MK3"
 		],
 		"mechPartRequirements": [
 			"Weapon.Melee.Punch.Hand"
@@ -523,7 +526,116 @@
 					"tags": [
 						"Weapon.Melee"
 					],
-					"damageMulti": 1.2
+					"damageMulti": 1.4,
+					"cooldownMulti": 1.1
+				}
+			]
+		},
+		"loreAccurate": false
+	},
+	"BATTLE_FIST": {
+		"description": "Battle fists optimize a mech's hand actuators for physical engagements, optimizing the servos for improved damage and speed.\n\nRequires Hands.",
+		"relativeWeight": 0.01,
+		"rarity": 0.02,
+		"invalidMechParts": [
+			"Head",
+			"CenterTorso",
+			"LeftTorso",
+			"RightTorso",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"mechPartConflicts": [
+			"CLAWS",
+			"BATTLE_FIST",
+			"BATTLE_FIST_MK2",
+			"BATTLE_FIST_MK3"
+		],
+		"mechPartRequirements": [
+			"Weapon.Melee.Punch.Hand"
+		],
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 1.1,
+					"cooldownMulti": 0.9
+				}
+			]
+		},
+		"loreAccurate": false
+	},
+	"BATTLE_FIST_MK2": {
+		"description": "Battle fists optimize a mech's hand actuators for physical engagements, optimizing the servos for improved damage and speed.\n\nRequires Hands.",
+		"relativeWeight": 0.02,
+		"rarity": 0.01,
+		"invalidMechParts": [
+			"Head",
+			"CenterTorso",
+			"LeftTorso",
+			"RightTorso",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"mechPartConflicts": [
+			"CLAWS",
+			"BATTLE_FIST",
+			"BATTLE_FIST_MK2",
+			"BATTLE_FIST_MK3"
+		],
+		"mechPartRequirements": [
+			"Weapon.Melee.Punch.Hand"
+		],
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 1.2,
+					"cooldownMulti": 0.8
+				}
+			]
+		},
+		"loreAccurate": false
+	},
+	"BATTLE_FIST_MK3": {
+		"description": "Battle fists optimize a mech's hand actuators for physical engagements, optimizing the servos for improved damage and speed.\n\nRequires Hands.",
+		"relativeWeight": 0.03,
+		"rarity": 0.008,
+		"invalidMechParts": [
+			"Head",
+			"CenterTorso",
+			"LeftTorso",
+			"RightTorso",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"mechPartConflicts": [
+			"CLAWS",
+			"BATTLE_FIST",
+			"BATTLE_FIST_MK2",
+			"BATTLE_FIST_MK3"
+		],
+		"mechPartRequirements": [
+			"Weapon.Melee.Punch.Hand"
+		],
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 1.3,
+					"cooldownMulti": 0.7
 				}
 			]
 		},
