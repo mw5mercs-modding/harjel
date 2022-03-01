@@ -659,5 +659,82 @@
 				}
 			]
 		}
+	},
+	"COCKPIT_HOTSEAT": {
+		"fillerSlots": {
+			"dynamic": 6
+		},
+		"mechConflicts": [
+			"TSMYOMER",
+			"TSMYOMER_H",
+			"TSMYOMER_L",
+			"TSMYOMER_M"
+		],
+		"loreAccurate": false,
+		"rarity": 0.03,
+		"armorComponentFront": 3,
+		"structureComponent": 3,
+		"equipmentToggle": "EquipmentToggle1",
+		"activeProperties": {
+			"heat": 1,
+			"heatBuildup": 0.04,
+			"heatDissipation": 0.08,
+			"tsmMulti": 1.5,
+			"topSpeedMulti": 1.3
+		}
+	},
+	"GYRO_MELEE": {
+		"loreAccurate": false,
+		"rarity": 0.03,
+		"weapons": {
+			"scope": "mech",
+			"groups": [
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 1.1,
+					"cooldownMulti": 0.9
+				}
+			]
+		}
+	},
+	"GYRO_MELEE_MK2": {
+		"loreAccurate": false,
+		"rarity": 0.02,
+		"weapons": {
+			"scope": "mech",
+			"groups": [
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 1.15,
+					"cooldownMulti": 0.85,
+					"torsoTwistRateMulti": 1.08
+				}
+			]
+		}
+	},
+	"GYRO_MELEE_MK3": {
+		"loreAccurate": false,
+		"rarity": 0.01,
+		"weapons": {
+			"scope": "mech",
+			"groups": [
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 1.2,
+					"cooldownMulti": 0.85,
+					"torsoTwistRateMulti": 1.1,
+					"turnSpeedMulti": 1.08
+				}
+			]
+		}
 	}
 }

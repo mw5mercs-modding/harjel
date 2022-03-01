@@ -10,6 +10,11 @@
 	"actorClassPath": "/harjel/Extensions/IncomingDmgHandler.IncomingDmgHandler_C"
 },
 {
+	"name": "miscequipment",
+	"type": "mech",
+	"actorClassPath": "/harjel/Extensions/MiscEquipmentHandler.MiscEquipmentHandler_C"
+},
+{
 	"name": "incomingdmgprops",
 	"type": "properties",
 	"actorClassPath": "/harjel/Extensions/IncomingDmgPropertyExtension.IncomingDmgPropertyExtension_C"

@@ -18,5 +18,25 @@
 	},
 	"heat": {
 		"label": "Heat/sec"
+	},
+	"activeProperties/heat": {
+		"label": "Heat/sec when active"
+	},
+	"activeProperties/heatBuildup": {
+		"label": "Heat buildup/sec when active"
+	},
+	"activeProperties/heatDissipation": {
+		"label": "Heat dissipation/sec after deactivation"
+	},
+	"activeProperties/tsmMulti": {
+		"label": "TSM melee damage when active",
+		"unit": "multi"
+	},
+	"activeProperties/topSpeedMulti": {
+		"label": "Top speed modifier when active",
+		"unit": "multi"
+	},
+	"equipmentToggle": {
+		"label": "Toggle active via"
 	}
 }
