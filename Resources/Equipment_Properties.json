@@ -454,9 +454,35 @@
 					"tags": [
 						"Weapon.Melee"
 					],
+					"damageMulti": 1.15
+				}
+			]
+		},
+		"loreAccurate": false
+	},
+	"UPPER_SPIKED": {
+		"relativeWeight": 0.01,
+		"rarity": 0.01,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
 					"damageMulti": 1.1
 				}
 			]
+		},
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Melee",
+				"tags": ["Weapon.Melee"],
+				"armorDamageMulti": 0.9,
+				"strutureDamageMulti": 0.9,
+				"scope": "component"
+			}]
 		},
 		"loreAccurate": false
 	},
@@ -870,5 +896,21 @@
 		"mechConflicts": [
 			"BC_PILOTING"
 		]
+	},
+	"RE_INFORCED_LEGS": {
+		"rarity": 0.01,
+		"loreAccurate": false,
+		"relativeWeight": 0.01,
+		"armorComponentFrontMulti": 1.1,
+		"structureComponentMulti": 1.1,
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Melee",
+				"tags": ["Weapon.Melee"],
+				"armorDamageMulti": 0.96,
+				"strutureDamageMulti": 0.96,
+				"scope": "component"
+			}]
+		}
 	}
 }
