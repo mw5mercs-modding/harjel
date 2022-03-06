@@ -2,11 +2,20 @@
 
 This mod adds additional equipments to the game which can be installed into individual locations.
 
+Much of this mod is inspired by or based on stuff from Roguetech, arguably my favorite game ever.
+
 - **HarJel I, II, III** - Self-Repair systems. Upon taking damage they will repair armor and structure in their install location for a certain amount of time. Install a total of 7 HarJel systems to make the entire mech self-repair. Different HarJel tiers cannot be combined, also they cannot be installed in the head (lore forbids it!).
 - **Modular Armor Mk1 - Mk4** - Armor upgrades which add a fixed amount of armor to their installation location. Variants for rear armor are included. Different tiers for different weight classes.
 - **Patchwork T1 - T3** - provide a small amount of weight in exchange for some slots. Because Patchwork is awesome.
 - **Black Carapace** - Find it, cower in its presence.
 - **Advanced Targetting Computers** - TC upgrades which weigh a ton but add considerable upgrades for different weapon systems.
+- **Actuators** - A bunch of actuator equipment which can be installed in arm actuator slots, many being melee-focussed.
+- **Gyro upgrades** - Melee focussed gyros
+- **Angel ECM**
+- **NSS** - The Null Signature System (armor upgrade) is essentially just a stacking ECM. NEEDS TESTING AND FEEDBACK.
+- **Battle Computers** - One ton upgrades which can be installed with a "modular TC" and add different bonuses.
+- **Laser Insulator** - Essentially an advanced single heatsink which lowers the heat output of lasers installed in the same location.
+- **Cockpit Hotseat** - A cockpit upgrade with an integrated TSM that can be triggered via hotkey. The longer the Hotseat is active the more heat it produces.
 
 ## Requirements
 
@@ -48,8 +57,14 @@ YAML by itself already provides the following properties:
 |`relativeWeight`|Sets the equipment weight to a multiple of the mech's max tonnage, rounded to quarter tons (with a minumum weight of 0.25 tons). This should be paired with a 0 weight in the equipment asset. Special case: Gyros, here the multiplicator refers to the weight of a standard Gyro.|`"0.05"`|E|||
 |`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton.|`0.1`|x|||
 |`fillerSlots`|Allows to define the dynamic and fixed fillers an equipment requires. The value is a map which contains any of the following keys: `dynamic` refers to the number of dynamic fillers which can be placed anywhere (a typical example is endo). `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc. refer to the fixed fillers required in specific mech parts. One example is 2 slots in the center torso for an XL Gyro.|`{ "CenterTorso": 2 }`|E|||
-|`fixed`|If `true` the equipment cannot be removed and is considered a fixed equipment. It will not show up in the inventory. This should be combined with an intro date of 9999, autoamtic repair for the equipment asset and a salvage probability of 0. Fixed items can be used to create custom mech variants.|`true`|E|||
+|`fixed`|If `true` the equipment cannot be removed and is considered a fixed equipment. It will not show up in the inventory. This should be combined with an intro date of 9999 and autoamtic repair for the equipment asset. The salvage probability can either be set to 0 to prevent salvage completely or the salvaged item can be changed via `salvageInto`. Fixed items can be used to create custom mech variants.|`true`|E|||
 |`introYear`|Override the introduction year of an equipment. This is mostly interesting for mods which support both vanilla and YAML to hide equipment in vanilla.|`3078`|E|||
+
+##### Salvage Properties
+|Property|Description|Example|E|W|M|
+|---|---|---|---|---|---|
+|`salvageInto`|If set this equipment will be replaced in the mission salvage table. The value is a combination of the asset type and the asset name, separated by `:`. This property is very useful for `fixed` equipment which should not show up in the salvage table. An example would be a custom asset representing a fixed XL300 engine which should yield a normal XL300 during salvage.|`MWHeatSinkDataAsset:XL300`|E|||
+|`salvageMulti`|Can be used to change the number of salvage items created due to `salvageInto`. One example would be an internal `fixed` self-repair system which yields 7 Harjel II equipments when being salvaged.|`7`|E|||
 
 ##### Financial Properties 
 |Property|Description|Example|E|W|M|
@@ -68,7 +83,7 @@ YAML by itself already provides the following properties:
 |`armorRepairDaysMulti`|A multiplier on all armor repairs on the mech. This can for example be used on Hardened to make it take longer to repair.|`2`|E||M|
 |`upkeepCostMulti`|A multiplier on the recurring upkeep cost for both active 'mechs and those in cold storage.|`0.8`|||M|
 
-##### Installation Restrition Properties
+##### Installation Restriction Properties
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
 |`maxTonnage`|This equipment can only be equipped to a mech whose tonnage does not exceed this value.|`"35"`|E|||
@@ -131,6 +146,7 @@ YAML by itself already provides the following properties:
 |Property|Description|Example|E|W|M|
 |---|---|---|-----|-----|---|
 |`engineHeatsinkMulti`|Normally any engine above a 250 comes with external engine heatsinks. This multiplier can be used to modify that number.|`0`|E||M|
+|`heatCapacityBonus`|A bonus to the mech's total heat capacity.|`0.3`|E||M|
 
 ##### Special Properties
 |Property|Description|Example|E|W|M|
@@ -148,8 +164,9 @@ The following bonus properties can be specified in the `weapons` section of an e
 
 |Property|Description|
 |---|---|
+|`scope`|Can be either `mech` (default) or `component`. In the latter case the bonuses only apply to weapons installed in the same location. This property is ignored for mech quirks.|
 |`groups`|Contains an array of weapon group objects as decribed below.|
-|`lockonTimeMulti`||
+|`lockonTimeMulti`|Modifies the time it takes for weapons like LRMs to get a lock. Caution: this property is not subject to the `scope` since lock-on times are not weapon-specific.|
 |`traceDurationMulti`||
 |`traceDamageMulti`||
 |`traceCooldownMulti`||
@@ -166,6 +183,7 @@ The following bonus properties can be specified in the `weapons` section of an e
 |`ballisticMinRangeMulti`||
 |`ballisticOptimalRangeMulti`||
 |`ballisticMaxRangeMulti`||
+|`ballisticJamChanceMulti`||
 |`ppcSpreadRadiusMulti`||
 |`ppcSpreadDistanceMulti`||
 |`ppcSpeedMulti`||
@@ -186,6 +204,7 @@ The following bonus properties can be specified in the `weapons` section of an e
 |`missileMinRangeMulti`||
 |`missileOptimalRangeMulti`||
 |`missileMaxRangeMulti`||
+|`missileJamChanceMulti`||
 |`meleeDamageMulti`||
 |`meleeCooldownMulti`||
 |`meleeHeatMulti`||
@@ -213,6 +232,7 @@ Weapon groups are the most flexible way of defining weapon modifiers. Each group
 | `minRangeMulti`          ||
 | `optimalRangeMulti`      ||
 | `maxRangeMulti`          ||
+| `jamChanceMulti`         ||
 | `missilesDestroyedMulti` | Only applies to AMS           |
 | `rofMulti`               | Only applies to AMS           |
 
