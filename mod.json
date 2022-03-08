@@ -1,21 +1,21 @@
 {
-   "displayName" : "The Equipment Collection Formerly Known as HarJel",
-   "version" : "0.19",
-   "buildNumber" : 159,
-   "description" : "Adds additional mech upgrades: Modular Armor and Self-Repair equipment, advanced targeting computers.",
-   "author" : "truegerich",
-   "authorURL" : "https://github.com/mw5mercs-modding/harjel",
-   "defaultLoadOrder" : 6,
-   "gameVersion" : "1.1.0",
-   "manifest" : [
-      "/Game/Objects/Projectiles/_common/Projectile.uasset",
-      "/Game/Objects/Projectiles/_common/Ray.uasset",
-      "/Game/Objects/Weapons/Melee/MechHandAssault_MeleeWeaponDataAsset.uasset",
-      "/Game/Objects/Weapons/Melee/MechHandHeavy_MeleeWeaponDataAsset.uasset",
-      "/Game/Objects/Weapons/Melee/MechHandLight_MeleeWeaponDataAsset.uasset",
-      "/Game/Objects/Weapons/Melee/MechHandMedium_MeleeWeaponDataAsset.uasset"
-   ],
-   "steamPublishedFileId" : 2734262706,
-   "steamLastSubmittedBuildNumber" : "159",
-   "steamModVisibility" : "Public"
+	"displayName": "The Equipment Collection Formerly Known as HarJel",
+	"version": "0.20",
+	"buildNumber": 161,
+	"description": "Adds additional mech upgrades: Modular Armor and Self-Repair equipment, advanced targeting computers.",
+	"author": "truegerich",
+	"authorURL": "https://github.com/mw5mercs-modding/harjel",
+	"defaultLoadOrder": 6,
+	"gameVersion": "1.1.0",
+	"manifest": [
+		"/Game/Objects/Projectiles/_common/Projectile.uasset",
+		"/Game/Objects/Projectiles/_common/Ray.uasset",
+		"/Game/Objects/Weapons/Melee/MechHandAssault_MeleeWeaponDataAsset.uasset",
+		"/Game/Objects/Weapons/Melee/MechHandHeavy_MeleeWeaponDataAsset.uasset",
+		"/Game/Objects/Weapons/Melee/MechHandLight_MeleeWeaponDataAsset.uasset",
+		"/Game/Objects/Weapons/Melee/MechHandMedium_MeleeWeaponDataAsset.uasset"
+	],
+	"steamPublishedFileId": 2734262706,
+	"steamLastSubmittedBuildNumber": 161,
+	"steamModVisibility": "Public"
 }
