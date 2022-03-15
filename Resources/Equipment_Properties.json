@@ -954,5 +954,40 @@
 			"EXCHANGER",
 			"EXCHANGER_MK2"
 		]
+	},
+	"ImprovedJumpJet_Class1_Equipment":	{
+		"rarity": 0.05,
+		"mechConflicts": [
+			"JumpJet_Class1_Equipment"
+		],
+		"maxJumpJetsMulti": 1.5
+	},
+	"ImprovedJumpJet_Class2_Equipment":	{
+		"rarity": 0.05,
+		"mechConflicts": [
+			"JumpJet_Class2_Equipment"
+		],
+		"maxJumpJetsMulti": 1.5
+	},
+	"ImprovedJumpJet_Class3_Equipment":	{
+		"rarity": 0.05,
+		"mechConflicts": [
+			"JumpJet_Class3_Equipment"
+		],
+		"maxJumpJetsMulti": 1.5
+	},
+	"ImprovedJumpJet_Class4_Equipment":	{
+		"rarity": 0.05,
+		"mechConflicts": [
+			"JumpJet_Class4_Equipment"
+		],
+		"maxJumpJetsMulti": 1.5
+	},
+	"ImprovedJumpJet_Class1_Equipment":	{
+		"rarity": 0.05,
+		"mechConflicts": [
+			"JumpJet_Class1_Equipment"
+		],
+		"maxJumpJetsMulti": 1.5
 	}
 }
