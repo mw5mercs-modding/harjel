@@ -10,12 +10,13 @@ Much of this mod is inspired by or based on stuff from Roguetech, arguably my fa
 - **Black Carapace** - Find it, cower in its presence.
 - **Advanced Targetting Computers** - TC upgrades which weigh a ton but add considerable upgrades for different weapon systems.
 - **Actuators** - A bunch of actuator equipment which can be installed in arm actuator slots, many being melee-focussed.
-- **Gyro upgrades** - Melee focussed gyros
+- **Gyro upgrades** - Melee focussed gyros, stability gyro
 - **Angel ECM**
 - **NSS** - The Null Signature System (armor upgrade) is essentially just a stacking ECM. NEEDS TESTING AND FEEDBACK.
 - **Battle Computers** - One ton upgrades which can be installed with a "modular TC" and add different bonuses.
 - **Laser Insulator** - Essentially an advanced single heatsink which lowers the heat output of lasers installed in the same location.
 - **Cockpit Hotseat** - A cockpit upgrade with an integrated TSM that can be triggered via hotkey. The longer the Hotseat is active the more heat it produces.
+- **Improved Jump-Jets** - Improved jump jets weight 50% more but burn 15% longer and allow the installation of 1.5 JJs per walk MP. These are RT's I-JJs which I found to be much more reasonable than the TT ones (why would you ever want to use those?).
 
 ## Requirements
 
