@@ -10,13 +10,17 @@ Much of this mod is inspired by or based on stuff from Roguetech, arguably my fa
 - **Black Carapace** - Find it, cower in its presence.
 - **Advanced Targetting Computers** - TC upgrades which weigh a ton but add considerable upgrades for different weapon systems.
 - **Actuators** - A bunch of actuator equipment which can be installed in arm actuator slots, many being melee-focussed.
-- **Gyro upgrades** - Melee focussed gyros, stability gyro
+- **Gyro upgrades** - Melee focused gyros, defensive gyro (evasion pilot skill improvement), stability gyro (jam chance reduction)
 - **Angel ECM**
 - **NSS** - The Null Signature System (armor upgrade) is essentially just a stacking ECM. NEEDS TESTING AND FEEDBACK.
 - **Battle Computers** - One ton upgrades which can be installed with a "modular TC" and add different bonuses.
 - **Laser Insulator** - Essentially an advanced single heatsink which lowers the heat output of lasers installed in the same location.
 - **Cockpit Hotseat** - A cockpit upgrade with an integrated TSM that can be triggered via hotkey. The longer the Hotseat is active the more heat it produces.
 - **Improved Jump-Jets** - Improved jump jets weight 50% more but burn 15% longer and allow the installation of 1.5 JJs per walk MP. These are RT's I-JJs which I found to be much more reasonable than the TT ones (why would you ever want to use those?).
+- **Exchanger and Exchanger Mk2** - very rare and very powerful heatsinks which also lower the heat output of all weapons. Explode!
+- **Command Console** - A big cockpit-mounted ECM with sensor and cooldown improvements
+- **Advanced Small Cockpit** - Frees up a slot in the head
+- **Compact Engine 200** - more to come
 
 ## Requirements
 
@@ -60,6 +64,7 @@ YAML by itself already provides the following properties:
 |`fillerSlots`|Allows to define the dynamic and fixed fillers an equipment requires. The value is a map which contains any of the following keys: `dynamic` refers to the number of dynamic fillers which can be placed anywhere (a typical example is endo). `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc. refer to the fixed fillers required in specific mech parts. One example is 2 slots in the center torso for an XL Gyro.|`{ "CenterTorso": 2 }`|E|||
 |`fixed`|If `true` the equipment cannot be removed and is considered a fixed equipment. It will not show up in the inventory. This should be combined with an intro date of 9999 and autoamtic repair for the equipment asset. The salvage probability can either be set to 0 to prevent salvage completely or the salvaged item can be changed via `salvageInto`. Fixed items can be used to create custom mech variants.|`true`|E|||
 |`introYear`|Override the introduction year of an equipment. This is mostly interesting for mods which support both vanilla and YAML to hide equipment in vanilla.|`3078`|E|||
+|`slots`|Override the slot count of an equipment.|`3`|E|||
 
 ##### Salvage Properties
 |Property|Description|Example|E|W|M|
@@ -134,7 +139,7 @@ YAML by itself already provides the following properties:
 
 ##### Jump-Jet related Properties
 |Property|Description|Example|E|W|M|
-|---|---|---|-----|-----|---|
+|---|---|---|---|---|---|
 |`maxJumpJetsMulti`|A multiplicator for the maximum number of jump jets. Only useful on jumpjet equipment. Caution: the first encountered value will be used. Thus, make sure jump jets with different max multis cannot be combined (using `mechConflicts`). An example would be `1.5` for improved jump jets.|`1.5`|E|||
 |`jumpJetXyAccelMulti`|Raise (or lower) the horizontal acceleration when jumping.|`1.1`|E||M|
 |`jumpJetZAccelMulti`|Raise (or lower) the vertical acceleration when jumping.|`1.1`|E||M|
@@ -143,22 +148,34 @@ YAML by itself already provides the following properties:
 |`jumpJetFuelRegenTimeMulti`|Lower (or raise) the time it takes to regenerate the jump jet fuel. Values below 1 mean faster regen.|`0.9`|E||M|
 |`jumpJetHeatMulti`|Lower (or raise) the heat produced by jump jet usage. Values below 1 mean less heat production.|`0.9`|E||M|
 
+#### Pilot Skill Properties
+|Property|Description|Example|E|W|M|
+|---|---|---|---|---|---|
+|`gunnerySkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
+|`ballisticSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
+|`missileSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
+|`energySkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
+|`pilotingSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
+|`evasionSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
+|`shieldingSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
+|`heatManagementSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
+
 #### Misc Properties
 |Property|Description|Example|E|W|M|
-|---|---|---|-----|-----|---|
+|---|---|---|---|---|---|
 |`engineHeatsinkMulti`|Normally any engine above a 250 comes with external engine heatsinks. This multiplier can be used to modify that number.|`0`|E||M|
 |`heatCapacityBonus`|A bonus to the mech's total heat capacity.|`0.3`|E||M|
 
 ##### Special Properties
 |Property|Description|Example|E|W|M|
-|---|---|---|-----|-----|---|
+|---|---|---|---|---|---|
 |`predictiveTargeting`|A boolean property which can be used to enable predictive targeting, ie. a target recticle which points to where one has to shoot, accouting for things like drop-off and target speed.|`true`|E||M|
 
 ##### Weapon Modifier Properties
 The special property `weapons` allows to define a multitude of weapon modifiers ranging from a simple PPC range upgrade to cooldown modifiers for SRM6 launchers.
 
 |Property|Description| Example |E|W|M|
-|---|---|---------|-----|---|---|
+|---|---|---|---|---|---|
 |`weapons`|A json object containing weapon bonus properties as described below.||E||M|
 
 The following bonus properties can be specified in the `weapons` section of an equipment.
@@ -185,6 +202,7 @@ The following bonus properties can be specified in the `weapons` section of an e
 |`ballisticOptimalRangeMulti`||
 |`ballisticMaxRangeMulti`||
 |`ballisticJamChanceMulti`||
+|`ballisticAmmoMulti`||
 |`ppcSpreadRadiusMulti`||
 |`ppcSpreadDistanceMulti`||
 |`ppcSpeedMulti`||
@@ -206,6 +224,7 @@ The following bonus properties can be specified in the `weapons` section of an e
 |`missileOptimalRangeMulti`||
 |`missileMaxRangeMulti`||
 |`missileJamChanceMulti`||
+|`missileAmmoMulti`||
 |`meleeDamageMulti`||
 |`meleeCooldownMulti`||
 |`meleeHeatMulti`||
@@ -215,6 +234,7 @@ The following bonus properties can be specified in the `weapons` section of an e
 |`amsRofMulti`||
 |`amsOptimalRangeMulti`||
 |`amsMaxRangeMulti`||
+|`amsAmmoMulti`||
 
 ##### Weapon Groups
 
@@ -234,6 +254,7 @@ Weapon groups are the most flexible way of defining weapon modifiers. Each group
 | `optimalRangeMulti`      ||
 | `maxRangeMulti`          ||
 | `jamChanceMulti`         ||
+| `ammoMulti`              |A multiplier for ammo bins. Caution: since ammo multis are defined for weapons rather than their ammo type more than one multi can apply to one ammo type. In this case the highest multi is used.|
 | `missilesDestroyedMulti` | Only applies to AMS           |
 | `rofMulti`               | Only applies to AMS           |
 
@@ -369,6 +390,32 @@ Once quirks have been defined they also need to be applied to mechs. This is don
 |---|---|
 |`quirks`|An array of quirk ids which have been defined as detailed above.|
 |`scale`|A scaling vector for the mech which is applied in DerivedMech. Example: `X=1.1 Y=1.1 Z=1.1`|
+|`useSkinsFrom`|An optional gameplay tag indicating the mech variant from which this mech use the skins. This is useful for introducing new mech types without the need to manually update all skins.|
+|`autoconv`|An object defining details for YAML's automatic vanilla mech conversion (see below).|
 
+#### Automatic Mech Conversion
+YAML can automatically convert vanilla mechs. This is done by injecting required slots types and equipment.
 
-If you read until here, congrats, you can now go ahead and make your own self-repair equipment which can only be installed in the left leg, adds a total armor of 400, repairs 42 points of armor every 10 seconds for 2 hours, and is presented in a bright unicorn pink in the mechlab.
+However, MW5 does not account for XXL or light engines or gyro upgrades. This is why YAML allows to give hints for the conversion
+mechanism via `mechs.json` like so:
+
+```
+{
+	"AWII_11A": {
+		"autoconv": {
+			"engine": "xxl"
+		}
+	},
+	"AGS-4D": {
+		"autoconv": {
+			"engine": "xl",
+			"gyro": "xl"
+		}
+	}
+}
+```
+
+|Property|Description|
+|---|---|
+|`engine`|Gives a hint regarding the engine type to inject, overriding the XL flag in the MDA. Can be one of `xl`, `xxl`, `light`, `compact` (Caution: compact engines are not part of YAML proper and need to be provided by another mod like harjel).|
+|`gyro`|Gives a hint regarding the gyro to inject. Can be `xl` or `compact`.|
