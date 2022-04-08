@@ -527,23 +527,6 @@
 		"description": "A BattleMech Claw is a melee weapon most frequently used in the arena fighting on Solaris. The Claw consists of a series of hardened steel blades mounted on reinforced tungsten frames.\n\nRequires Hands.",
 		"relativeWeight": 0.02,
 		"rarity": 0.02,
-		"invalidMechParts": [
-			"Head",
-			"CenterTorso",
-			"LeftTorso",
-			"RightTorso",
-			"LeftLeg",
-			"RightLeg"
-		],
-		"mechPartConflicts": [
-			"CLAWS",
-			"BATTLE_FIST",
-			"BATTLE_FIST_MK2",
-			"BATTLE_FIST_MK3"
-		],
-		"mechPartRequirements": [
-			"Weapon.Melee.Punch.Hand"
-		],
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -563,23 +546,6 @@
 		"description": "Battle fists optimize a mech's hand actuators for physical engagements, optimizing the servos for improved damage and speed.\n\nRequires Hands.",
 		"relativeWeight": 0.01,
 		"rarity": 0.02,
-		"invalidMechParts": [
-			"Head",
-			"CenterTorso",
-			"LeftTorso",
-			"RightTorso",
-			"LeftLeg",
-			"RightLeg"
-		],
-		"mechPartConflicts": [
-			"CLAWS",
-			"BATTLE_FIST",
-			"BATTLE_FIST_MK2",
-			"BATTLE_FIST_MK3"
-		],
-		"mechPartRequirements": [
-			"Weapon.Melee.Punch.Hand"
-		],
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -599,23 +565,6 @@
 		"description": "Battle fists optimize a mech's hand actuators for physical engagements, optimizing the servos for improved damage and speed.\n\nRequires Hands.",
 		"relativeWeight": 0.02,
 		"rarity": 0.01,
-		"invalidMechParts": [
-			"Head",
-			"CenterTorso",
-			"LeftTorso",
-			"RightTorso",
-			"LeftLeg",
-			"RightLeg"
-		],
-		"mechPartConflicts": [
-			"CLAWS",
-			"BATTLE_FIST",
-			"BATTLE_FIST_MK2",
-			"BATTLE_FIST_MK3"
-		],
-		"mechPartRequirements": [
-			"Weapon.Melee.Punch.Hand"
-		],
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -635,23 +584,6 @@
 		"description": "Battle fists optimize a mech's hand actuators for physical engagements, optimizing the servos for improved damage and speed.\n\nRequires Hands.",
 		"relativeWeight": 0.03,
 		"rarity": 0.008,
-		"invalidMechParts": [
-			"Head",
-			"CenterTorso",
-			"LeftTorso",
-			"RightTorso",
-			"LeftLeg",
-			"RightLeg"
-		],
-		"mechPartConflicts": [
-			"CLAWS",
-			"BATTLE_FIST",
-			"BATTLE_FIST_MK2",
-			"BATTLE_FIST_MK3"
-		],
-		"mechPartRequirements": [
-			"Weapon.Melee.Punch.Hand"
-		],
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -685,6 +617,10 @@
 				}
 			]
 		}
+	},
+	"COCKPIT_SMALL_ADVANCED": {
+		"rarity": 0.05,
+		"loreAccurate": false
 	},
 	"COCKPIT_HOTSEAT": {
 		"fillerSlots": {
@@ -1005,5 +941,32 @@
 			"JumpJet_Class1_Equipment"
 		],
 		"maxJumpJetsMulti": 1.5
+	},
+	"Equipment.Engine.Compact": {
+		"rarity": 0.05,
+		"installCostScaling": 10,
+		"installCost": 30000,
+		"removeCost": 20000,
+		"slots": 1,
+		"category": "equipment.enginestd"
+	},
+	"COMMAND_CONSOLE": {
+		"description": "All 'Mechs come equipped with a stock cockpit configuration, which can be upgraded for improved performance. The Console adds a complete set of controls for a second MechWarrior with added command and control facilities, allowing for better Lance coordination.\nAdds low-tier ECM functionality, a boost to sensor range and reduced weapon cycle times due to the better coordination of two mech warriors.\nThe Command Console system can only be added to Heavy or Assault class 'Mechs; it is too large to fit into smaller 'Mechs.",
+		"rarity": 0.02,
+		"installCostScaling": 10,
+		"minTonnage": 60,
+		"sensorRangeMulti": 1.6,
+		"weapons": {
+			"scope": "mech",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"cooldownMulti": 0.92
+				}
+			]
+		}
 	}
 }
