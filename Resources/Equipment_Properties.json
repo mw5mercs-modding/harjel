@@ -630,7 +630,13 @@
 			"TSMYOMER",
 			"TSMYOMER_H",
 			"TSMYOMER_L",
-			"TSMYOMER_M"
+			"TSMYOMER_M",
+			"MASC_MKI",
+			"MASC_MKII",
+			"MASC_MKIII",
+			"MASC_MKIV",
+			"MASC_MKV",
+			"Equipment.MASC"
 		],
 		"loreAccurate": false,
 		"rarity": 0.03,
