@@ -779,8 +779,10 @@
 					"tags": [
 						"Weapon.Energy"
 					],
-					"heatMulti": 0.92,
-					"damageMulti": 1.08
+					"heatMulti": 0.9,
+					"damageMulti": 1.1,
+					"durationMulti": 0.85,
+					"cooldownMulti": 0.9
 				}
 			]
 		},
@@ -821,9 +823,11 @@
 					],
 					"spreadRadiusMulti": 0.9,
 					"spreadDistanceMulti": 1.1,
-					"speedMulti": 1.1
+					"speedMulti": 1.1,
+					"damageMulti": 1.1
 				}
-			]
+			],
+			"lockonTimeMulti": 0.85
 		},
 		"mechConflicts": [
 			"BC_MISSILE"
@@ -838,9 +842,11 @@
 					"tags": [
 						"Weapon.Ballistic"
 					],
-					"spreadRadiusMulti": 0.9,
-					"spreadDistanceMulti": 1.1,
-					"speedMulti": 1.1
+					"spreadRadiusMulti": 0.8,
+					"spreadDistanceMulti": 1.2,
+					"speedMulti": 1.1,
+					"damageMulti": 1.1,
+					"cooldownMulti": 0.9
 				}
 			]
 		},
@@ -857,16 +863,19 @@
 					"tags": [
 						"Weapon.ArtemisMissile"
 					],
-					"spreadRadiusMulti": 0.9,
-					"spreadDistanceMulti": 1.1,
+					"spreadRadiusMulti": 0.8,
+					"spreadDistanceMulti": 1.2,
 					"speedMulti": 1.1,
 					"cooldownMulti": 0.85,
-					"damageMulti": 1.08
+					"maxRangeMulti": 1.1
 				}
 			]
 		},
 		"mechConflicts": [
 			"BC_ARTEMIS_V"
+		],
+		"mechRequirements": [
+			"Weapon.ArtemisMissile"
 		]
 	},
 	"BC_PILOTING": {
@@ -979,6 +988,7 @@
 	},
 	"COMMAND_CONSOLE": {
 		"description": "All 'Mechs come equipped with a stock cockpit configuration, which can be upgraded for improved performance. The Console adds a complete set of controls for a second MechWarrior with added command and control facilities, allowing for better Lance coordination.\nAdds low-tier ECM functionality, a boost to sensor range and reduced weapon cycle times due to the better coordination of two mech warriors.\nThe Command Console system can only be added to Heavy or Assault class 'Mechs; it is too large to fit into smaller 'Mechs.",
+		"color": "(R=0.625,G=1,B=0,A=1)",
 		"rarity": 0.02,
 		"installCostScaling": 10,
 		"minTonnage": 60,
