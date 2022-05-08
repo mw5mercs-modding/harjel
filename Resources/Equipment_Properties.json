@@ -788,6 +788,27 @@
 			"BC_ENERGY"
 		]
 	},
+	"BC_PPC": {
+		"weapons": {
+			"scope": "mech",
+			"groups": [
+				{
+					"weaponGroupName": "PPC",
+					"tags": [
+						"Weapon.Energy.ParticleCannon"
+					],
+					"spreadRadiusMulti": 0.8,
+					"spreadDistanceMulti": 1.2,
+					"damageMulti": 1.1,
+					"cooldownMulti": 0.9,
+					"speedMulti": 1.1
+				}
+			]
+		},
+		"mechConflicts": [
+			"BC_PPC"
+		]
+	},
 	"BC_MISSILE": {
 		"weapons": {
 			"scope": "mech",
