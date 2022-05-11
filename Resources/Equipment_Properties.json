@@ -618,6 +618,30 @@
 			]
 		}
 	},
+	"WEAPON_MOUNT_HEAT": {
+		"relativeWeight": 0.01,
+		"rarity": 0.01,
+		"loreAccurate": false,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"heatMulti": 0.9
+				},
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 0.85
+				}
+			]
+		}
+	},
 	"COCKPIT_SMALL_ADVANCED": {
 		"rarity": 0.05,
 		"loreAccurate": false
