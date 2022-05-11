@@ -676,6 +676,13 @@
 			"topSpeedMulti": 1.3
 		}
 	},
+	"SLIC_SUITE": {
+		"loreAccurate": false,
+		"rarity": 0.02,
+		"pilotingSkillBonus": 2,
+		"evasionSkillBonus": 1,
+		"sensorRangeMulti": 1.15
+	},
 	"GYRO_MELEE": {
 		"loreAccurate": false,
 		"rarity": 0.03,
@@ -916,6 +923,27 @@
 		"mechConflicts": [
 			"BC_PILOTING"
 		]
+	},
+	"BC_PREDICTIVE": {
+		"predictiveTargeting": true,
+		"mechConflicts": [
+			"BC_PREDICTIVE"
+		],
+		"description": "Battle Computers are Modular Pieces that can be added to a Targeting Computer Modular, greatly enhancing the Combat capabilities of any Mech it is installed on.\n\nPredicts projectile trajectory and drop of the actually selected ballistic weapon (Autocannons, PPCs, Gauss, etc) and selected enemy unit movement for pinpoint accuracy while in combat, by drawing a crosshair on the HUD at the optional aim location.",
+		"weapons": {
+			"scope": "mech",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"spreadRadiusMulti": 0.8,
+					"spreadDistanceMulti": 1.2,
+					"speedMulti": 1.15
+				}
+			]
+		}
 	},
 	"RE_INFORCED_LEGS": {
 		"rarity": 0.01,
