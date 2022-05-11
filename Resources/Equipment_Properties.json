@@ -289,7 +289,8 @@
 		"rarity": 0.05
 	},
 	"SENSORS_PROBE": {
-		"rarity": 0.1
+		"rarity": 0.1,
+		"color": "(R=1,G=0.115883,B=0,A=1)"
 	},
 	"ARMOR_NSS": {
 		"armorPerTon": 32,
@@ -853,7 +854,8 @@
 					"spreadRadiusMulti": 0.9,
 					"spreadDistanceMulti": 1.1,
 					"speedMulti": 1.1,
-					"damageMulti": 1.1
+					"damageMulti": 1.1,
+					"cooldownMulti": 0.9
 				}
 			],
 			"lockonTimeMulti": 0.85
@@ -898,7 +900,8 @@
 					"cooldownMulti": 0.85,
 					"maxRangeMulti": 1.1
 				}
-			]
+			],
+			"lockonTimeMulti": 0.9
 		},
 		"mechConflicts": [
 			"BC_ARTEMIS_V"
