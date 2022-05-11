@@ -938,9 +938,9 @@
 					"tags": [
 						"Weapon"
 					],
-					"spreadRadiusMulti": 0.8,
-					"spreadDistanceMulti": 1.2,
-					"speedMulti": 1.15
+					"spreadRadiusMulti": 0.85,
+					"spreadDistanceMulti": 1.15,
+					"speedMulti": 1.1
 				}
 			]
 		}
