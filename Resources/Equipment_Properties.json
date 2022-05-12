@@ -929,7 +929,7 @@
 		"mechConflicts": [
 			"BC_PREDICTIVE"
 		],
-		"description": "Battle Computers are Modular Pieces that can be added to a Targeting Computer Modular, greatly enhancing the Combat capabilities of any Mech it is installed on.\n\nPredicts projectile trajectory and drop of the actually selected ballistic weapon (Autocannons, PPCs, Gauss, etc) and selected enemy unit movement for pinpoint accuracy while in combat, by drawing a crosshair on the HUD at the optional aim location.",
+		"description": "Battle Computers are Modular Pieces that can be added to a Targeting Computer Modular, greatly enhancing the Combat capabilities of any Mech it is installed on.\n\nPredicts projectile trajectory and drop of the actually selected ballistic weapon (Autocannons, PPCs, Gauss, etc) and selected enemy unit movement for pinpoint accuracy while in combat, by drawing a crosshair on the HUD at the optimal aim location.",
 		"weapons": {
 			"scope": "mech",
 			"groups": [
