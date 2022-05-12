@@ -1,11 +1,11 @@
 {
    "displayName" : "The Equipment Collection Formerly Known as HarJel",
-   "version" : "0.21.2",
-   "buildNumber" : 180,
+   "version" : "0.22",
+   "buildNumber" : 190,
    "description" : "This mod adds additional armor upgrades to the game which can be installed into individual locations.\r\n\r\n- HarJel I, II, III - Self-Repair systems. Upon taking damage they will repair armor and structure in their install location for a certain amount of time. Also they add a 1.1. armor multiplier to their install location. Install a total of 7 HarJel systems to make the entire mech self-repair. Different HarJel tiers cannot be combined, also they cannot be installed in the head (lore forbids it!).\r\n- Patchwork T1 - T3: provide a small amount of weight in exchange for some slots. Because Patchwork is awesome.\r\n- Modular Armor Mk1 - Mk4: Armor upgrades which add a fixed amount of armor to their installation location. Variants for rear armor are included.\r\n- Black Carapace - Find it, cower in its presence.\r\n- Advanced Targetting Computers - TC upgrades which weigh a ton but add considerable upgrades for different weapon systems.\r\n- Composite Structure - Half weight but also half the structure points\r\n- Endo-Composite Structure - 0.75 of the weight but with some bulk\r\n- Heavy Ferro Armor - 24% more armor for 21 dynamic fillers\r\n- Reflective Armor - Also known as \"Glazed\", 50% more effective against energy attacks\r\n- Reinforced Armor - Also known as \"Reactive\", 50% more effective against Missile and Artillery attacks (for now only artillery weapons)\r\n- Reinforced Ballistic Armor - 50% more effective against missile and ballistic attacks\r\n- Spall Liner Armor - 15% damage reduction for all incoming damage with 15% more armor weight\r\n- Actuators - A bunch of actuator equipment which can be installed in arm actuator slots, many being melee-focussed.\r\n- Gyro upgrades - Melee focussed gyros\r\n- Angel ECM\r\n- NSS - The Null Signature System (armor upgrade) is essentially just a stacking ECM. NEEDS TESTING AND FEEDBACK.\r\n- Battle Computers - One ton upgrades which can be installed with a \"modular TC\" and add different bonuses.\r\n- Laser Insulator - Essentially an advanced single heatsink which lowers the heat output of lasers installed in the same location.\r\n- Cockpit Hotseat - A cockpit upgrade with an integrated TSM that can be triggered via hotkey. The longer the Hotseat is active the more heat it produces.\r\n- Exchanger and Exchanger Mk2 - very rare and very powerful heatsinks which also lower the heat output of all weapons. Explodes!\r\n\r\nRequirements\r\nThe HarJel mod depends on YetAnotherMechLab (YAML). It makes use of the extended equipment property system provided by YAML. In fact, the requirements I had for Harjel let me to develop the equipment properties system in the first place. See below for details.\r\n\r\nMod Compatibility\r\nNow compatible with pretty much everything!\r\nStarting with 0.16 the AbstractMech override was dropped which means it should be compatible with any mod that does not mess up YAML's DerivedMech.\r\n\r\nMod Recommendations\r\nApart from cszolee79's required mods YAML, YAW and YAWC I recommend my own stuff:\r\n- I highly recommend my Special Variants mod which puts all the goodies in here to use for you to encounter and salvage.\r\n- My HeatSinkKits mod adds more heat sink types and heat sink kits like radical ones and protos.\r\n- The AdvacedCareerStarts lets you start a new career in the Dark Age, customize the pilots and starting mechs. Very useful if you ever want to encounter some of the stuff in this mod.\r\n\r\nCustomization\r\nSee HarJel on GitHub\uFEFF for details on the implementation and customization possibilities.\r\n\r\nAcknowledgements\r\nA big shoutout to cszolee79 for not only providing the YAML source code but also helping with so many questions and for accepting my patches.\r\nThanks to Shedovv for inital testing and feedback.",
    "author" : "truegerich",
    "authorURL" : "https://github.com/mw5mercs-modding/harjel",
-   "defaultLoadOrder" : 0,
+   "defaultLoadOrder" : 5,
    "gameVersion" : "1.1.0",
    "manifest" : [
       "/Game/Objects/Projectiles/_common/Projectile.uasset",
@@ -16,6 +16,6 @@
       "/Game/Objects/Weapons/Melee/MechHandMedium_MeleeWeaponDataAsset.uasset"
    ],
    "steamPublishedFileId" : 2734262706,
-   "steamLastSubmittedBuildNumber" : "180",
+   "steamLastSubmittedBuildNumber" : 180,
    "steamModVisibility" : "Public"
 }
