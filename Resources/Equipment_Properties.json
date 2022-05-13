@@ -667,10 +667,10 @@
 		"rarity": 0.03,
 		"armorComponentFront": 3,
 		"structureComponent": 3,
-		"equipmentToggle": "EquipmentToggle1",
+		"equipmentToggle": "ToggleCockpitHotseat",
 		"activeProperties": {
 			"heat": 1,
-			"heatBuildup": 0.04,
+			"heatBuildup": 0.06,
 			"heatDissipation": 0.08,
 			"tsmMulti": 1.5,
 			"topSpeedMulti": 1.3
