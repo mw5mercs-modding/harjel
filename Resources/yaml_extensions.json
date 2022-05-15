@@ -18,5 +18,10 @@
 	"name": "incomingdmgprops",
 	"type": "properties",
 	"actorClassPath": "/harjel/Extensions/IncomingDmgPropertyExtension.IncomingDmgPropertyExtension_C"
+},
+{
+	"name": "HeatsinkKitHandler",
+	"type": "mech",
+	"actorClassPath": "/harjel/Extensions/HeatSinkKitsHandler.HeatSinkKitsHandler_C"
 }
 ]

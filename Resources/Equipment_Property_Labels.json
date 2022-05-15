@@ -41,5 +41,26 @@
 	},
 	"maxJumpJetsMulti": {
 		"label": "Maximum amount of JJ allowed by walk MP"
+	},
+	"heatActivationThreshold": {
+		"label": "Heat threshold for activation",
+		"unit": "percent"
+	},
+	"heatDeactivationThreshold": {
+		"label": "Heat threshold for normalization",
+		"unit": "percent"
+	},
+	"heatFailureChancePerSec": {
+		"label": "Failure chance per second",
+		"unit": "percent"
+	},
+	"heatDamageOnFailure": {
+		"label": "Heat Damage on failure"
+	},
+	"damageOnFailure": {
+		"label": "Damage on failure"
+	},
+	"heatDissWhenActive": {
+		"label": "Heat dissipation when active"
 	}
 }
