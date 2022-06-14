@@ -147,13 +147,14 @@
 	},
 	"BLACK_CARAPACE": {
 		"loreAccurate": false,
-		"description": "The Black Carapace is the result of a secret research project which integrated the HarJel self-repair system directly into the armor plates. As a result the armor is slightly more bulky and heavier but the self-repair effect makes more than up for this.\nHowever, due to the compact build weapon heat can be vented less effectively.\n\nReserves 1 slot per Location except Head and CenterTorso.",
+		"description": "The Black Carapace is the result of a secret research project which integrated the HarJel self-repair system directly into the armor plates. As a result the armor is slightly more bulky and heavier but the self-repair effect makes more than up for this.\nHowever, due to the compact build weapon heat can be vented less effectively.\n\nReserves 1 slot per Location except Head.",
 		"selfRepairArmor": 2,
 		"selfRepairStructure": 1,
 		"selfRepairDuration": 8,
 		"selfRepairInterval": 1,
 		"selfRepairScope": "mech",
 		"fillerSlots": {
+			"CenterTorso": 1,
 			"LeftTorso": 1,
 			"RightTorso": 1,
 			"LeftLeg": 1,
@@ -179,6 +180,36 @@
 		],
 		"rarity": 0.02,
 		"installCost": 78000,
+		"installCostScaling": 10
+	},
+	"HARDENED_FERRO": {
+		"loreAccurate": false,
+		"description": "Advances in Material Sciences since and recovered from the Star League in combination with RISC ingenuity allowed the creation of this Armor. Combining the Toughness of Hardened Structure and the weight savings of Heavy Ferro with a refurbished unique HarJel Self Repair System does this Armor turn anything into an undying Juggernaut.\n\nReserves 2 slots in every component except the head.",
+		"selfRepairArmor": 3.5,
+		"selfRepairStructure": 2,
+		"selfRepairDuration": 4,
+		"selfRepairInterval": 1,
+		"selfRepairScope": "mech",
+		"fillerSlots": {
+			"LeftTorso": 2,
+			"RightTorso": 2,
+			"LeftArm": 2,
+			"RightArm": 2,
+			"LeftLeg": 2,
+			"RightLeg": 2,
+			"CenterTorso": 2
+		},
+		"armorWeightMulti": 1.4,
+		"armorMulti": 1.5,
+		"minTonnage": 0,
+		"maxTonnage": 100,
+		"mechConflicts": [
+			"HARJEL_I",
+			"HARJEL_II",
+			"HARJEL_III"
+		],
+		"rarity": 0.02,
+		"installCost": 82000,
 		"installCostScaling": 10
 	},
 	"TCOMP_MISSLE_ADVANCED": {
