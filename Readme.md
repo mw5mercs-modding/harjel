@@ -103,15 +103,15 @@ YAML by itself already provides the following properties:
 ##### Armor and Structure Properties
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
-|`armorComponentFront`|An absolute value that is added to the armor of the mech part the equipment is installed in.|`"35"`|E|||
-|`armorComponentRear`|An absolute value that is added to the rear armor of the mech part the equipment is installed in..|`"35"`|E|||
-|`armorComponentFrontMulti`|A multiplier that is applied to the mech front armor of the mech part the equipment is installed in.|`"1.1"`|E|||
-|`armorComponentRearMulti`|A multiplier that is applied to the rear armor of the mech part the equipment is installed in.|`"1.2"`|E|||
-|`armorMulti`|A multiplier that is applied to the entire mech's armor.|`"2.0"`|E||M|
+|`armorComponentFront`|An absolute value that is added to the armor of the mech part the equipment is installed in.|`"35"`|E|W||
+|`armorComponentRear`|An absolute value that is added to the rear armor of the mech part the equipment is installed in..|`"35"`|E|W||
+|`armorComponentFrontMulti`|A multiplier that is applied to the mech front armor of the mech part the equipment is installed in.|`"1.1"`|E|W||
+|`armorComponentRearMulti`|A multiplier that is applied to the rear armor of the mech part the equipment is installed in.|`"1.2"`|E|W||
+|`armorMulti`|A multiplier that is applied to the entire mech's armor.|`"2.0"`|E|W|M|
 |`armorBonus`|Absolute armor bonus values for each mech surface. The value is a json object which can contain one entry for each surface (`Head`, `CenterTorso`, `RearCenterTorso`, etc).|`{ "RightTorso": 20 }`|||M|
-|`structureComponent`|An absolute value that is added to the structure of the mech part the equipment is installed in.|`"35"`|E|||
-|`structureComponentMulti`|A multiplier that is applied to the structure of the mech part the equipment is installed in.|`"1.1"`|E|||
-|`structureMulti`|A multiplier that is applied to the entire mech's structure.|`"2.0"`|E||M|
+|`structureComponent`|An absolute value that is added to the structure of the mech part the equipment is installed in.|`"35"`|E|W||
+|`structureComponentMulti`|A multiplier that is applied to the structure of the mech part the equipment is installed in.|`"1.1"`|E|W||
+|`structureMulti`|A multiplier that is applied to the entire mech's structure.|`"2.0"`|E|W|M|
 |`structureBonus`|Absolute structure bonus values for each mech surface. The value is a json object which can contain one entry for each surface (`Head`, `CenterTorso`, `RearCenterTorso`, etc).|`{ "RightTorso": 20 }`|||M|
 |`armorWeightMulti`|A multiplicator for an armor upgrade. Does only make sense for armor equipments (type tags starting with `Internal.Armor`) and is typically combined with `armorMulti`. An example would be Hardened armor which uses a multi of `2.0` in combination with ab `armorMulti` of `2.0`. Alternatively `armorPerTon` can be used.|`2.0`|E|||
 |`armorPerTon`|The amount of armor points one ton yields. Does only make sense for armor equipments (type tags starting with `Internal.Armor`). An example would be Hardened armor which uses a value of `64` in combination with ab `armorMulti` of `2.0`. An alternative to `armorWeightMulti` with a higher priority.|`64`|E|||
