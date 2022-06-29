@@ -1069,14 +1069,6 @@
 		],
 		"maxJumpJetsMulti": 1.5
 	},
-	"Equipment.Engine.Compact": {
-		"rarity": 0.05,
-		"installCostScaling": 10,
-		"installCost": 30000,
-		"removeCost": 20000,
-		"slots": 1,
-		"category": "equipment.enginestd"
-	},
 	"COMMAND_CONSOLE": {
 		"description": "All 'Mechs come equipped with a stock cockpit configuration, which can be upgraded for improved performance. The Console adds a complete set of controls for a second MechWarrior with added command and control facilities, allowing for better Lance coordination.\nAdds low-tier ECM functionality, a boost to sensor range and reduced weapon cycle times due to the better coordination of two mech warriors.\nThe Command Console system can only be added to Heavy or Assault class 'Mechs; it is too large to fit into smaller 'Mechs.",
 		"color": "(R=0.625,G=1,B=0,A=1)",
