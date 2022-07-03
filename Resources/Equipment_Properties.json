@@ -782,10 +782,37 @@
 					"tags": [
 						"Weapon"
 					],
-					"jamChanceMulti": 0.8
+					"jamChanceMulti": 0.85
 				}
 			]
 		}
+	},
+	"GYRO_DREADNOUGHT": {
+		"loreAccurate": false,
+		"relativeWeight": 0.5,
+		"rarity": 0.01,
+		"weapons": {
+			"scope": "mech",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"jamChanceBonus": -0.2
+				}
+			]
+		},
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Weapon",
+				"tags": ["Weapon"],
+				"armorDamageMulti": 0.95,
+				"strutureDamageMulti": 0.95,
+				"scope": "mech"
+			}]
+		},
+		"installCostScaling": 10
 	},
 	"GYRO_DEFENSIVE": {
 		"loreAccurate": false,
