@@ -646,7 +646,7 @@
 					"tags": [
 						"Weapon"
 					],
-					"jamChanceMulti": 0.85,
+					"jamChanceBonus": -0.1,
 					"spreadRadiusMulti": 0.9,
 					"spreadDistanceMulti": 1.1
 				}
