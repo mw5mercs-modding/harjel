@@ -475,7 +475,7 @@
 	"SHOULDER_ARMORED": {
 		"relativeWeight": 0.01,
 		"rarity": 0.02,
-		"armorComponentFrontMulti": 1.1,
+		"armorComponentFrontMulti": 1.25,
 		"loreAccurate": false
 	},
 	"UPPER_MELEE": {
@@ -514,8 +514,8 @@
 			"groups": [{
 				"weaponGroupName": "Melee",
 				"tags": ["Weapon.Melee"],
-				"armorDamageMulti": 0.9,
-				"strutureDamageMulti": 0.9,
+				"armorDamageMulti": 0.85,
+				"strutureDamageMulti": 0.85,
 				"scope": "component"
 			}]
 		},
@@ -524,7 +524,7 @@
 	"UPPER_ARMORED": {
 		"relativeWeight": 0.01,
 		"rarity": 0.02,
-		"armorComponentFrontMulti": 1.1,
+		"armorComponentFrontMulti": 1.25,
 		"loreAccurate": false
 	},
 	"UPPER_HARD_ENED": {
@@ -536,7 +536,7 @@
 				"tags": ["Weapon"],
 				"armorDamageMulti": 0.95,
 				"strutureDamageMulti": 0.95,
-				"scope": "component"
+				"scope": "mech"
 			}]
 		},
 		"loreAccurate": false
@@ -553,82 +553,6 @@
 						"Weapon.Melee"
 					],
 					"damageMulti": 1.15
-				}
-			]
-		},
-		"loreAccurate": false
-	},
-	"CLAWS": {
-		"description": "A BattleMech Claw is a melee weapon most frequently used in the arena fighting on Solaris. The Claw consists of a series of hardened steel blades mounted on reinforced tungsten frames.\n\nRequires Hands.",
-		"relativeWeight": 0.02,
-		"rarity": 0.02,
-		"weapons": {
-			"scope": "component",
-			"groups": [
-				{
-					"weaponGroupName": "Melee",
-					"tags": [
-						"Weapon.Melee"
-					],
-					"damageMulti": 1.4,
-					"cooldownMulti": 1.1
-				}
-			]
-		},
-		"loreAccurate": false
-	},
-	"BATTLE_FIST": {
-		"description": "Battle fists optimize a mech's hand actuators for physical engagements, optimizing the servos for improved damage and speed.\n\nRequires Hands.",
-		"relativeWeight": 0.01,
-		"rarity": 0.02,
-		"weapons": {
-			"scope": "component",
-			"groups": [
-				{
-					"weaponGroupName": "Melee",
-					"tags": [
-						"Weapon.Melee"
-					],
-					"damageMulti": 1.1,
-					"cooldownMulti": 0.9
-				}
-			]
-		},
-		"loreAccurate": false
-	},
-	"BATTLE_FIST_MK2": {
-		"description": "Battle fists optimize a mech's hand actuators for physical engagements, optimizing the servos for improved damage and speed.\n\nRequires Hands.",
-		"relativeWeight": 0.02,
-		"rarity": 0.01,
-		"weapons": {
-			"scope": "component",
-			"groups": [
-				{
-					"weaponGroupName": "Melee",
-					"tags": [
-						"Weapon.Melee"
-					],
-					"damageMulti": 1.2,
-					"cooldownMulti": 0.8
-				}
-			]
-		},
-		"loreAccurate": false
-	},
-	"BATTLE_FIST_MK3": {
-		"description": "Battle fists optimize a mech's hand actuators for physical engagements, optimizing the servos for improved damage and speed.\n\nRequires Hands.",
-		"relativeWeight": 0.03,
-		"rarity": 0.008,
-		"weapons": {
-			"scope": "component",
-			"groups": [
-				{
-					"weaponGroupName": "Melee",
-					"tags": [
-						"Weapon.Melee"
-					],
-					"damageMulti": 1.3,
-					"cooldownMulti": 0.7
 				}
 			]
 		},
