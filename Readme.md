@@ -70,11 +70,7 @@ YAML by itself already provides the following properties:
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
 |`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton. Be aware that this works perfectly for engine upgrades like XL engines by setting it to a negative value like `-0.5`. The rounding up results in the weight reduction matching perfectly.|`0.1`|x|||
-|`engineHealthType`|Only relevant for engine upgrades. Set this to one of the following:
-- `xl` - Mech will go down when it loses one side torso (unless `cheatXL` is enabled)
-- `light` - Mech can lose one ST before going down.
-- `xxl` - Mech will go down when it loses one ST.
-- `primitive` - Primitive engine, the rating of the core will be divided by 1.2 before calculating the base speed of the mech.|`xl`|x|||
+|`engineHealthType`|Only relevant for engine upgrades. Set this to one of the following:<ul><li>`xl` - Mech will go down when it loses one side torso (unless `cheatXL` is enabled)</li><li>`light` - Mech can lose one ST before going down.</li><li>`xxl` - Mech will go down when it loses one ST.</li><li>`primitive` - Primitive engine, the rating of the core will be divided by 1.2 before calculating the base speed of the mech.</li></ul>|`xl`|x|||
 
 ##### Salvage Properties
 |Property|Description|Example|E|W|M|
