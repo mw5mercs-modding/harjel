@@ -60,7 +60,7 @@ YAML by itself already provides the following properties:
 |`rarity`|Define the rarity of an equipment between 0 and 1. The rarity directly sets the probability the item will show up in markets.|`0.2`|E|||
 |`loreAccurate`|States whether the equipment can be found in the lore. If not and configuration entry `loreAbidingCitizen` is `true` then the equipment will never show up in markets. Defaults to `true`|`false`|E|||
 |`relativeWeight`|Sets the equipment weight to a multiple of the mech's max tonnage, rounded to quarter tons (with a minumum weight of 0.25 tons). This should be paired with a 0 weight in the equipment asset. Special case: Gyros, here the multiplicator refers to the weight of a standard Gyro.|`"0.05"`|E|||
-|`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton.|`0.1`|x|||
+|`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton.|`0.1`|E|||
 |`fillerSlots`|Allows to define the dynamic and fixed fillers an equipment requires. The value is a map which contains any of the following keys: `dynamic` refers to the number of dynamic fillers which can be placed anywhere (a typical example is endo). `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc. refer to the fixed fillers required in specific mech parts. One example is 2 slots in the center torso for an XL Gyro.|`{ "CenterTorso": 2 }`|E|W||
 |`fixed`|If `true` the equipment cannot be removed and is considered a fixed equipment. It will not show up in the inventory. This should be combined with autoamtic repair for the equipment asset. The salvage probability can either be set to 0 to prevent salvage completely or the salvaged item can be changed via `salvageInto`. Fixed items can be used to create custom mech variants.|`true`|E|||
 |`introYear`|Override the introduction year of an equipment. This is mostly interesting for mods which support both vanilla and YAML to hide equipment in vanilla.|`3078`|E|||
@@ -69,8 +69,8 @@ YAML by itself already provides the following properties:
 ##### Engine Properties
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
-|`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton. Be aware that this works perfectly for engine upgrades like XL engines by setting it to a negative value like `-0.5`. The rounding up results in the weight reduction matching perfectly.|`0.1`|x|||
-|`engineHealthType`|Only relevant for engine upgrades. Set this to one of the following:<ul><li>`xl` - Mech will go down when it loses one side torso (unless `cheatXL` is enabled)</li><li>`light` - Mech can lose one ST before going down.</li><li>`xxl` - Mech will go down when it loses one ST.</li><li>`primitive` - Primitive engine, the rating of the core will be divided by 1.2 before calculating the base speed of the mech.</li></ul>|`xl`|x|||
+|`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton. Be aware that this works perfectly for engine upgrades like XL engines by setting it to a negative value like `-0.5`. The rounding up results in the weight reduction matching perfectly.|`0.1`|E|||
+|`engineHealthType`|Only relevant for engine upgrades. Set this to one of the following:<ul><li>`xl` - Mech will go down when it loses one side torso (unless `cheatXL` is enabled)</li><li>`light` - Mech can lose one ST before going down.</li><li>`xxl` - Mech will go down when it loses one ST.</li><li>`primitive` - Primitive engine, the rating of the core will be divided by 1.2 before calculating the base speed of the mech.</li></ul>|`xl`|E|||
 
 ##### Salvage Properties
 |Property|Description|Example|E|W|M|
