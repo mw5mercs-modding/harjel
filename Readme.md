@@ -396,6 +396,8 @@ Once quirks have been defined they also need to be applied to mechs. This is don
 #### Automatic Mech Conversion
 YAML can automatically convert vanilla mechs. This is done by injecting required slots types and equipment.
 
+In order for the final weight of the 'mech to be perfect vanilla mechs should be designed taking TT rules into account, both with regards to base weight (account for engine rating and engine type) and used slots. Example: if the 'mech is supposed to run an XL engine make sure to not give the vanilla MDA more than 8 slots in the side torsos.
+
 However, MW5 does not account for XXL or light engines or gyro upgrades. This is why YAML allows to give hints for the conversion
 mechanism via `mechs.json` like so:
 
@@ -417,5 +419,6 @@ mechanism via `mechs.json` like so:
 
 |Property|Description|
 |---|---|
-|`engine`|Gives a hint regarding the engine type to inject, overriding the XL flag in the MDA. Can be one of `xl`, `xxl`, `light`, `compact` (Caution: compact engines are not part of YAML proper and need to be provided by another mod like harjel).|
+|`engine`|Gives a hint regarding the engine type to inject, overriding the XL flag in the MDA. Can be one of `xl`, `xxl`, `light`, `compact`.|
 |`gyro`|Gives a hint regarding the gyro to inject. Can be `xl` or `compact`.|
+|`coreCnt`|By default all 'mechs have one engine core slot (unless the MDA already contains more). This property can be used to raise the number of core slots. Typically this would be set to `2` for superheavy mechs|
