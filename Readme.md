@@ -56,7 +56,7 @@ YAML by itself already provides the following properties:
 |`name`|Rename an equipment. Might be useful. Example: the HeatSinkKit mod uses it to rename the "Engine Double Heat Sinks" to "Double Heat Sink Kit".||E|||
 |`description`|Because it is annoying to edit the desciption in the asset all the time, and also: newlines!|`"One line\nanother line."`|E|||
 |`color`|Set the color of the equipment in the market and mechlab as an RGBA value.|`"(R=0.59,G=0.03,B=0.11,A=1)"`|E|||
-|`category`|Allows to set the category of the equipment. One would typically use this on equipments which have the "generic" type `Heatsink.Single`. Can be one of: `equipment.ammo`, `equipment.cooling`, `equipment.mobility`, `equipment.electronics`, `equipment.internal`, `equipment.misc`, `equipment.enginestd`, `equipment.enginelight`, `equipment.enginexl` and `equipment.enginexxl`. Be aware that setting the category this way means that the equipment will always be shown, independent of the value of the "valid only" checkbox.|`"equipment.internal"`|E|||
+|`category`|Allows to set the category of the equipment. One would typically use this on equipments which have the "generic" type `Heatsink.Single`. Can be one of: `equipment.ammo`, `equipment.cooling`, `equipment.mobility`, `equipment.electronics`, `equipment.internal`, `equipment.misc`, `equipment.enginecore`, `equipment.enginetype`. Be aware that setting the category this way means that the equipment will always be shown, independent of the value of the "valid only" checkbox.|`"equipment.internal"`|E|||
 |`rarity`|Define the rarity of an equipment between 0 and 1. The rarity directly sets the probability the item will show up in markets.|`0.2`|E|||
 |`loreAccurate`|States whether the equipment can be found in the lore. If not and configuration entry `loreAbidingCitizen` is `true` then the equipment will never show up in markets. Defaults to `true`|`false`|E|||
 |`relativeWeight`|Sets the equipment weight to a multiple of the mech's max tonnage, rounded to quarter tons (with a minumum weight of 0.25 tons). This should be paired with a 0 weight in the equipment asset. Special case: Gyros, here the multiplicator refers to the weight of a standard Gyro.|`"0.05"`|E|||
@@ -65,6 +65,16 @@ YAML by itself already provides the following properties:
 |`fixed`|If `true` the equipment cannot be removed and is considered a fixed equipment. It will not show up in the inventory. This should be combined with autoamtic repair for the equipment asset. The salvage probability can either be set to 0 to prevent salvage completely or the salvaged item can be changed via `salvageInto`. Fixed items can be used to create custom mech variants.|`true`|E|||
 |`introYear`|Override the introduction year of an equipment. This is mostly interesting for mods which support both vanilla and YAML to hide equipment in vanilla.|`3078`|E|||
 |`slots`|Override the slot count of an equipment.|`3`|E|||
+
+##### Engine Properties
+|Property|Description|Example|E|W|M|
+|---|---|---|---|---|---|
+|`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton. Be aware that this works perfectly for engine upgrades like XL engines by setting it to a negative value like `-0.5`. The rounding up results in the weight reduction matching perfectly.|`0.1`|x|||
+|`engineHealthType`|Only relevant for engine upgrades. Set this to one of the following:
+- `xl` - Mech will go down when it loses one side torso (unless `cheatXL` is enabled)
+- `light` - Mech can lose one ST before going down.
+- `xxl` - Mech will go down when it loses one ST.
+- `primitive` - Primitive engine, the rating of the core will be divided by 1.2 before calculating the base speed of the mech.|`xl`|x|||
 
 ##### Salvage Properties
 |Property|Description|Example|E|W|M|
@@ -165,6 +175,7 @@ YAML by itself already provides the following properties:
 |---|---|---|---|---|---|
 |`engineHeatsinkMulti`|Normally any engine above a 250 comes with external engine heatsinks. This multiplier can be used to modify that number.|`0`|E||M|
 |`heatCapacityBonus`|A bonus to the mech's total heat capacity.|`0.3`|E||M|
+|`dmgEvasionChance`|A chance to avoid any incoming fire. At 1.0 this is quite similar to god-mode.|`0.05`|E||M|
 
 ##### Special Properties
 |Property|Description|Example|E|W|M|
