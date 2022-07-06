@@ -253,7 +253,8 @@ Weapon groups are the most flexible way of defining weapon modifiers. Each group
 | `minRangeMulti`          ||
 | `optimalRangeMulti`      ||
 | `maxRangeMulti`          ||
-| `jamChanceMulti`         ||
+| `jamChanceMulti`         |Weapons can have a jam chance between 0 and 1 with 1 refering to a 100% jam chance. This multi will be applied to the weapon's jam chance. In most cases `jamChanceBonus` makes more sense.|
+| `jamChanceBonus`      |Weapons can have a jam chance between 0 and 1 with 1 refering to a 100% jam chance. This modifier will directly be added on top of the weapon's jam chance. Example: given a weapon jam chance of `0.3` (30%) and a modifier of `-0.1` the final jam chance of the weapon will be `0.2` (20%&).|
 | `ammoMulti`              |A multiplier for ammo bins. Caution: since ammo multis are defined for weapons rather than their ammo type more than one multi can apply to one ammo type. In this case the highest multi is used.|
 | `missilesDestroyedMulti` | Only applies to AMS           |
 | `rofMulti`               | Only applies to AMS           |
