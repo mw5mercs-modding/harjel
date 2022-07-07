@@ -467,9 +467,6 @@
 		"rarity": 0.02,
 		"mechPartRequirements": [
 			"Weapon.Energy.Laser"
-		],
-		"mechPartConflicts": [
-			"LASER_INSULATOR"
 		]
 	},
 	"SHOULDER_ARMORED": {
