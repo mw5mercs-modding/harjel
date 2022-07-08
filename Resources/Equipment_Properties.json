@@ -164,8 +164,6 @@
 		},
 		"armorWeightMulti": 1.15,
 		"color": "(R=0.1,G=0.1,B=0.1,A=1)",
-		"minTonnage": 0,
-		"maxTonnage": 100,
 		"weapons": {
 			"groups": [{
 				"weaponGroupName": "Weapon",
@@ -201,8 +199,6 @@
 		},
 		"armorWeightMulti": 1.4,
 		"armorMulti": 1.5,
-		"minTonnage": 0,
-		"maxTonnage": 100,
 		"mechConflicts": [
 			"HARJEL_I",
 			"HARJEL_II",
@@ -274,16 +270,12 @@
 	"COMPOSITE_STRUCTURE": {
 		"structureMulti": 0.5,
 		"structureWeightMulti": "0.5",
-		"minTonnage": "0",
-		"maxTonnage": "100",
 		"rarity": 0.2,
 		"installCost": 35000,
 		"installCostScaling": 10
 	},
 	"ENDO_COMPOSITE_STRUCTURE": {
 		"structureWeightMulti": "0.75",
-		"minTonnage": "0",
-		"maxTonnage": "100",
 		"rarity": 0.08,
 		"installCost": 45000,
 		"installCostScaling": 10
@@ -294,8 +286,6 @@
 		"fillerSlots": {
 			"dynamic": 21
 		},
-		"minTonnage": "0",
-		"maxTonnage": "100",
 		"rarity": 0.3,
 		"installCost": 20000,
 		"installCostScaling": 10
@@ -315,8 +305,6 @@
 			"GuardianECM"
 		],
 		"color": "(R=0.27,G=0.3176,B=0.3216,A=1)",
-		"minTonnage": 0,
-		"maxTonnage": 100,
 		"rarity": 0.05
 	},
 	"SENSORS_PROBE": {
@@ -336,8 +324,6 @@
 		"mechRequirements": [
 			"Equipment.ECM"
 		],
-		"minTonnage": 0,
-		"maxTonnage": 100,
 		"rarity": 0.02,
 		"heat": 0.35,
 		"weapons": {
@@ -355,8 +341,6 @@
 		"fillerSlots": {
 			"dynamic": 10
 		},
-		"minTonnage": "0",
-		"maxTonnage": "100",
 		"armorWeightMulti": 1,
 		"rarity": 0.15,
 		"installCost": 20000,
@@ -376,8 +360,6 @@
 		"fillerSlots": {
 			"dynamic": 10
 		},
-		"minTonnage": "0",
-		"maxTonnage": "100",
 		"armorWeightMulti": 1,
 		"rarity": 0.15,
 		"installCost": 20000,
@@ -404,8 +386,6 @@
 		"fillerSlots": {
 			"dynamic": 10
 		},
-		"minTonnage": "0",
-		"maxTonnage": "100",
 		"armorPerTon": 24,
 		"rarity": 0.15,
 		"installCost": 20000,
@@ -430,8 +410,6 @@
 		"fillerSlots": {
 			"dynamic": 2
 		},
-		"minTonnage": "0",
-		"maxTonnage": "100",
 		"armorWeightMulti": 1.15,
 		"rarity": 0.05,
 		"installCost": 20000,
