@@ -247,8 +247,11 @@ The following bonus properties can be specified in the `weapons` section of an e
 
 Weapon groups are the most flexible way of defining weapon modifiers. Each group has a set of gameplay `tags` which define the weapons the properties apply to (with prefix matching), a `weaponGroupName` which is used to identify the list of tags in the UI, and a set of properties. Possible properties are listed below.
 
-| Property                 | Description                   |
-|--------------------------|-------------------------------|
+|Property|Description|
+|---|---|
+|`weaponGroupName`|The human-readable name of the weapon group which is also used for labelling the bonuses in the UI. Typically this would be something like "Laser" or "MRM" or even "Arm-mounted weapons".|
+|`tags`|An array of weapon tags which the bonuses apply for. The simplest value would be `["Weapon"]` which would cause the bonus to be applied to all weapons. See the examples below for more.|
+|`mechParts`|An optional array of mech parts the bonuses apply for. This is only really useful for 'mech quirks and allows to restrict the bonuses to specific parts. A typical example would be arm-mounted weapons. In that case the value would be `["LeftArm", "RightArm"]`.|
 | `durationMulti`          | Only applies to trace weapons |
 | `spreadRadiusMulti`      ||
 | `spreadDistanceMulti`    ||
@@ -303,6 +306,50 @@ The following example applies a heat multi to all weapons.
         "Weapon"
     ],
     "heatMulti": 0.9
+}
+```
+
+
+##### Incoming Damage Properties
+The special property `incomingDamage` allows to define modifiers for incoming damage based on the weapon type. These can be used in 'mech quirks as well as equipment properties.
+
+Like with the weapon modifiers `groups` define incoming damage modifiers for a group of weapons based on weapon tags. Other than for weapon groups, though, the `scope` can be defined individually for each group.
+
+Groups have the following properties:
+
+|Property|Description|
+|---|---|
+|`weaponGroupName`|The human-readable name of the weapon group which is also used for labelling the bonuses in the UI. Typically this would be something like "Laser" or "MRM".|
+|`tags`|An array of weapon tags which the modifiers apply for. The simplest value would be `["Weapon"]` which would cause the modifiers to be applied to all incoming weapons. See the examples below for more.|
+|`scope`|Can be either `mech` (default) or `component`. In the latter case the modifiers only apply to incoming damage in the same location. This property is ignored for mech quirks.|
+|`armorDamageMulti`|A multiplier for the damage caused to armor.|
+|`structureDamageMulti`|A multiplier for the damage caused to structure.|
+
+###### Examples
+
+```json
+"ARMOR_GLAZED": {
+	"incomingDamage": {
+		"groups": [{
+			"weaponGroupName": "Energy",
+			"tags": ["Weapon.Energy"],
+			"armorDamageMulti": 0.5,
+			"scope": "mech"
+		}]
+	}
+}
+```
+```json
+"UPPER_SPIKED": {
+	"incomingDamage": {
+		"groups": [{
+			"weaponGroupName": "Melee",
+			"tags": ["Weapon.Melee"],
+			"armorDamageMulti": 0.85,
+			"strutureDamageMulti": 0.85,
+			"scope": "component"
+		}]
+	}
 }
 ```
 
@@ -394,12 +441,12 @@ The following example defines the quirks for the Atlas Boar's Head Hero mech.
 #### Mech Properties
 Once quirks have been defined they also need to be applied to mechs. This is done in a file called `mechs.json`. It contains a map of mech definitions where the key can be either the variant name or the MDL name. Each mech is then an object which can have any of the following properties.
 
-|Property|Description|
-|---|---|
-|`quirks`|An array of quirk ids which have been defined as detailed above.|
-|`scale`|A scaling vector for the mech which is applied in DerivedMech. Example: `X=1.1 Y=1.1 Z=1.1`|
-|`useSkinsFrom`|An optional gameplay tag indicating the mech variant from which this mech use the skins. This is useful for introducing new mech types without the need to manually update all skins.|
-|`autoconv`|An object defining details for YAML's automatic vanilla mech conversion (see below).|
+|Property|Description|Example|
+|---|---|---|
+|`quirks`|An array of quirk ids which have been defined as detailed above.||
+|`scale`|A scaling vector for the mech which is applied in DerivedMech.|`X=1.1 Y=1.1 Z=1.1`|
+|`useSkinsFrom`|An optional gameplay tag indicating the mech chassis from which this mech use the skins. This is useful for introducing new mech types without the need to manually update all skins.|`Mechs.Heavy.Warhammer`|
+|`autoconv`|An object defining details for YAML's automatic vanilla mech conversion (see below).||
 
 #### Automatic Mech Conversion
 YAML can automatically convert vanilla mechs. This is done by injecting required slots types and equipment.
