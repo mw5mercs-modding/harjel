@@ -17,6 +17,7 @@ with unreal.ScopedEditorTransaction("CollectEquipmentMetadata Script") as trans:
 		f.write("# Yet Another Equipment Collection\n\n")
 		f.write("Name|Year|Weight|Size|Description|Base Price\n")
 		f.write("---|---|---|---|---|---\n")
+		lines = []
 		for asset_path in assets:
 			asset = get_asset(asset_path)
 			if hasattr(asset, "name"):
@@ -27,11 +28,6 @@ with unreal.ScopedEditorTransaction("CollectEquipmentMetadata Script") as trans:
 				unreal.log("Slots: {}".format(asset.slots))
 				unreal.log("Description: {}".format(asset.description))
 				unreal.log("Base Price: {}".format(asset.c_bill_base_value))
-				f.write("{}|{}|{}|{}|{}|{}\n".format(asset.name, asset.intro_date.to_tuple()[0], asset.tons, asset.slots, asset.description, asset.c_bill_base_value))
-				#if str(asset.short_name).startswith("C-"):
-				#	unreal.log("Renaming to " + str(asset.short_name)[2:] + " (C)")
-				#	asset.set_editor_property("short_name", unreal.Text(str(asset.short_name)[2:] + " (C)"))
-		
-	#unreal.log(o.mech_data.variant_name)
-	#unreal.log(o.mech_data.default_mech)
-	#unreal.log(get_primary_asset_id(asset_location + srcVariant + "_Loadout"))
+				lines.append("{}|{}|{:.1f}|{}|{}|{}".format(asset.name, asset.intro_date.to_tuple()[0], asset.tons, asset.slots, asset.description, asset.c_bill_base_value))
+		for l in sorted(lines):
+			f.write(l + "\n") 
