@@ -1072,5 +1072,18 @@
 		"armorComponentFront": 20,
 		"structureComponent": 10,
 		"rarity": 0.1
+	},
+	"ARMOR_HEAT_DISS": {
+		"fillerSlots": {
+			"dynamic": 6
+		},
+		"armorWeightMulti": 1.1,
+		"rarity": 0.1,
+		"incomingDamage": {
+			"heatMulti": 0.5
+		},
+		"installCostScaling": 10,
+		"armorRepairCostMulti": 1.1,
+		"armorRepairDaysMulti": 1.1
 	}
 }
