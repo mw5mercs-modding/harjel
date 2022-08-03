@@ -292,16 +292,6 @@
 			"dynamic": 5
 		}
 	},
-	"HEAVY_FERRO": {
-		"armorMulti": 1.24,
-		"armorWeightMulti": 1,
-		"fillerSlots": {
-			"dynamic": 21
-		},
-		"rarity": 0.3,
-		"installCost": 20000,
-		"installCostScaling": 10
-	},
 	"STEALTH_ARMOR": {
 		"stealth": true,
 		"armorPerTon": 32,
