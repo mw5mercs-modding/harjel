@@ -1,4 +1,4 @@
-# Mechwarrior 5 Mod: The Equipment Collection formerly known as HarJel
+# Mechwarrior 5 Mod: Yet Another Equipment Collection
 
 This mod adds additional equipments to the game which can be installed into individual locations.
 
@@ -20,7 +20,7 @@ Much of this mod is inspired by or based on stuff from Roguetech, arguably my fa
 - **Exchanger and Exchanger Mk2** - very rare and very powerful heatsinks which also lower the heat output of all weapons. Explode!
 - **Command Console** - A big cockpit-mounted ECM with sensor and cooldown improvements
 - **Advanced Small Cockpit** - Frees up a slot in the head
-- **Compact Engine 200** - more to come
+- **Heat Dissipating Armor** - 50% less heat damage taken from Flamers and inferno missiles for a little bulk.
 
 ## Requirements
 
@@ -312,6 +312,13 @@ The following example applies a heat multi to all weapons.
 
 ##### Incoming Damage Properties
 The special property `incomingDamage` allows to define modifiers for incoming damage based on the weapon type. These can be used in 'mech quirks as well as equipment properties.
+
+The `incomingDamage` object has the following properties:
+
+|Property|Description| Example |
+|---|---|---|
+|`groups`|A json array which contains weapon group objects as decribed below.||E||M|
+|`heatMulti`|A multiplier for incoming heat damage from flamers, etc..|`0.5`|E||M|
 
 Like with the weapon modifiers `groups` define incoming damage modifiers for a group of weapons based on weapon tags. Other than for weapon groups, though, the `scope` can be defined individually for each group.
 
