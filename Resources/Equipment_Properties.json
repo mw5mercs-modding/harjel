@@ -140,15 +140,18 @@
 	},
 	"PATCHWORK_T1": {
 		"rarity": 0.04,
-		"installCost": 30000
+		"installCost": 30000,
+		"removeCost": 3000
 	},
 	"PATCHWORK_T2": {
 		"rarity": 0.03,
-		"installCost": 45000
+		"installCost": 45000,
+		"removeCost": 4500
 	},
 	"PATCHWORK_T3": {
 		"rarity": 0.02,
-		"installCost": 60000
+		"installCost": 60000,
+		"removeCost": 6000
 	},
 	"BLACK_CARAPACE": {
 		"loreAccurate": false,
@@ -183,6 +186,7 @@
 		],
 		"rarity": 0.02,
 		"installCost": 78000,
+		"removeCost": 7800,
 		"installCostScaling": 10
 	},
 	"HARDENED_FERRO": {
@@ -211,6 +215,7 @@
 		],
 		"rarity": 0.02,
 		"installCost": 82000,
+		"removeCost": 8200,
 		"installCostScaling": 10
 	},
 	"TCOMP_MISSLE_ADVANCED": {
@@ -277,6 +282,7 @@
 		"structureWeightMulti": "0.5",
 		"rarity": 0.2,
 		"installCost": 35000,
+		"removeCost": 3500,
 		"installCostScaling": 10,
 		"structureRepairCostMulti": 0.65,
 		"structureRepairDaysMulti": 0.4
@@ -285,6 +291,7 @@
 		"structureWeightMulti": "0.75",
 		"rarity": 0.08,
 		"installCost": 45000,
+		"removeCost": 4500,
 		"installCostScaling": 10,
 		"structureRepairCostMulti": 1.3,
 		"structureRepairDaysMulti": 1.2,
@@ -342,6 +349,7 @@
 		"armorPerTon": 24,
 		"rarity": 0.15,
 		"installCost": 20000,
+		"removeCost": 4000,
 		"installCostScaling": 10,
 		"incomingDamage": {
 			"groups": [{
@@ -366,6 +374,7 @@
 		"armorWeightMulti": 1.15,
 		"rarity": 0.05,
 		"installCost": 20000,
+		"removeCost": 4000,
 		"installCostScaling": 10,
 		"incomingDamage": {
 			"groups": [{
