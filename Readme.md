@@ -192,56 +192,56 @@ The following bonus properties can be specified in the `weapons` section of an e
 |`scope`|Can be either `mech` (default) or `component`. In the latter case the bonuses only apply to weapons installed in the same location. This property is ignored for mech quirks.|
 |`groups`|Contains an array of weapon group objects as decribed below.|
 |`lockonTimeMulti`|Modifies the time it takes for weapons like LRMs to get a lock. Caution: this property is not subject to the `scope` since lock-on times are not weapon-specific.|
-|`traceDurationMulti`||
-|`traceDamageMulti`||
-|`traceCooldownMulti`||
-|`traceHeatMulti`||
-|`traceOptimalRangeMulti`||
-|`traceMaxRangeMulti`||
-|`ballisticSpreadRadiusMulti`||
-|`ballisticSpreadDistanceMulti`||
-|`ballisticSpeedMulti`||
-|`ballisticDamageMulti`||
-|`ballisticCooldownMulti`||
-|`ballisticHeatMulti`||
-|`ballisticNullRangeMulti`||
-|`ballisticMinRangeMulti`||
-|`ballisticOptimalRangeMulti`||
-|`ballisticMaxRangeMulti`||
-|`ballisticJamChanceMulti`||
-|`ballisticAmmoMulti`||
-|`ppcSpreadRadiusMulti`||
-|`ppcSpreadDistanceMulti`||
-|`ppcSpeedMulti`||
-|`ppcDamageMulti`||
-|`ppcCooldownMulti`||
-|`ppcHeatMulti`||
-|`ppcNullRangeMulti`||
-|`ppcMinRangeMulti`||
-|`ppcOptimalRangeMulti`||
-|`ppcMaxRangeMulti`||
-|`missleSpreadRadiusMulti`||
-|`missleSpreadDistanceMulti`||
-|`missleSpeedMulti`||
-|`missleDamageMulti`||
-|`missleCooldownMulti`||
-|`missleHeatMulti`||
-|`missileNullRangeMulti`||
-|`missileMinRangeMulti`||
-|`missileOptimalRangeMulti`||
-|`missileMaxRangeMulti`||
-|`missileJamChanceMulti`||
-|`missileAmmoMulti`||
-|`meleeDamageMulti`||
-|`meleeCooldownMulti`||
-|`meleeHeatMulti`||
-|`meleeOptimalRangeMulti`||
-|`meleeMaxRangeMulti`||
-|`amsMissilesDestroyedMulti`||
-|`amsRofMulti`||
-|`amsOptimalRangeMulti`||
-|`amsMaxRangeMulti`||
-|`amsAmmoMulti`||
+|`traceDurationMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`traceDamageMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`traceCooldownMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`traceHeatMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`traceOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`traceMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticSpreadRadiusMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticSpreadDistanceMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticSpeedMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticDamageMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticCooldownMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticHeatMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticNullRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticMinRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticJamChanceMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ballisticAmmoMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ppcSpreadRadiusMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ppcSpreadDistanceMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ppcSpeedMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ppcDamageMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ppcCooldownMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ppcHeatMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ppcNullRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ppcMinRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ppcOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`ppcMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missleSpreadRadiusMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missleSpreadDistanceMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missleSpeedMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missleDamageMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missleCooldownMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missleHeatMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missileNullRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missileMinRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missileOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missileMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missileJamChanceMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`missileAmmoMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`meleeDamageMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`meleeCooldownMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`meleeHeatMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`meleeOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`meleeMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`amsMissilesDestroyedMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`amsRofMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`amsOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`amsMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`amsAmmoMulti`|*Deprecated. Use `weaponGroups` as described below.*|
 
 ##### Weapon Groups
 
