@@ -607,11 +607,11 @@
 					"tags": [
 						"Weapon.Melee"
 					],
-					"damageMulti": 1.15
+					"damageMulti": 1.15,
+					"cooldownMulti": 0.85
 				}
 			]
 		},
-		"cooldownMulti": 0.85,
 		"torsoTwistRateMulti": 1.08
 	},
 	"GYRO_MELEE_MK3": {
