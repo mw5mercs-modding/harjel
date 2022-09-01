@@ -169,7 +169,7 @@ YAML by itself already provides the following properties:
 #### Misc Properties
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
-|`engineHeatsinkMulti`|Normally any engine above a 250 comes with external engine heatsinks. This multiplier can be used to modify that number.|`0`|E||M|
+|`engineHeatsinkMulti`|Normally any engine above a 250 comes with external engine heatsinks (one per every 25 engine rating - 275 has one, 300 two, etc). This multiplier can be used to modify that number.|`0`|E||M|
 |`heatCapacityBonus`|A bonus to the mech's total heat capacity.|`0.3`|E||M|
 |`dmgEvasionChance`|A chance to avoid any incoming fire. At 1.0 this is quite similar to god-mode.|`0.05`|E||M|
 
@@ -192,56 +192,56 @@ The following bonus properties can be specified in the `weapons` section of an e
 |`scope`|Can be either `mech` (default) or `component`. In the latter case the bonuses only apply to weapons installed in the same location. This property is ignored for mech quirks.|
 |`groups`|Contains an array of weapon group objects as decribed below.|
 |`lockonTimeMulti`|Modifies the time it takes for weapons like LRMs to get a lock. Caution: this property is not subject to the `scope` since lock-on times are not weapon-specific.|
-|`traceDurationMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`traceDamageMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`traceCooldownMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`traceHeatMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`traceOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`traceMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticSpreadRadiusMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticSpreadDistanceMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticSpeedMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticDamageMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticCooldownMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticHeatMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticNullRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticMinRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticJamChanceMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ballisticAmmoMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ppcSpreadRadiusMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ppcSpreadDistanceMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ppcSpeedMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ppcDamageMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ppcCooldownMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ppcHeatMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ppcNullRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ppcMinRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ppcOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`ppcMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missleSpreadRadiusMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missleSpreadDistanceMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missleSpeedMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missleDamageMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missleCooldownMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missleHeatMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missileNullRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missileMinRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missileOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missileMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missileJamChanceMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`missileAmmoMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`meleeDamageMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`meleeCooldownMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`meleeHeatMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`meleeOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`meleeMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`amsMissilesDestroyedMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`amsRofMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`amsOptimalRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`amsMaxRangeMulti`|*Deprecated. Use `weaponGroups` as described below.*|
-|`amsAmmoMulti`|*Deprecated. Use `weaponGroups` as described below.*|
+|`traceDurationMulti`||
+|`traceDamageMulti`||
+|`traceCooldownMulti`||
+|`traceHeatMulti`||
+|`traceOptimalRangeMulti`||
+|`traceMaxRangeMulti`||
+|`ballisticSpreadRadiusMulti`||
+|`ballisticSpreadDistanceMulti`||
+|`ballisticSpeedMulti`||
+|`ballisticDamageMulti`||
+|`ballisticCooldownMulti`||
+|`ballisticHeatMulti`||
+|`ballisticNullRangeMulti`||
+|`ballisticMinRangeMulti`||
+|`ballisticOptimalRangeMulti`||
+|`ballisticMaxRangeMulti`||
+|`ballisticJamChanceMulti`||
+|`ballisticAmmoMulti`||
+|`ppcSpreadRadiusMulti`||
+|`ppcSpreadDistanceMulti`||
+|`ppcSpeedMulti`||
+|`ppcDamageMulti`||
+|`ppcCooldownMulti`||
+|`ppcHeatMulti`||
+|`ppcNullRangeMulti`||
+|`ppcMinRangeMulti`||
+|`ppcOptimalRangeMulti`||
+|`ppcMaxRangeMulti`||
+|`missleSpreadRadiusMulti`||
+|`missleSpreadDistanceMulti`||
+|`missleSpeedMulti`||
+|`missleDamageMulti`||
+|`missleCooldownMulti`||
+|`missleHeatMulti`||
+|`missileNullRangeMulti`||
+|`missileMinRangeMulti`||
+|`missileOptimalRangeMulti`||
+|`missileMaxRangeMulti`||
+|`missileJamChanceMulti`||
+|`missileAmmoMulti`||
+|`meleeDamageMulti`||
+|`meleeCooldownMulti`||
+|`meleeHeatMulti`||
+|`meleeOptimalRangeMulti`||
+|`meleeMaxRangeMulti`||
+|`amsMissilesDestroyedMulti`||
+|`amsRofMulti`||
+|`amsOptimalRangeMulti`||
+|`amsMaxRangeMulti`||
+|`amsAmmoMulti`||
 
 ##### Weapon Groups
 
@@ -448,12 +448,29 @@ The following example defines the quirks for the Atlas Boar's Head Hero mech.
 #### Mech Properties
 Once quirks have been defined they also need to be applied to mechs. This is done in a file called `mechs.json`. It contains a map of mech definitions where the key can be either the variant name or the MDL name. Each mech is then an object which can have any of the following properties.
 
-|Property|Description|Example|
-|---|---|---|
-|`quirks`|An array of quirk ids which have been defined as detailed above.||
-|`scale`|A scaling vector for the mech which is applied in DerivedMech.|`X=1.1 Y=1.1 Z=1.1`|
-|`useSkinsFrom`|An optional gameplay tag indicating the mech chassis from which this mech use the skins. This is useful for introducing new mech types without the need to manually update all skins.|`Mechs.Heavy.Warhammer`|
-|`autoconv`|An object defining details for YAML's automatic vanilla mech conversion (see below).||
+|Property|Description|
+|---|---|
+|`quirks`|An array of quirk ids which have been defined as detailed above.|
+|`scale`|A scaling vector for the mech which is applied in DerivedMech. Example: `X=1.1 Y=1.1 Z=1.1`|
+|`useSkinsFrom`|An optional gameplay tag indicating the mech variant from which this mech use the skins. This is useful for introducing new mech types without the need to manually update all skins.|
+|`aiMechRole`|Set the default AI mech role from the TTRulez_AI mod. This will only take effect if that mod is active. For possible values see below.|
+|`autoconv`|An object defining details for YAML's automatic vanilla mech conversion (see below).|
+
+##### TTRulez_AI Mech Roles
+
+YAML has built-in support for TTRulez_AI mech roles. These can be chosen in the mech lab, allowing the player to give roles to their custom builds. A default role can be set in `mechs.json` via the `aiMechRole` property. The following values are supported:
+
+|Value|Description|
+|---|---|
+|`AntiAir`|Antiaircraft: These are usually sniper type units with ballistic weapons designed for antiaircraft and antitank targets<ul><li>Same function as Snipers but Target preference is VTOL and TANK</li><li>RECOMMEND USE IN FOCUSED FIRE and mainly to provide air and antitank support</li></ul>|
+|`Ambusher`|Ambusher: Slow heavily armed city fighters that use cover to engage enemies<ul><li>Target preference: Heavy units</li><li>If more than 300m from the enemy and has JJ, the AI will jump towards the target to close quickly skimming the ground, if no JJ the AI will rush towards the target.</li><li>If less than 300m from the enemy, and the enemy has sight will move behind cover (building), if it has LOS and JJ it will use them to get cover quickly.  Once out of sight the AI will work to regain LOS to fire on the enemy. Then in a few seconds of firing try to move back to cover again.</li></ul>|
+|`Brawler`|Brawler: Heavily armored and slower mechs with mix of ranged weapons. <ul><li>Target preference: Heavy units</li><li>Focus fire: Will use vanilla logic of closing and circling the enemy</li><li>Engage at will: Will use ranged tactics based on their weapon range compared to the enemies range to maximize damage.  May occasionally use cover logic to engage.</li></ul>|
+|`Juggernaut`|Juggernaut: Heavily armed and armored mechs with close range weapons designed to push an advance.<ul><li>Target preference: Assault units</li><li>The AI will move aggressively towards the enemy using JJ if possible and engage at more than 200m</li><li>Juggernauts do not break off if damaged so provide support with other units</li></ul>|
+|`MissleBoat`|Sniper/Firesupport/Missileboat: These often slow mech types are used to fire on enemy mechs at a range to minimize damage to themselves and support a more aggressive unit. <ul><li>Target preference: Slow heavy and assault units</li><li>Focused fire: These mechs deploy on the battlefield near the player on the high ground</li><li>Engage at will: These mechs engaged in ranged combat maximizing distance from the enemy</li><li>RECOMMEND USE IN FOCUSED FIRE</li></ul>|
+|`Scout`|Scout: Light recon units mainly used to fight vehicles, turrets, and light mechs<ul><li>Target preference: Light fast units</li><li>If a VTOL, Tank, or Turret is targeted will aggressively engage at close range</li><li>If a fast mech is targeted they will engage in a circle fight trying to gain advantage with spins and occasionally hit and run</li><li>If a slow mech is targeted they will engage in hit and run tactics with occasional circling</li><li>RECOMMEND IN ENGAGE AT WILL</li></ul>|
+|`Skirmisher`|Skirmisher: Fast, lightly armored, units with long range weapons, they use cover or hit and run tactics and have two main roles to kill fast light units and keep them off heavier units or to distract heavier units<ul><li>Target preference: Fast units</li><li>If a fast mech is targeted (>90kph is targeted) they will use JJ to close and attack circling</li><li>Engage at will: If a slower heavier mech is targeted they will use hit and run or ranged tactics</li><li>Focused fire: If ordered to attack the players target they will jump/rush in to engage the target then break off and return to the player. Once back to the player will rush to the enemy again. This is skirmishing and distracts he enemy</li></ul>|
+|`Sniper`|Sniper/Firesupport/Missileboat: These often slow mech types are used to fire on enemy mechs at a range to minimize damage to themselves and support a more aggressive unit. <ul><li>Target preference: Slow heavy and assault units</li><li>Focused fire: These mechs deploy on the battlefield near the player on the high ground</li><li>Engage at will: These mechs engaged in ranged combat maximizing distance from the enemy</li><li>RECOMMEND USE IN FOCUSED FIRE</li></ul>|
+|`Striker`|Striker: Fast lightly armored units with close range heavy damage weapons such as SRMs. Ideally they flank the target to maximize damage. They stay on a target until it is dead or forced to retreat.<ul><li>Target Preference: Slow heavy and assault units</li><li>If fighting fast enemies, they engage in circle fights or hit and run.</li><li>If the target is any mech with speed less than 80kph, the AI will run the flanking logic.  This selects a point to the side of the enemy at least 100m away.  Rushes/jumps to this point and once it detects the enemies rear arc the AI rushes to engage their rear armor.  If the player uses FocusFire they will use the player as a reference for their flank so the enemy will have to focus  on either the player or striker.</li><li>RECOMMEND USE IN FOCUSED FIRE</li></ul>|
 
 #### Automatic Mech Conversion
 YAML can automatically convert vanilla mechs. This is done by injecting required slots types and equipment.
