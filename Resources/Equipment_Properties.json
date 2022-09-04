@@ -567,7 +567,7 @@
 		"activeProperties": {
 			"heat": 1,
 			"heatBuildup": 0.06,
-			"heatDissipation": 0.08,
+			"heatDissipation": 0.1,
 			"tsmMulti": 1.5,
 			"topSpeedMulti": 1.3
 		}
