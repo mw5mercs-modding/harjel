@@ -172,6 +172,9 @@ YAML by itself already provides the following properties:
 |`engineHeatsinkMulti`|Normally any engine above a 250 comes with external engine heatsinks (one per every 25 engine rating - 275 has one, 300 two, etc). This multiplier can be used to modify that number.|`0`|E||M|
 |`heatCapacityBonus`|A bonus to the mech's total heat capacity.|`0.3`|E||M|
 |`dmgEvasionChance`|A chance to avoid any incoming fire. At 1.0 this is quite similar to god-mode.|`0.05`|E||M|
+|`caseLevel`|The level of C.A.S.E. protection provided. Can be either `1` (ammo explosion damage does not spread to other components) or `2` (ammo explosion damage is reduced to `2` points of damage).|`1`|E||M|
+|`caseScope`|States which parts of the mech are protected by the `caseLevel`. Can be either `component` or `mech`.|`component`|E|||
+|`case2MaxDmg`|Sets the maximum damage an ammo explosion can cause if `caseLevel` is 2. Defaults to `2.0` .|`5.0`|E||M|
 
 ##### Special Properties
 |Property|Description|Example|E|W|M|
@@ -454,11 +457,12 @@ Once quirks have been defined they also need to be applied to mechs. This is don
 |`scale`|A scaling vector for the mech which is applied in DerivedMech. Example: `X=1.1 Y=1.1 Z=1.1`|
 |`useSkinsFrom`|An optional gameplay tag indicating the mech variant from which this mech use the skins. This is useful for introducing new mech types without the need to manually update all skins.|
 |`aiMechRole`|Set the default AI mech role from the TTRulez_AI mod. This will only take effect if that mod is active. For possible values see below.|
+|`mechType`|The type of mech which can be `bipedal` (default) or `quad` for now. Only has an impact on quad mechs which will then have their arm slots replaced with leg slots.|
 |`autoconv`|An object defining details for YAML's automatic vanilla mech conversion (see below).|
 
 ##### TTRulez_AI Mech Roles
 
-YAML has built-in support for TTRulez_AI mech roles. These can be chosen in the mech lab, allowing the player to give roles to their custom builds. A default role can be set in `mechs.json` via the `aiMechRole` property. The following values are supported:
+YAML has built-in support for TTRulez_AI mech roles. These can be chosen in the mech lab, allowing the player to give roles to their custom builds. A default role can be set in `mechs.json` via the `aiMechRole` property (there is no real advantage over setting these in the UnitCard, when implementing this feature I was under the impression that TTRulez_AI introduced additional roles which can not be set in the UnitCard). The following values are supported:
 
 |Value|Description|
 |---|---|
