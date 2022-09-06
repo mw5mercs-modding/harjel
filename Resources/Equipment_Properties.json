@@ -453,7 +453,7 @@
 				"weaponGroupName": "Melee",
 				"tags": ["Weapon.Melee"],
 				"armorDamageMulti": 0.85,
-				"strutureDamageMulti": 0.85,
+				"structureDamageMulti": 0.85,
 				"scope": "component"
 			}]
 		},
@@ -473,7 +473,7 @@
 				"weaponGroupName": "Weapon",
 				"tags": ["Weapon"],
 				"armorDamageMulti": 0.95,
-				"strutureDamageMulti": 0.95,
+				"structureDamageMulti": 0.95,
 				"scope": "mech"
 			}]
 		},
@@ -670,7 +670,7 @@
 				"weaponGroupName": "Weapon",
 				"tags": ["Weapon"],
 				"armorDamageMulti": 0.95,
-				"strutureDamageMulti": 0.95,
+				"structureDamageMulti": 0.95,
 				"scope": "mech"
 			}]
 		},
@@ -879,7 +879,7 @@
 				"weaponGroupName": "Melee",
 				"tags": ["Weapon.Melee"],
 				"armorDamageMulti": 0.96,
-				"strutureDamageMulti": 0.96,
+				"structureDamageMulti": 0.96,
 				"scope": "component"
 			}]
 		},
@@ -1106,5 +1106,25 @@
 		"installCostScaling": 10,
 		"armorRepairCostMulti": 1.1,
 		"armorRepairDaysMulti": 1.1
+	},
+	"COCKPIT_PRIMITIVE": {
+		"pilotingSkillBonus": -1,
+		"installCostScaling": 15,
+		"removeCost": 25000,
+		"removeDays": 5
+	},
+	"SENSORS_PRIMITIVE": {
+		"sensorRangeMulti": 0.8,
+		"installCostScaling": 15,
+		"removeCost": 22000,
+		"removeDays": 4
+	},
+	"ARMOR_PRIMITIVE": {
+		"armorWeightMulti": 1.33,
+		"armorRepairCostMulti": 0.5,
+		"armorRepairDaysMulti": 0.5,
+		"installCostScaling": 15,
+		"removeCost": 85000,
+		"removeDays": 8
 	}
 }
