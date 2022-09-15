@@ -197,6 +197,8 @@
 		"selfRepairDuration": 4,
 		"selfRepairInterval": 1,
 		"selfRepairScope": "mech",
+		"caseLevel": 2,
+		"caseScope": "mech",
 		"fillerSlots": {
 			"LeftTorso": 2,
 			"RightTorso": 2,
@@ -216,7 +218,9 @@
 		"rarity": 0.02,
 		"installCost": 82000,
 		"removeCost": 8200,
-		"installCostScaling": 10
+		"installCostScaling": 10,
+		"armorRepairCostMulti": 2,
+		"armorRepairDaysMulti": 2
 	},
 	"TCOMP_MISSLE_ADVANCED": {
 		"weapons": {
