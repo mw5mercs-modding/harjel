@@ -324,6 +324,13 @@
 		"rarity": 0.1,
 		"color": "(R=1,G=0.115883,B=0,A=1)"
 	},
+	"SENSORS_SEARCHLIGHT": {
+		"rarity": 0.1,
+		"features": [
+			"searchlight"
+		],
+		"sensorRangeBonus": 80
+	},
 	"ARMOR_NSS": {
 		"armorPerTon": 32,
 		"fillerSlots": {
