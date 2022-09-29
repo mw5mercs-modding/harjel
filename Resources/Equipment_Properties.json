@@ -67,7 +67,11 @@
 	"Equipment.Harjel": {
 		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
 		"category": "equipment.internal",
-		"installCostScaling": 10
+		"installCostScaling": 10,
+		"structureRepairCostMulti": 1.2,
+		"structureRepairDaysMulti": 1.2,
+		"armorRepairCostMulti": 1.2,
+		"armorRepairDaysMulti": 1.2
 	},
 	"HARJEL_I": {
 		"armorComponentFrontMulti": 1.1,
@@ -1139,5 +1143,66 @@
 		"installCostScaling": 15,
 		"removeCost": 85000,
 		"removeDays": 8
+	},
+	"PPC_CAPACITOR": {
+		"rarity": 0.04,
+		"color": "(R=1.0,G=0.26,B=0,A=1)",
+		"category": "equipment.electronics",
+		"weapons": {
+			"groups": [
+				{
+					"weaponGroupName": "PPC",
+					"tags": [
+						"Weapon.Energy.ParticleCannon"
+					],
+					"excludeTags": [
+						"Weapon.Energy.ParticleCannon.ERPPC.Cap",
+						"Weapon.Energy.ParticleCannon.HPPC.Cap",
+						"Weapon.Energy.ParticleCannon.LPPC.Cap",
+						"Weapon.Energy.ParticleCannon.PPC.Cap",
+						"Weapon.Energy.ParticleCannon.SNPPC.Cap"
+					]
+					"heatMulti": 1.15,
+					"damageMulti": 1.3
+				}
+			]
+		},
+		"mechConflicts": [
+			"PPC_CAPACITOR"
+		]
+	},
+	"SUPER_COOLED_MYOMER": {
+		"description": "The RISC Super-Cooled Myomer is a Dark Age era improvement on myomer. It offers a benefit in that it effectively eliminates heat buildup due to movement.\nThe system works by adding friction-reducing fluids to the myomer, secondary coolant lines between myomer bundles, and sheathing the key myomer bundles in extra insulation.\nThis myomer is not compatible with any other type of myomer or myomer enhancements.",
+		"category": "equipment.mobility",
+		"color": "(R=1.0,G=1.0,B=0.282176,A=1)",
+		"mechConflicts": [
+			"COCKPIT_HOTSEAT",
+			"TSMYOMER",
+			"SUPER_COOLED_MYOMER"
+		],
+		"movementHeatMulti": 0,
+		"fillerSlots": {
+			"dynamic": 5
+		},
+		"structureRepairCostMulti": 1.2,
+		"structureRepairDaysMulti": 1.2,
+		"armorRepairCostMulti": 1.2,
+		"armorRepairDaysMulti": 1.2
+	},
+	"FERRO_PROTOTYPE": {
+		"fillerSlots": {
+			"dynamic": 16
+		},
+		"rarity": 0.01,
+		"armorRepairCostMulti": 1.4,
+		"armorRepairDaysMulti": 1.4
+	},
+	"ENDO_PROTOTYPE": {
+		"fillerSlots": {
+			"dynamic": 16
+		},
+		"rarity": 0.01,
+		"structureRepairCostMulti": 1.8,
+		"structureRepairDaysMulti": 1.8,
 	}
 }
