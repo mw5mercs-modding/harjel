@@ -252,7 +252,7 @@
 			"ppcSpreadRadiusMulti": 0.6,
 			"ppcDistanceMulti": 1.4,
 			"ppcSpeedMulti": 1.2,
-			"ppcDamageMulti": 1.15,
+			"ppcDamageMulti": 1.10,
 			"ppcCooldownMulti": 0.8
 		},
 		"rarity": 0.1
@@ -523,7 +523,7 @@
 					"tags": [
 						"Weapon"
 					],
-					"jamChanceBonus": -0.1,
+					"jamChanceBonus": -0.07,
 					"spreadRadiusMulti": 0.9,
 					"spreadDistanceMulti": 1.1
 				}
@@ -659,7 +659,7 @@
 					"tags": [
 						"Weapon"
 					],
-					"jamChanceMulti": 0.85
+					"jamChanceBonus": -0.05
 				}
 			]
 		}
@@ -676,7 +676,7 @@
 					"tags": [
 						"Weapon"
 					],
-					"jamChanceBonus": -0.2
+					"jamChanceBonus": -0.05
 				}
 			]
 		},
@@ -983,10 +983,10 @@
 		],
 		"maxJumpJetsMulti": 1.5
 	},
-	"ImprovedJumpJet_Class1_Equipment":	{
+	"ImprovedJumpJet_Class5_Equipment":	{
 		"rarity": 0.05,
 		"mechConflicts": [
-			"JumpJet_Class1_Equipment"
+			"JumpJet_Class5_Equipment"
 		],
 		"maxJumpJetsMulti": 1.5
 	},
