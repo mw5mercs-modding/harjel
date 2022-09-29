@@ -1161,7 +1161,7 @@
 						"Weapon.Energy.ParticleCannon.LPPC.Cap",
 						"Weapon.Energy.ParticleCannon.PPC.Cap",
 						"Weapon.Energy.ParticleCannon.SNPPC.Cap"
-					]
+					],
 					"heatMulti": 1.15,
 					"damageMulti": 1.3
 				}
@@ -1203,6 +1203,6 @@
 		},
 		"rarity": 0.01,
 		"structureRepairCostMulti": 1.8,
-		"structureRepairDaysMulti": 1.8,
+		"structureRepairDaysMulti": 1.8
 	}
 }
