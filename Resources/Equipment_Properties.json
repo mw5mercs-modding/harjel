@@ -511,6 +511,34 @@
 		},
 		"loreAccurate": false
 	},
+	"WEAPON_MOUNT": {
+		"relativeWeight": 0.01,
+		"rarity": 0.01,
+		"loreAccurate": false,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon.Energy",
+						"Weapon.Ballistic",
+						"Weapon.Missile",
+						"Weapon.ArtemisMissile"
+					],
+					"cooldownMulti": 0.9,
+					"damageMulti": 1.05
+				},
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 0.85
+				}
+			]
+		}
+	},
 	"WEAPON_MOUNT_RECOIL": {
 		"relativeWeight": 0.01,
 		"rarity": 0.01,
@@ -1204,5 +1232,46 @@
 		"rarity": 0.01,
 		"structureRepairCostMulti": 1.8,
 		"structureRepairDaysMulti": 1.8
+	},
+	"TURRET_MOUNT": {
+		"rarity": 0.01,
+		"loreAccurate": false,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"cooldownMulti": 0.85,
+					"damageMulti": 1.1
+				}
+			]
+		},
+		"invalidMechParts": [
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"mechPartConflicts": [
+			"TURRET_MOUNT"
+		]
+	},
+	"ENDO_TSM": {
+		"structureWeightMulti": "0.75",
+		"rarity": 0.06,
+		"installCost": 45000,
+		"removeCost": 4500,
+		"installCostScaling": 10,
+		"structureRepairCostMulti": 1.4,
+		"structureRepairDaysMulti": 1.25,
+		"fillerSlots": {
+			"dynamic": 12
+		},
+		"features": [
+			"tsm"
+		]
 	}
 }
