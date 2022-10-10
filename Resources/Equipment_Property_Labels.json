@@ -37,7 +37,8 @@
 		"unit": "multi"
 	},
 	"equipmentToggle": {
-		"label": "Toggle active via"
+		"label": "Toggle active via",
+		"unit": "hotkey"
 	},
 	"maxJumpJetsMulti": {
 		"label": "Maximum amount of JJ allowed by walk MP"
