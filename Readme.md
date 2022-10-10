@@ -57,12 +57,13 @@ YAML by itself already provides the following properties:
 |`description`|Because it is annoying to edit the desciption in the asset all the time, and also: newlines!|`"One line\nanother line."`|E|||
 |`color`|Set the color of the equipment in the market and mechlab as an RGBA value.|`"(R=0.59,G=0.03,B=0.11,A=1)"`|E|||
 |`category`|Allows to set the category of the equipment. One would typically use this on equipments which have the "generic" type `Heatsink.Single`. Can be one of: `equipment.ammo`, `equipment.cooling`, `equipment.mobility`, `equipment.electronics`, `equipment.internal`, `equipment.misc`, `equipment.enginecore`, `equipment.enginetype`. Be aware that setting the category this way means that the equipment will always be shown, independent of the value of the "valid only" checkbox.|`"equipment.internal"`|E|||
-|`rarity`|Define the rarity of an equipment between 0 and 1. The rarity directly sets the probability the item will show up in markets.|`0.2`|E|||
+|`rarity`|Define the rarity of an equipment between 0 and 1. The rarity directly sets the probability the item will show up in markets and affect the total number of items available. Defaults to `0.3`. See also `marketMaxCnt`.|`0.2`|E|||
+|`marketMaxCnt`|Set the maximum number that a market can hold of one equipment. By default this is `3` for everything.|`1`|E|||
 |`loreAccurate`|States whether the equipment can be found in the lore. If not and configuration entry `loreAbidingCitizen` is `true` then the equipment will never show up in markets. Defaults to `true`|`false`|E|||
 |`relativeWeight`|Sets the equipment weight to a multiple of the mech's max tonnage, rounded to quarter tons (with a minumum weight of 0.25 tons). This should be paired with a 0 weight in the equipment asset. Special case: Gyros, here the multiplicator refers to the weight of a standard Gyro.|`"0.05"`|E|||
 |`engineRelativeWeight`|Sets the equipment weight to a multiple of the mech's engine weight, rounded up to the next half-ton.|`0.1`|E|||
 |`fillerSlots`|Allows to define the dynamic and fixed fillers an equipment requires. The value is a map which contains any of the following keys: `dynamic` refers to the number of dynamic fillers which can be placed anywhere (a typical example is endo). `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc. refer to the fixed fillers required in specific mech parts. One example is 2 slots in the center torso for an XL Gyro.|`{ "CenterTorso": 2 }`|E|W||
-|`fixed`|If `true` the equipment cannot be removed and is considered a fixed equipment. It will not show up in the inventory. This should be combined with autoamtic repair for the equipment asset. The salvage probability can either be set to 0 to prevent salvage completely or the salvaged item can be changed via `salvageInto`. Fixed items can be used to create custom mech variants.|`true`|E|||
+|`fixed`|If `true` the equipment cannot be removed and is considered a fixed equipment. It will not show up in the inventory. This should be combined with autoamtic repair for the equipment asset. The salvage probability can either be set to 0 to prevent salvage completely or the salvaged item can be changed via `salvageInto`. Fixed items can be used to create custom mech variants.|`true`|E|W||
 |`introYear`|Override the introduction year of an equipment. This is mostly interesting for mods which support both vanilla and YAML to hide equipment in vanilla.|`3078`|E|||
 |`slots`|Override the slot count of an equipment.|`3`|E|||
 
@@ -81,19 +82,21 @@ YAML by itself already provides the following properties:
 ##### Financial Properties 
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
-|`installCost`|Overwrites the install cost defined in the asset.|`20000`|E|||
-|`removeCost`|Overwrites the remove cost defined in the asset.|`20000`|E|||
-|`repairCost`|Overwrites the repair cost defined in the asset.|`20000`|E|||
-|`installCostScaling`|Defines an installation (and removal) cost scaling based on the max mech tonnage. The value defines the multiplier for a 100 ton mech while a 20 ton mech will always set a multiplier of 1.|`10`|E|||
-|`installDays`|Overwrites the install days defined in the asset.|`2`|E|||
-|`removeDays`|Overwrites the remove days defined in the asset.|`2`|E|||
-|`repairDays`|Overwrites the repair days defined in the asset.|`2`|E|||
-|`installDaysScaling`|Defines an installation (and removal) days scaling based on the max mech tonnage. The value defines the multiplier for a 100 ton mech while a 20 ton mech will always set a multiplier of 1.|`10`|E|||
+|`installCost`|Overwrites the install cost defined in the asset.|`20000`|E|W||
+|`removeCost`|Overwrites the remove cost defined in the asset.|`20000`|E|W||
+|`repairCost`|Overwrites the repair cost defined in the asset.|`20000`|E|W||
+|`installCostScaling`|Defines an installation (and removal) cost scaling based on the max mech tonnage. The value defines the multiplier for a 100 ton mech while a 20 ton mech will always set a multiplier of 1.|`10`|E|W||
+|`installDays`|Overwrites the install days defined in the asset.|`2`|E|W||
+|`removeDays`|Overwrites the remove days defined in the asset.|`2`|E|W||
+|`repairDays`|Overwrites the repair days defined in the asset.|`2`|E|W||
+|`installDaysScaling`|Defines an installation (and removal) days scaling based on the max mech tonnage. The value defines the multiplier for a 100 ton mech while a 20 ton mech will always set a multiplier of 1.|`10`|E|W||
 |`structureRepairCostMulti`|A multiplier on all structure repairs on the mech. This can for example be used on Endosteel to make it more expensive to repair.|`2`|E||M|
 |`structureRepairDaysMulti`|A multiplier on all structure repairs on the mech. This can for example be used on Endosteel to make it take longer to repair.|`2`|E||M|
 |`armorRepairCostMulti`|A multiplier on all armor repairs on the mech. This can for example be used on Hardened to make it more expensive to repair.|`2`|E||M|
 |`armorRepairDaysMulti`|A multiplier on all armor repairs on the mech. This can for example be used on Hardened to make it take longer to repair.|`2`|E||M|
 |`upkeepCostMulti`|A multiplier on the recurring upkeep cost for both active 'mechs and those in cold storage.|`0.8`|||M|
+|`equipmentRefitCostMulti`|A multiplier for the cost of weapon and equipment refits (install/remove/repair).|`1.2`|E||M|
+|`equipmentRefitDaysMulti`|A multiplier for the required time of weapon and equipment refits (install/remove/repair).|`1.2`|E||M|
 
 ##### Installation Restriction Properties
 |Property|Description|Example|E|W|M|
@@ -180,13 +183,18 @@ YAML by itself already provides the following properties:
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
 |`predictiveTargeting`|A boolean property which can be used to enable predictive targeting, ie. a target recticle which points to where one has to shoot, accouting for things like drop-off and target speed.|`true`|E||M|
+|`antiAirTargeting`|Same as above, but only applies to VTOLs (other units won't have the reticle unless a Predictive TC or quirk is installed).|`true`|E||M|
+|`hasBasicUAV`|Integer number to add to Ammo.Consumable.UAV to any 'Mech. They will have this many norma UAVs plus whatever is equipped. Advanced UAV upgrades all to the increased stats.|`4`|M|
 
 ##### Weapon Modifier Properties
-The special property `weapons` allows to define a multitude of weapon modifiers ranging from a simple PPC range upgrade to cooldown modifiers for SRM6 launchers.
-
 |Property|Description| Example |E|W|M|
 |---|---|---|---|---|---|
 |`weapons`|A json object containing weapon bonus properties as described below.||E||M|
+|`armorDamageMulti`|A multiplier for the damage dealt to armor. This allows to create weapons that do more or less damage to armor.||W||
+|`structureDamageMulti`|A multiplier for the damage dealt to structure. This allows to create weapons that do more or less damage to structure.||W||
+
+The special property `weapons` allows to define a multitude of weapon modifiers ranging from a simple PPC range upgrade to cooldown modifiers for SRM6 launchers.
+
 
 The following bonus properties can be specified in the `weapons` section of an equipment.
 
@@ -253,13 +261,15 @@ Weapon groups are the most flexible way of defining weapon modifiers. Each group
 |Property|Description|
 |---|---|
 |`weaponGroupName`|The human-readable name of the weapon group which is also used for labelling the bonuses in the UI. Typically this would be something like "Laser" or "MRM" or even "Arm-mounted weapons".|
-|`tags`|An array of weapon tags which the bonuses apply for. The simplest value would be `["Weapon"]` which would cause the bonus to be applied to all weapons. See the examples below for more.|
+|`tags`|An array of weapon tags and/or weapon asset ids which the bonuses apply for. The simplest value would be `["Weapon"]` which would cause the bonus to be applied to all weapons. See the examples below for more.|
+|`excludeTags`|An optional array of weapon tags and/or weapon asset ids which the bonuses do not apply for.|
 |`mechParts`|An optional array of mech parts the bonuses apply for. This is only really useful for 'mech quirks and allows to restrict the bonuses to specific parts. A typical example would be arm-mounted weapons. In that case the value would be `["LeftArm", "RightArm"]`.|
 | `durationMulti`          | Only applies to trace weapons |
 | `spreadRadiusMulti`      ||
 | `spreadDistanceMulti`    ||
 | `speedMulti`             ||
 | `damageMulti`            ||
+| `heatDamageMulti`        | Only applies to trace and melee weapons for now. |
 | `cooldownMulti`          ||
 | `heatMulti`              ||
 | `nullRangeMulti`         ||
