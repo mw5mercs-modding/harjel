@@ -226,42 +226,96 @@
 		"armorRepairCostMulti": 2,
 		"armorRepairDaysMulti": 2
 	},
+	"FERRO_CARBIDE_C": {
+		"caseLevel": 1,
+		"caseScope": "mech",
+		"armorWeightMulti": 0.89286,
+		"armorMulti": 1.1,
+		"installCostScaling": 10,
+		"armorRepairCostMulti": 2.0,
+		"armorRepairDaysMulti": 1.9,
+		"rarity": 0.01,
+		"fillerSlots": {
+			"LeftTorso": 1,
+			"RightTorso": 1,
+			"LeftArm": 1,
+			"RightArm": 1,
+			"LeftLeg": 1,
+			"RightLeg": 1,
+			"CenterTorso": 1
+		},
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Weapon",
+				"tags": [
+					"Weapon"
+				],
+				"armorDamageMulti": 0.85,
+				"scope": "mech"
+			}]
+		}
+	},
 	"TCOMP_MISSLE_ADVANCED": {
 		"weapons": {
-			"missileSpreadRadiusMulti": 0.6,
-			"missileSpreadDistanceMulti": 1.4,
-			"missileSpeedMulti": 1.2,
-			"missileDamageMulti": 1.15,
-			"missileCooldownMulti": 0.8,
+			"groups": [{
+				"weaponGroupName": "Missile",
+				"tags": [
+					"Weapon.Missile",
+					"Weapon.ArtemisMissile"
+				],
+				"spreadRadiusMulti": 0.6,
+				"spreadDistanceMulti": 1.4,
+				"speedMulti": 1.2,
+				"damageMulti": 1.15,
+				"cooldownMulti": 0.8
+			}],
 			"lockonTimeMulti": 0.7
 		},
 		"rarity": 0.1
 	},
 	"TCOMP_BALLISTIC_ADVANCED": {
 		"weapons": {
-			"ballisticSpreadRadiusMulti": 0.6,
-			"ballisticSpreadDistanceMulti": 1.4,
-			"ballisticSpeedMulti": 1.2,
-			"ballisticDamageMulti": 1.15,
-			"ballisticCooldownMulti": 0.8
+			"groups": [{
+				"weaponGroupName": "Ballistic",
+				"tags": [
+					"Weapon.Ballistic"
+				],
+				"spreadRadiusMulti": 0.6,
+				"spreadDistanceMulti": 1.4,
+				"speedMulti": 1.2,
+				"damageMulti": 1.15,
+				"cooldownMulti": 0.8
+			}]
 		},
 		"rarity": 0.1
 	},
 	"TCOMP_PPC_ADVANCED": {
 		"weapons": {
-			"ppcSpreadRadiusMulti": 0.6,
-			"ppcDistanceMulti": 1.4,
-			"ppcSpeedMulti": 1.2,
-			"ppcDamageMulti": 1.10,
-			"ppcCooldownMulti": 0.8
+			"groups": [{
+				"weaponGroupName": "PPC",
+				"tags": [
+					"Weapon.Energy.ParticleCannon"
+				],
+				"spreadRadiusMulti": 0.6,
+				"spreadDistanceMulti": 1.4,
+				"speedMulti": 1.2,
+				"damageMulti": 1.10,
+				"cooldownMulti": 0.8
+			}]
 		},
 		"rarity": 0.1
 	},
 	"TCOMP_TRACE_ADVANCED": {
 		"weapons": {
-			"traceDurationMulti": 0.7,
-			"traceDamageMulti": 1.15,
-			"traceCooldownMulti": 0.8
+			"groups": [{
+				"weaponGroupName": "Laser",
+				"tags": [
+					"Weapon.Energy.Laser"
+				],
+				"durationMulti": 0.7,
+				"damageMulti": 1.15,
+				"cooldownMulti": 0.8
+			}]
 		},
 		"rarity": 0.1
 	},
