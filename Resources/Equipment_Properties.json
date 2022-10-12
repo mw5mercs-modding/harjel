@@ -636,6 +636,24 @@
 			]
 		}
 	},
+	"COOLING_JACKET": {
+		"rarity": 0.01,
+		"loreAccurate": false,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"heatMulti": 0.9
+				}
+			]
+		},
+		"armTwistAngleMulti": 0.9,
+		"armTwistRateMulti": 0.85
+	},
 	"COCKPIT_SMALL_ADVANCED": {
 		"rarity": 0.05,
 		"loreAccurate": false
