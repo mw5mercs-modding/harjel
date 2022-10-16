@@ -539,8 +539,10 @@
 	"UPPER_ARMORED": {
 		"relativeWeight": 0.01,
 		"rarity": 0.02,
-		"armorComponentFrontMulti": 1.25,
-		"loreAccurate": false
+		"armorComponentFrontMulti": 1.2,
+		"loreAccurate": false,
+		"caseLevel": 2,
+		"case2MaxDmg": 5
 	},
 	"UPPER_HARD_ENED": {
 		"relativeWeight": 0.01,
@@ -549,12 +551,14 @@
 			"groups": [{
 				"weaponGroupName": "Weapon",
 				"tags": ["Weapon"],
-				"armorDamageMulti": 0.95,
-				"structureDamageMulti": 0.95,
+				"armorDamageMulti": 0.9,
+				"structureDamageMulti": 0.9,
 				"scope": "mech"
 			}]
 		},
-		"loreAccurate": false
+		"loreAccurate": false,
+		"caseLevel": 2,
+		"case2MaxDmg": 5
 	},
 	"LOWER_MELEE": {
 		"relativeWeight": 0.01,
@@ -613,7 +617,7 @@
 					"tags": [
 						"Weapon"
 					],
-					"jamChanceBonus": -0.07,
+					"jamChanceMulti": 0.75,
 					"spreadRadiusMulti": 0.9,
 					"spreadDistanceMulti": 1.1
 				}
@@ -769,7 +773,7 @@
 					"tags": [
 						"Weapon"
 					],
-					"jamChanceBonus": -0.05
+					"jamChanceMulti": 0.85
 				}
 			]
 		}
@@ -786,7 +790,7 @@
 					"tags": [
 						"Weapon"
 					],
-					"jamChanceBonus": -0.05
+					"jamChanceMulti": 0.85
 				}
 			]
 		},
@@ -1005,8 +1009,8 @@
 			"groups": [{
 				"weaponGroupName": "Melee",
 				"tags": ["Weapon.Melee"],
-				"armorDamageMulti": 0.96,
-				"structureDamageMulti": 0.96,
+				"armorDamageMulti": 0.95,
+				"structureDamageMulti": 0.95,
 				"scope": "component"
 			}]
 		},
