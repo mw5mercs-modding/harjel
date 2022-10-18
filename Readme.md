@@ -22,6 +22,8 @@ Much of this mod is inspired by or based on stuff from Roguetech, arguably my fa
 - **Advanced Small Cockpit** - Frees up a slot in the head
 - **Heat Dissipating Armor** - 50% less heat damage taken from Flamers and inferno missiles for a little bulk.
 
+[Full list of equipments](equipment.md)
+
 ## Requirements
 
 The HarJel mod depends on YetAnotherMechLab (YAML). It makes use of the extended equipment property system provided by YAML. In fact, the requirements I
@@ -173,7 +175,10 @@ YAML by itself already provides the following properties:
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
 |`engineHeatsinkMulti`|Normally any engine above a 250 comes with external engine heatsinks (one per every 25 engine rating - 275 has one, 300 two, etc). This multiplier can be used to modify that number.|`0`|E||M|
+|`internalHeatsinkBonus`|Adds (or removes) internal engine heatsinks. This is typically used to strip heatsinks from the engine to save weight.|`-1`|E||M|
 |`heatCapacityBonus`|A bonus to the mech's total heat capacity.|`0.3`|E||M|
+|`coolingMulti`|A multiplier for the heat dissipation of the equipments (heat sinks) in the component or the entire mech (see also `coolingMultiScope`).|`1.1`|E|W|M|
+|`coolingMultiScope`|Defines to which mech parts the heat dissipation multi applies.  Can be either `component` or `mech`. Defaults to `mech`.|`1.1`|E|W||
 |`dmgEvasionChance`|A chance to avoid any incoming fire. At 1.0 this is quite similar to god-mode.|`0.05`|E||M|
 |`caseLevel`|The level of C.A.S.E. protection provided. Can be either `1` (ammo explosion damage does not spread to other components) or `2` (ammo explosion damage is reduced to `2` points of damage).|`1`|E||M|
 |`caseScope`|States which parts of the mech are protected by the `caseLevel`. Can be either `component` or `mech`.|`component`|E|||
