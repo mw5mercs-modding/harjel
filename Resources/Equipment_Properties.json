@@ -1125,10 +1125,12 @@
 		}
 	},
 	"ClanDHS79": {
-		"rarity": 0.1
+		"rarity": 0.1,
+		"module": "Clan"
 	},
 	"ClanLHS79": {
-		"rarity": 0.08
+		"rarity": 0.08,
+		"module": "Clan"
 	},
 	"CompactHeatSink79": {
 		"rarity": 0.1
@@ -1156,7 +1158,8 @@
 		"name": "Double Heat Sink Kit"
 	},
 	"CLAN_DHS_KIT": {
-		"rarity": 0.08
+		"rarity": 0.08,
+		"module": "Clan"
 	},
 	"COMPACT_HS_KIT": {
 		"rarity": 0.08
@@ -1382,7 +1385,8 @@
 		"mechConflicts": [
 			"PARTIAL_WING_SYSTEM",
 			"PARTIAL_WING_SYSTEM_C"
-		]
+		],
+		"rarity": 0.08
 	},
 	"PARTIAL_WING_SYSTEM_C": {
 		"category": "equipment.mobility",
@@ -1405,6 +1409,33 @@
 		"mechConflicts": [
 			"PARTIAL_WING_SYSTEM",
 			"PARTIAL_WING_SYSTEM_C"
-		]
+		],
+		"rarity": 0.05,
+		"module": "Clan"
+	},
+	"INTERLINKED_MYOMER_LEG": {
+		"loreAccurate": false,
+		"relativeWeight": 0.01,
+		"accelerationMulti": 1.05,
+		"rarity": 0.1
+	},
+	"MACHINED_PIVOT_POINT": {
+		"loreAccurate": false,
+		"relativeWeight": 0.01,
+		"turnSpeedMulti": 1.05,
+		"rarity": 0.1
+	},
+	"COOLING_LINES": {
+		"loreAccurate": false,
+		"category": "equipment.cooling",
+		"coolingMulti": 1.4,
+		"coolingMultiScope": "component",
+		"mechPartConflicts": [
+			"COOLING_LINES"
+		],
+		"invalidMechParts": [
+			"CenterTorso"
+		],
+		"rarity": 0.07
 	}
 }

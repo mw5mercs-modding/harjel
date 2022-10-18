@@ -2,12 +2,12 @@
 	"DHS_KIT_QS": {
 		"loreAccurate": false,
 		"rarity": 0.1,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"DHS_QS": {
 		"loreAccurate": false,
 		"rarity": 0.1,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"ENGINE_XL_QS": {
 		"loreAccurate": false,
@@ -21,7 +21,7 @@
 		"installCost": 35000,
 		"removeCost": 10000,
 		"engineRelativeWeight": -0.45,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"ENGINE_IC_XL_QS": {
 		"loreAccurate": false,
@@ -48,13 +48,13 @@
 		},
 		"armorRepairCostMulti": 0.75,
 		"armorRepairDaysMulti": 0.85,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"SENSORS_TC_QS": {
 		"loreAccurate": false,
 		"rarity": 0.1,
 		"sensorRangeMulti": 1.2,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"CASE_II_QS": {
 		"color": "(R=0,G=1,B=1,A=1)",
@@ -68,7 +68,7 @@
 			"ClanCASE_II",
 			"CASE_II_QS"
 		],
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"HYBRID_TSM_QS": {
 		"loreAccurate": false,
@@ -106,7 +106,7 @@
 			"tsmMulti": 1.25,
 			"topSpeedMulti": 1.15
 		},
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"UPPER_RECOIL_QS": {
 		"loreAccurate": false,
@@ -120,11 +120,11 @@
 					"tags": [
 						"Weapon"
 					],
-					"jamChanceBonus": -0.05
+					"jamChanceMulti": 0.85
 				}
 			]
 		},
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"ARMOR_DURALAST_QS": {
 		"loreAccurate": false,
@@ -154,7 +154,7 @@
 			}]
 		},
 		"rarity": 0.1,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"STRUCTURE_QS": {
 		"loreAccurate": false,
@@ -164,7 +164,7 @@
 		"structureRepairDaysMulti": 0.65,
 		"installCostScaling": 10,
 		"rarity": 0.1,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"ENDO_QS": {
 		"loreAccurate": false,
@@ -177,7 +177,7 @@
 			"dynamic": 10
 		},
 		"rarity": 0.1,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"STRUCTURE_ENDO_BULKY_QS": {
 		"loreAccurate": false,
@@ -190,7 +190,7 @@
 			"dynamic": 22
 		},
 		"rarity": 0.1,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"ARMOR_FERRO_QS": {
 		"loreAccurate": false,
@@ -211,7 +211,7 @@
 			"dynamic": 4
 		},
 		"rarity": 0.1,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"SPEEDY_LEG_QS": {
 		"loreAccurate": false,
@@ -221,7 +221,7 @@
 		"decelerationMulti": 0.92,
 		"turnSpeedMulti": 0.92,
 		"rarity": 0.1,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"STICK_AND_PEEL_QS": {
 		"loreAccurate": false,
@@ -240,7 +240,7 @@
 			"Head"
 		],
 		"rarity": 0.1,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"COMPACT_ACTUATOR_LOWER_QS": {
 		"loreAccurate": false,
@@ -259,7 +259,7 @@
 			]
 		},
 		"rarity": 0.05,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"COMPACT_ACTUATOR_UPPER_QS": {
 		"loreAccurate": false,
@@ -278,12 +278,12 @@
 			]
 		},
 		"rarity": 0.05,
-		"module": "quikcsell"
+		"module": "Quikcsell"
 	},
 	"ENGINE_HS_REMOVAL_QS": {
 		"loreAccurate": false,
 		"rarity": 0.05,
-		"module": "quikcsell",
+		"module": "Quikcsell",
 		"internalHeatsinkBonus": -1,
 		"invalidMechParts": [
 			"Head",
