@@ -254,17 +254,17 @@
 					"tags": [
 						"Weapon.Melee"
 					],
-					"damageMulti": 0.2
+					"damageMulti": 0.01
 				}
 			]
 		},
 		"rarity": 0.05,
 		"module": "Quikcsell"
 	},
-	"COMPACT_ACTUATOR_UPPER_QS": {
+	"COMPACT_ACTUATOR_HAND_QS": {
 		"loreAccurate": false,
-		"armTwistAngleMulti": 0.8,
-		"armTwistRateMulti": 0.8,
+		"armTwistAngleMulti": 0.6,
+		"armTwistRateMulti": 0.6,
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -273,7 +273,7 @@
 					"tags": [
 						"Weapon.Melee"
 					],
-					"damageMulti": 0.2
+					"damageMulti": 0.01
 				}
 			]
 		},
