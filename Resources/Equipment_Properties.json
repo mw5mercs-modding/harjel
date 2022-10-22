@@ -508,6 +508,8 @@
 				}
 			]
 		},
+		"armorComponentFront": 10,
+		"structureComponent": 5,
 		"loreAccurate": false
 	},
 	"UPPER_SPIKED": {
@@ -534,7 +536,43 @@
 				"scope": "component"
 			}]
 		},
-		"loreAccurate": false
+		"loreAccurate": false,
+		"module": "Pirate"
+	},
+	"SPIKED_FIST": {
+		"loreAccurate": false,
+		"relativeWeight": 0.025,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Punch",
+					"tags": [
+						"Weapon.Melee.Light.Punch",
+						"Weapon.Melee.Medium.Punch",
+						"Weapon.Melee.Heavy.Punch",
+						"Weapon.Melee.Assault.Punch"
+
+					],
+					"damageMulti": 1.2,
+					"cooldownMulti": 0.9
+				},
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon.Energy",
+						"Weapon.Missile",
+						"Weapon.ArtemisMissile",
+						"Weapon.Ballistic"
+					],
+					"cooldownMulti": 1.2,
+					"damageMulti": 0.85
+				}
+			]
+		},
+		"armorComponentFront": 10,
+		"structureComponent": 5,
+		"module": "Pirate"
 	},
 	"UPPER_ARMORED": {
 		"relativeWeight": 0.01,
@@ -1437,5 +1475,33 @@
 			"CenterTorso"
 		],
 		"rarity": 0.07
+	},
+	"IMPROVED_ACTUATORS": {
+		"loreAccurate": false,
+		"rarity": 0.04,
+		"armTwistAngleMulti": 1.2,
+		"armTwistRateMulti": 1.15
+	},
+	"BATTLE_FIST": {
+		"loreAccurate": false,
+		"rarity": 0.1,
+		"relativeWeight": 0.01,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Punch",
+					"tags": [
+						"Weapon.Melee.Light.Punch",
+						"Weapon.Melee.Medium.Punch",
+						"Weapon.Melee.Heavy.Punch",
+						"Weapon.Melee.Assault.Punch"
+					],
+					"damageMulti": 1.1
+				}
+			]
+		},
+		"armorComponentFront": 10,
+		"structureComponent": 5
 	}
 }
