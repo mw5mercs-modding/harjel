@@ -21,8 +21,7 @@ Much of this mod is inspired by or based on stuff from Roguetech, arguably my fa
 - **Command Console** - A big cockpit-mounted ECM with sensor and cooldown improvements
 - **Advanced Small Cockpit** - Frees up a slot in the head
 - **Heat Dissipating Armor** - 50% less heat damage taken from Flamers and inferno missiles for a little bulk.
-
-[Full list of equipments](equipment.md)
+- and much more... [Full list of equipments](equipment.md)
 
 ## Requirements
 
