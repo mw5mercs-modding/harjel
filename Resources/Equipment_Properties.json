@@ -1424,6 +1424,9 @@
 			"PARTIAL_WING_SYSTEM",
 			"PARTIAL_WING_SYSTEM_C"
 		],
+		"mechRequirements": [
+			"Equipment.JumpJets"
+		],
 		"rarity": 0.08
 	},
 	"PARTIAL_WING_SYSTEM_C": {
@@ -1447,6 +1450,9 @@
 		"mechConflicts": [
 			"PARTIAL_WING_SYSTEM",
 			"PARTIAL_WING_SYSTEM_C"
+		],
+		"mechRequirements": [
+			"Equipment.JumpJets"
 		],
 		"rarity": 0.05,
 		"module": "Clan"
