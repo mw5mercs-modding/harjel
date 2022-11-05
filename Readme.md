@@ -139,6 +139,7 @@ YAML by itself already provides the following properties:
 |`accelerationMulti`|Change the acceleration for the mech by this multiplier. Get fast faster (or slower).|`1.1`|E||M|
 |`decelerationMulti`|Change the deceleration for the mech by this multiplier. Get slow faster (or slower).|`1.1`|E||M|
 |`turnSpeedMulti`|Change the turn speed of the mech by this multiplier. Turn corners faster (or slower).|`1.1`|E||M|
+|`movementHeatMulti`|A multiplier for the heat a 'mech produces through movement. A typical example would be the XXL engine which doubles the movement heat.|`2.0`|E||M|
 
 ##### Sensor Properties
 |Property|Description|Example|E|W|M|
@@ -157,15 +158,14 @@ YAML by itself already provides the following properties:
 |`jumpJetFuelBurnTimeMulti`|Raise (or lower) the time jump jet fuel burns. Values above 1 mean that the mech can jump higher.|`1.1`|E||M|
 |`jumpJetFuelRegenTimeMulti`|Lower (or raise) the time it takes to regenerate the jump jet fuel. Values below 1 mean faster regen.|`0.9`|E||M|
 |`jumpJetHeatMulti`|Lower (or raise) the heat produced by jump jet usage. Values below 1 mean less heat production.|`0.9`|E||M|
+|`gravityScale`|Lower (or raise) the gravity for the mech. This allows to let the mech fall down slower after a jump.|`0.5`|E||M|
 
 #### Pilot Skill Properties
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
-|`gunnerySkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
 |`ballisticSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
 |`missileSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
 |`energySkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
-|`pilotingSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
 |`evasionSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
 |`shieldingSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|
 |`heatManagementSkillBonus`|A bonus/modifier for a pilot skill, can be positive or negative.|`2`|E||M|

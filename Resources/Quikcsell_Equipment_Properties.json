@@ -34,8 +34,9 @@
 		"installCostScaling": 12,
 		"installCost": 35000,
 		"removeCost": 10000,
-		"topSpeedMulti": 0.85,"weapons": {
-			"scope": "component",
+		"topSpeedMulti": 0.85,
+		"weapons": {
+			"scope": "mech",
 			"groups": [
 				{
 					"weaponGroupName": "Weapon",
