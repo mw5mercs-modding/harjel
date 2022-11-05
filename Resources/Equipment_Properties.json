@@ -1509,5 +1509,29 @@
 		},
 		"armorComponentFront": 10,
 		"structureComponent": 5
+	},
+	"IMPROVED_LIFE_SUPPORT": {
+		"rarity": 0.05,
+		"armorComponentFront": 2,
+		"pilotDeathPercMult": 0.7,
+		"category": "equipment.misc"
+	},
+	"EVASION_SUPPORT_1": {
+		"loreAccurate": false,
+		"rarity": 0.02,
+		"category": "equipment.misc",
+		"evasionSkillBonus": 2
+	},
+	"SHIELDING_SUPPORT_1": {
+		"loreAccurate": false,
+		"rarity": 0.02,
+		"category": "equipment.misc",
+		"shieldingSkillBonus": 2
+	},
+	"HEAT_MANAGEMENT_SUPPORT_1": {
+		"loreAccurate": false,
+		"rarity": 0.02,
+		"category": "equipment.misc",
+		"heatManagementSkillBonus": 2
 	}
 }
