@@ -1280,7 +1280,8 @@
 		"armorRepairDaysMulti": 1.1
 	},
 	"COCKPIT_PRIMITIVE": {
-		"pilotingSkillBonus": -1,
+		"noEjectionSystem": true,
+		"pilotDeathPercMult": 3,
 		"installCostScaling": 15,
 		"removeCost": 25000,
 		"removeDays": 5
@@ -1533,5 +1534,19 @@
 		"rarity": 0.02,
 		"category": "equipment.misc",
 		"heatManagementSkillBonus": 2
+	},
+	"FERRO_LAMELLOR_CLAN": {
+		"description": "Created by the Scientist caste of Clan Snow Raven in 3070, Ferro-Lamellor armor is based on the Ferro-Carbide armor used in the Raven's WarShips. Scaled down for use on 'Mechs, AeroSpace Fighters, and tanks, the experimental Ferro-Lamellor armor offers improved protection, beyond even that of the Ferro-Fibrous armor family.\n\nThough it only offers 88% coverage compared to standard armor , Ferro-Lamellor has a unique property: It reduces the damage of weapon strikes by 20%. In addition, the armor will reinforce the structure of the unit mounting it.\nRequires 12 dynamic slots.",
+		"fillerSlots": {
+			"dynamic": 12
+		},
+		"armorPerTon": 28,
+		"rarity": 0.01,
+		"installCost": 20000,
+		"installCostScaling": 10,
+		"armorMulti": 1.25,
+		"structureMulti": 1.2,
+		"armorRepairCostMulti": 2,
+		"armorRepairDaysMulti": 2
 	}
 }
