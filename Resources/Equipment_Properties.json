@@ -901,9 +901,9 @@
 			"scope": "mech",
 			"groups": [
 				{
-					"weaponGroupName": "Energy",
+					"weaponGroupName": "Laser",
 					"tags": [
-						"Weapon.Energy"
+						"Weapon.Energy.Laser"
 					],
 					"heatMulti": 0.9,
 					"damageMulti": 1.1,
