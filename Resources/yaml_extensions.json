@@ -13,5 +13,10 @@
 	"name": "HeatsinkKitHandler",
 	"type": "mech",
 	"actorClassPath": "/harjel/Extensions/HeatSinkKitsHandler.HeatSinkKitsHandler_C"
+},
+{
+	"name": "harjel-global-misc",
+	"type": "global",
+	"actorClassPath": "/harjel/Extensions/YAEC_GlobalMisc.YAEC_GlobalMisc_C"
 }
 ]
