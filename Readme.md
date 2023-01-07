@@ -147,6 +147,9 @@ YAML by itself already provides the following properties:
 |`sensorRangeBonus`|A fixed bonus to the sensor range in meters.|`2000`|E||M|
 |`sensorRangeMulti`|A multiplier for the sensor range.|`1.5`|E||M|
 |`sensorFov`|The value of the sensor's field of view in degrees. Use `360` for the ultimate sensor upgrade.|`360`|E||M|
+|`sensorRangeBonusLance`|A fixed bonus to the sensor range in meters which applies to the entire lance, or more precisely all friendly mechs.|`2000`|E||M|
+|`sensorRangeMultiLance`|A multiplier for the sensor range which applies to the entire lance, or more precisely all friendly mechs.|`1.5`|E||M|
+|`sensorFovLance`|The value of the sensor's field of view in degrees which applies to the entire lance, or more precisely all friendly mechs. Use `360` for the ultimate sensor upgrade.|`360`|E||M|
 
 ##### Jump-Jet related Properties
 |Property|Description|Example|E|W|M|
@@ -196,6 +199,8 @@ YAML by itself already provides the following properties:
 |`weapons`|A json object containing weapon bonus properties as described below.||E||M|
 |`armorDamageMulti`|A multiplier for the damage dealt to armor. This allows to create weapons that do more or less damage to armor.||W||
 |`structureDamageMulti`|A multiplier for the damage dealt to structure. This allows to create weapons that do more or less damage to structure.||W||
+|`jamChance`|A chance (0 to 1) for the weapon to jam on fireing. This works on any weapon and has no relation to the fire while in cooldown that UACs use. Should be combined with a proper value for `jamDuration`.||W||
+|`jamDuration`|The time in seconds that a weapon is jammed. Does only make sense in combination with `jamDuration`. Defaults to 2.5 times the cooldown time of the weapon.||W||
 
 The special property `weapons` allows to define a multitude of weapon modifiers ranging from a simple PPC range upgrade to cooldown modifiers for SRM6 launchers.
 
