@@ -734,6 +734,11 @@
 			"MASC_MKIII",
 			"MASC_MKIV",
 			"MASC_MKV",
+			"C79_MASC_MKI",
+			"C79_MASC_MKII",
+			"C79_MASC_MKIII",
+			"C79_MASC_MKIV",
+			"C79_MASC_MKV",
 			"Equipment.MASC",
 			"HYBRID_TSM_QS",
 			"COCKPIT_HOTSEAT"
@@ -1413,6 +1418,26 @@
 		},
 		"features": [
 			"tsm"
+		],
+		"mechConflicts": [
+			"TSMYOMER",
+			"TSMYOMER_H",
+			"TSMYOMER_L",
+			"TSMYOMER_M",
+			"MASC_MKI",
+			"MASC_MKII",
+			"MASC_MKIII",
+			"MASC_MKIV",
+			"MASC_MKV",
+			"C79_MASC_MKI",
+			"C79_MASC_MKII",
+			"C79_MASC_MKIII",
+			"C79_MASC_MKIV",
+			"C79_MASC_MKV",
+			"Equipment.MASC",
+			"HYBRID_TSM_QS",
+			"COCKPIT_HOTSEAT",
+			"ENDO_TSM"
 		]
 	},
 	"PARTIAL_WING_SYSTEM": {
