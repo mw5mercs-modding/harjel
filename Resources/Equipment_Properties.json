@@ -369,6 +369,18 @@
 			"dynamic": 5
 		}
 	},
+	"ENDO_COMPOSITE_STRUCTURE_CLAN": {
+		"structureWeightMulti": "0.75",
+		"rarity": 0.08,
+		"installCost": 90000,
+		"removeCost": 9000,
+		"installCostScaling": 10,
+		"structureRepairCostMulti": 1.45,
+		"structureRepairDaysMulti": 1.3,
+		"fillerSlots": {
+			"dynamic": 3
+		}
+	},
 	"STEALTH_ARMOR": {
 		"stealth": true,
 		"armorPerTon": 32,
