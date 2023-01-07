@@ -759,8 +759,8 @@
 	"SLIC_SUITE": {
 		"loreAccurate": false,
 		"rarity": 0.02,
-		"evasionSkillBonus": 3,
-		"sensorRangeMulti": 1.15
+		"evasionSkillBonus": 2,
+		"sensorRangeMultiLance": 1.15
 	},
 	"GYRO_MELEE": {
 		"loreAccurate": false,
