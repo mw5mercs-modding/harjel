@@ -1165,7 +1165,6 @@
 		"rarity": 0.02,
 		"installCostScaling": 10,
 		"minTonnage": 60,
-		"sensorRangeMulti": 1.6,
 		"weapons": {
 			"scope": "mech",
 			"groups": [
@@ -1177,7 +1176,9 @@
 					"cooldownMulti": 0.92
 				}
 			]
-		}
+		},
+		"sensorRangeMultiLance": 1.6,
+		"sensorFovLance": 360
 	},
 	"ClanDHS79": {
 		"rarity": 0.1,
