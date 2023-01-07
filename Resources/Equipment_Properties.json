@@ -72,9 +72,9 @@
 	"HARJEL_I": {
 		"armorComponentFrontMulti": 1.1,
 		"armorComponentRearMulti": 1.1,
-		"selfRepairArmor": 1,
-		"selfRepairStructure": 0.5,
-		"selfRepairDuration": 5,
+		"selfRepairArmor": 0.5,
+		"selfRepairStructure": 0.25,
+		"selfRepairDuration": 8,
 		"selfRepairInterval": 1,
 		"selfRepairScope": "component",
 		"mechPartConflicts": [
@@ -96,9 +96,9 @@
 	"HARJEL_II": {
 		"armorComponentFrontMulti": 1.1,
 		"armorComponentRearMulti": 1.1,
-		"selfRepairArmor": 2,
-		"selfRepairStructure": 1,
-		"selfRepairDuration": 5,
+		"selfRepairArmor": 1,
+		"selfRepairStructure": 0.5,
+		"selfRepairDuration": 8,
 		"selfRepairInterval": 1,
 		"selfRepairScope": "component",
 		"mechPartConflicts": [
@@ -120,9 +120,9 @@
 	"HARJEL_III": {
 		"armorComponentFrontMulti": 1.1,
 		"armorComponentRearMulti": 1.1,
-		"selfRepairArmor": 4,
-		"selfRepairStructure": 2,
-		"selfRepairDuration": 5,
+		"selfRepairArmor": 2,
+		"selfRepairStructure": 1,
+		"selfRepairDuration": 8,
 		"selfRepairInterval": 1,
 		"selfRepairScope": "component",
 		"mechPartConflicts": [
@@ -168,9 +168,9 @@
 	"BLACK_CARAPACE": {
 		"loreAccurate": false,
 		"description": "The Black Carapace is the result of a secret research project which integrated the HarJel self-repair system directly into the armor plates. As a result the armor is slightly more bulky and heavier but the self-repair effect makes more than up for this.\nHowever, due to the compact build weapon heat can be vented less effectively.\n\nReserves 1 slot per Location except Head.",
-		"selfRepairArmor": 2,
-		"selfRepairStructure": 1,
-		"selfRepairDuration": 8,
+		"selfRepairArmor": 1,
+		"selfRepairStructure": 0.5,
+		"selfRepairDuration": 13,
 		"selfRepairInterval": 1,
 		"selfRepairScope": "mech",
 		"fillerSlots": {
@@ -204,9 +204,9 @@
 	"HARDENED_FERRO": {
 		"loreAccurate": false,
 		"description": "Advances in Material Sciences since and recovered from the Star League in combination with RISC ingenuity allowed the creation of this Armor. Combining the Toughness of Hardened Structure and the weight savings of Heavy Ferro with a refurbished unique HarJel Self Repair System does this Armor turn anything into an undying Juggernaut.\n\nReserves 2 slots in every component except the head.",
-		"selfRepairArmor": 3.5,
-		"selfRepairStructure": 2,
-		"selfRepairDuration": 4,
+		"selfRepairArmor": 1.8,
+		"selfRepairStructure": 1,
+		"selfRepairDuration": 6,
 		"selfRepairInterval": 1,
 		"selfRepairScope": "mech",
 		"caseLevel": 2,
