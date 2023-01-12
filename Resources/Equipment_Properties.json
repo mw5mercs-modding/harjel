@@ -271,13 +271,12 @@
 					"Weapon.Missile",
 					"Weapon.ArtemisMissile"
 				],
-				"spreadRadiusMulti": 0.6,
-				"spreadDistanceMulti": 1.4,
+				"spreadRadiusMulti": 0.7,
+				"spreadDistanceMulti": 1.3,
 				"speedMulti": 1.2,
-				"damageMulti": 1.15,
 				"cooldownMulti": 0.8
 			}],
-			"lockonTimeMulti": 0.7
+			"lockonTimeMulti": 0.75
 		},
 		"rarity": 0.1
 	},
@@ -288,10 +287,9 @@
 				"tags": [
 					"Weapon.Ballistic"
 				],
-				"spreadRadiusMulti": 0.6,
-				"spreadDistanceMulti": 1.4,
+				"spreadRadiusMulti": 0.7,
+				"spreadDistanceMulti": 1.3,
 				"speedMulti": 1.2,
-				"damageMulti": 1.15,
 				"cooldownMulti": 0.8
 			}]
 		},
@@ -304,10 +302,9 @@
 				"tags": [
 					"Weapon.Energy.ParticleCannon"
 				],
-				"spreadRadiusMulti": 0.6,
-				"spreadDistanceMulti": 1.4,
+				"spreadRadiusMulti": 0.7,
+				"spreadDistanceMulti": 1.3,
 				"speedMulti": 1.2,
-				"damageMulti": 1.10,
 				"cooldownMulti": 0.8
 			}]
 		},
@@ -320,8 +317,7 @@
 				"tags": [
 					"Weapon.Energy.Laser"
 				],
-				"durationMulti": 0.7,
-				"damageMulti": 1.15,
+				"durationMulti": 0.75,
 				"cooldownMulti": 0.8
 			}]
 		},
@@ -923,7 +919,6 @@
 						"Weapon.Energy.Laser"
 					],
 					"heatMulti": 0.9,
-					"damageMulti": 1.1,
 					"durationMulti": 0.85,
 					"cooldownMulti": 0.9
 				}
@@ -944,7 +939,6 @@
 					],
 					"spreadRadiusMulti": 0.8,
 					"spreadDistanceMulti": 1.2,
-					"damageMulti": 1.1,
 					"cooldownMulti": 0.9,
 					"speedMulti": 1.1
 				}
@@ -967,7 +961,6 @@
 					"spreadRadiusMulti": 0.9,
 					"spreadDistanceMulti": 1.1,
 					"speedMulti": 1.1,
-					"damageMulti": 1.1,
 					"cooldownMulti": 0.9
 				}
 			],
@@ -989,7 +982,6 @@
 					"spreadRadiusMulti": 0.8,
 					"spreadDistanceMulti": 1.2,
 					"speedMulti": 1.1,
-					"damageMulti": 1.1,
 					"cooldownMulti": 0.9
 				}
 			]
