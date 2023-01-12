@@ -860,16 +860,18 @@
 		"rarity": 0.03,
 		"evasionSkillBonus": 3
 	},
-	"TCOMP_MODULAR": {
-		"description": "The modular Targeting Computer allows Battle Computer upgrades to be installed on the mech.\n\nAllows Battle Computer upgrades.",
+	"TCOMP_MODULAR_BC": {
 		"loreAccurate": false,
-		"rarity": 0.03
+		"rarity": 0.03,
+		"features": [
+			"modularTc"
+		]
 	},
 	"Equipment.Misc.BattleComputer": {
 		"rarity": 0.01,
 		"loreAccurate": false,
-		"mechRequirements": [
-			"Equipment.Targeting.Modular"
+		"requiredFeatures": [
+			"modularTc"
 		],
 		"color": "(R=1,G=0.26,B=0,A=1)",
 		"category": "equipment.electronics"
@@ -1012,8 +1014,7 @@
 			"BC_ARTEMIS_V"
 		],
 		"mechRequirements": [
-			"Weapon.ArtemisMissile",
-			"Equipment.Targeting.Modular"
+			"Weapon.ArtemisMissile"
 		]
 	},
 	"BC_PILOTING": {
@@ -1170,7 +1171,10 @@
 			]
 		},
 		"sensorRangeMultiLance": 1.6,
-		"sensorFovLance": 360
+		"sensorFovLance": 360,
+		"features": [
+			"modularTc"
+		]
 	},
 	"ClanDHS79": {
 		"rarity": 0.1,
