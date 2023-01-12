@@ -599,7 +599,7 @@
 				"tags": ["Weapon"],
 				"armorDamageMulti": 0.9,
 				"structureDamageMulti": 0.9,
-				"scope": "mech"
+				"scope": "component"
 			}]
 		},
 		"loreAccurate": false,
