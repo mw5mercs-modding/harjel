@@ -67,6 +67,7 @@ YAML by itself already provides the following properties:
 |`fixed`|If `true` the equipment cannot be removed and is considered a fixed equipment. It will not show up in the inventory. This should be combined with autoamtic repair for the equipment asset. The salvage probability can either be set to 0 to prevent salvage completely or the salvaged item can be changed via `salvageInto`. Fixed items can be used to create custom mech variants.|`true`|E|W||
 |`introYear`|Override the introduction year of an equipment. This is mostly interesting for mods which support both vanilla and YAML to hide equipment in vanilla.|`3078`|E|||
 |`slots`|Override the slot count of an equipment.|`3`|E|||
+|`features`|A list of features the equipment or entire mech supports. This can either be one of the pre-defined ones (See below for a list of supported features) or a random string which acts as a value for the `requiredFeatures` property.|`3`|E||M|
 
 ##### Engine Properties
 |Property|Description|Example|E|W|M|
@@ -109,6 +110,8 @@ YAML by itself already provides the following properties:
 |`mechConflicts`|A list of equipments which cannot be installed in the mech in combination with this equipment.|`["HARJEL_II", "HARHEL_III"]`|E|W||
 |`mechPartRequirements`|A list of equipments which need to be installed in the same location as this equipment. This can be either equipment names or tag names.|`GuardianECM` or `Equipment.ECM`|E|W||
 |`mechRequirements`|A list of equipments which need to be installed in the mech in combination with this equipment. This can be either equipment names or tag names.|`GuardianECM` or `Equipment.ECM`|E|W||
+|`requiredFeatures`|A list of features (See property `features`) which need to be present in the mech in combination with this equipment.|`["tsm"]`|E|W||
+
 
 ##### Armor and Structure Properties
 |Property|Description|Example|E|W|M|
@@ -418,9 +421,24 @@ In addition to the equipment properties provided by YAML the HarJel mod adds the
 }
 ```
 
+#### Features
+
+Properties `features` and `requiredFeatures` deal with sets of strings representing features that an equipment or the entire mech supports. YAML itself knows the following features:
+
+|Feature|Description|
+|---|---|
+|`tsm`|Enables TSM for the mech, meaning melee damage and speed will scale with mech heat.|
+|`searchlight`|If present the mech supports an additional, stronger setting for the mech light.|
+|`predictiveTargeting`|Enables a crosshair on the HUD at the optimal aim location.|
+
+Additional features can be defined by mods to act as equipment restrictions using `requiredFeatures`.
+
+
 #### Mech Quirks
 
 Mech quirks can be defined in a file called `quirks.json` in the `Resources` directory. The file contains a map of quirks where each quirk has a `name`, a `description`, an optional `color` and a set of `properties`. The supported properties are listed above and are marked in the `M` column as being compatible with mech quirks.
+
+**Important**: each mod can have its own set of `quirks.json` and `mechs.json`. YAML will merge all quirks and definitions from all mods. Mods with a higher load order will overwrite mech entries in case of duplicates. This also means that there is no need to re-define quirks which already exist in YAML.
 
 The key of the quirk object can be arbitrary as it is only used to reference the quirk in the mech definitions.
 
