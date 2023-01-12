@@ -903,6 +903,7 @@
 						"Weapon"
 					],
 					"maxRangeMulti": 1.1,
+					"optimalRangeMulti": 1.1,
 					"minRangeMulti": 0.5
 				}
 			]
