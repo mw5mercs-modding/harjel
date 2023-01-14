@@ -76,6 +76,7 @@
 		"selfRepairStructure": 0.25,
 		"selfRepairDuration": 8,
 		"selfRepairInterval": 1,
+		"selfRepairDegradation": 0.95,
 		"selfRepairScope": "component",
 		"mechPartConflicts": [
 			"HARJEL_I"
@@ -100,6 +101,7 @@
 		"selfRepairStructure": 0.5,
 		"selfRepairDuration": 8,
 		"selfRepairInterval": 1,
+		"selfRepairDegradation": 0.95,
 		"selfRepairScope": "component",
 		"mechPartConflicts": [
 			"HARJEL_II"
@@ -124,6 +126,7 @@
 		"selfRepairStructure": 1,
 		"selfRepairDuration": 8,
 		"selfRepairInterval": 1,
+		"selfRepairDegradation": 0.95,
 		"selfRepairScope": "component",
 		"mechPartConflicts": [
 			"HARJEL_III"
@@ -172,6 +175,7 @@
 		"selfRepairStructure": 0.5,
 		"selfRepairDuration": 13,
 		"selfRepairInterval": 1,
+		"selfRepairDegradation": 0.95,
 		"selfRepairScope": "mech",
 		"fillerSlots": {
 			"CenterTorso": 1,
@@ -208,6 +212,7 @@
 		"selfRepairStructure": 1,
 		"selfRepairDuration": 6,
 		"selfRepairInterval": 1,
+		"selfRepairDegradation": 0.95,
 		"selfRepairScope": "mech",
 		"caseLevel": 2,
 		"caseScope": "mech",

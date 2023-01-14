@@ -13,6 +13,10 @@
 		"label": "Self-repair interval",
 		"unit": "sec"
 	},
+	"selfRepairDegradation": {
+		"label": "Self-repair degradation factor",
+		"unit": "multi"
+	},
 	"selfRepairScope": {
 		"label": "Self-repair scope"
 	},
