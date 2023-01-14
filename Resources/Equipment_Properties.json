@@ -265,6 +265,14 @@
 				],
 				"armorDamageMulti": 0.85,
 				"scope": "mech"
+			},{
+				"weaponGroupName": "Re-Engineered Laser",
+				"tags": [
+					"Weapon.Energy.Laser.RELaser",
+					"Weapon.Energy.Laser.Re"
+				],
+				"armorDamageMulti": 1.15,
+				"scope": "mech"
 			}]
 		}
 	},
@@ -474,6 +482,14 @@
 				],
 				"armorDamageMulti": 0.85,
 				"structureDamageMulti": 0.6,
+				"scope": "mech"
+			},{
+				"weaponGroupName": "Re-Engineered Laser",
+				"tags": [
+					"Weapon.Energy.Laser.RELaser",
+					"Weapon.Energy.Laser.Re"
+				],
+				"armorDamageMulti": 1.15,
 				"scope": "mech"
 			}]
 		},
@@ -1635,6 +1651,61 @@
 		"armorMulti": 1.25,
 		"structureMulti": 1.2,
 		"armorRepairCostMulti": 2,
-		"armorRepairDaysMulti": 2
+		"armorRepairDaysMulti": 2,
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Re-Engineered Laser",
+				"tags": [
+					"Weapon.Energy.Laser.RELaser",
+					"Weapon.Energy.Laser.Re"
+				],
+				"armorDamageMulti": 1.25,
+				"scope": "mech"
+			}]
+		}
+	},
+	"BLUE_SHIELD_PARTICLE_FIELD_DAMPER": {
+		"category": "equipment.internal",
+		"color": "(R=1.0,G=0.26,B=0,A=1)",
+		"rarity": 0.01,
+		"fillerSlots": {
+			"LeftTorso": 1,
+			"RightTorso": 1,
+			"LeftArm": 1,
+			"RightArm": 1,
+			"LeftLeg": 1,
+			"RightLeg": 1
+		},
+		"invalidMechParts": [
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg",
+			"Head",
+			"RightTorso",
+			"LeftTorso"
+		],
+		"mechConflicts": [
+			"BLUE_SHIELD_PARTICLE_FIELD_DAMPER"
+		],
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "PPC",
+				"tags": [
+					"Weapon.Energy.ParticleCannon"
+				],
+				"armorDamageMulti": 0.15,
+				"structureDamageMulti": 0.15,
+				"scope": "mech"
+			},{
+				"weaponGroupName": "Energy",
+				"tags": [
+					"Weapon.Energy"
+				],
+				"armorDamageMulti": 0.35,
+				"structureDamageMulti": 0.35,
+				"scope": "mech"
+			}]
+		}
 	}
 }
