@@ -48,12 +48,25 @@
 		"label": "Maximum amount of JJ allowed by walk MP"
 	},
 	"heatActivationThreshold": {
-		"label": "Heat threshold for activation",
+		"label": "Activates when heat above",
 		"unit": "percent"
 	},
 	"heatDeactivationThreshold": {
-		"label": "Heat threshold for normalization",
+		"label": "Deactivates when heat below",
 		"unit": "percent"
+	},
+	"heatActivationThresholdAbs": {
+		"label": "Activates when heat above"
+	},
+	"heatDeactivationThresholdAbs": {
+		"label": "Deactivates when heat below"
+	},
+	"autoDeactivationTime": {
+		"label": "Deactivates after",
+		"unit": "sec"
+	},
+	"heatDissipationOnActivation": {
+		"label": "Heat dissipation on activation"
 	},
 	"heatFailureChancePerSec": {
 		"label": "Failure chance per second",

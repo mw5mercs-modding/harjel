@@ -295,5 +295,77 @@
 			"LeftTorso",
 			"RightTorso"
 		]
+	},
+	"THERMAL_MASS_SMALL_QS": {
+		"loreAccurate": false,
+		"rarity": 0.05,
+		"category": "equipment.cooling",
+		"module": "Quikcsell",
+		"heatActivationThresholdAbs": 32,
+		"autoDeactivationTime": 20.0,
+		"heatDissipationOnActivation": 14,
+		"activeProperties": {
+			"heat": 0.2
+		},
+		"mechConflicts": [
+			"THERMAL_MASS_SMALL_QS",
+			"THERMAL_MASS_MEDIUM_QS",
+			"THERMAL_MASS_LARGE_QS"
+		],
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		]
+	},
+	"THERMAL_MASS_MEDIUM_QS": {
+		"loreAccurate": false,
+		"rarity": 0.05,
+		"category": "equipment.cooling",
+		"module": "Quikcsell",
+		"heatActivationThresholdAbs": 32,
+		"autoDeactivationTime": 20.0,
+		"heatDissipationOnActivation": 24,
+		"activeProperties": {
+			"heat": 0.4
+		},
+		"mechConflicts": [
+			"THERMAL_MASS_SMALL_QS",
+			"THERMAL_MASS_MEDIUM_QS",
+			"THERMAL_MASS_LARGE_QS"
+		],
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		]
+	},
+	"THERMAL_MASS_LARGE_QS": {
+		"loreAccurate": false,
+		"rarity": 0.05,
+		"category": "equipment.cooling",
+		"module": "Quikcsell",
+		"heatActivationThresholdAbs": 32,
+		"autoDeactivationTime": 20.0,
+		"heatDissipationOnActivation": 38,
+		"activeProperties": {
+			"heat": 0.6
+		},
+		"mechConflicts": [
+			"THERMAL_MASS_SMALL_QS",
+			"THERMAL_MASS_MEDIUM_QS",
+			"THERMAL_MASS_LARGE_QS"
+		],
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		]
 	}
 }
