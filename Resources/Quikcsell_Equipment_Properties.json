@@ -311,13 +311,6 @@
 			"THERMAL_MASS_SMALL_QS",
 			"THERMAL_MASS_MEDIUM_QS",
 			"THERMAL_MASS_LARGE_QS"
-		],
-		"invalidMechParts": [
-			"Head",
-			"LeftArm",
-			"RightArm",
-			"LeftLeg",
-			"RightLeg"
 		]
 	},
 	"THERMAL_MASS_MEDIUM_QS": {
@@ -335,13 +328,6 @@
 			"THERMAL_MASS_SMALL_QS",
 			"THERMAL_MASS_MEDIUM_QS",
 			"THERMAL_MASS_LARGE_QS"
-		],
-		"invalidMechParts": [
-			"Head",
-			"LeftArm",
-			"RightArm",
-			"LeftLeg",
-			"RightLeg"
 		]
 	},
 	"THERMAL_MASS_LARGE_QS": {
@@ -359,13 +345,6 @@
 			"THERMAL_MASS_SMALL_QS",
 			"THERMAL_MASS_MEDIUM_QS",
 			"THERMAL_MASS_LARGE_QS"
-		],
-		"invalidMechParts": [
-			"Head",
-			"LeftArm",
-			"RightArm",
-			"LeftLeg",
-			"RightLeg"
 		]
 	}
 }
