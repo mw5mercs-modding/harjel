@@ -18,5 +18,10 @@
 	"name": "harjel-global-misc",
 	"type": "global",
 	"actorClassPath": "/harjel/Extensions/YAEC_GlobalMisc.YAEC_GlobalMisc_C"
+},
+{
+	"name": "harjel-properties",
+	"type": "properties",
+	"actorClassPath": "/harjel/Extensions/YAEC_PropertiesHandler.YAEC_PropertiesHandler_C"
 }
 ]
