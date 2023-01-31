@@ -5,23 +5,23 @@
 		"installCostScaling": 10
 	},
 	"MODULAR_ARMOR_MK1_FRONT": {
-		"maxArmorComponent": 8,
+		"armorComponentFront": 8,
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK2_FRONT": {
-		"maxArmorComponent": 16,
+		"armorComponentFront": 16,
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK3_FRONT": {
-		"maxArmorComponent": 24,
+		"armorComponentFront": 24,
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK4_FRONT": {
-		"maxArmorComponent": 32,
+		"armorComponentFront": 32,
 		"rarity": 0.05
 	},
 	"MODULAR_ARMOR_MK1_REAR": {
-		"maxArmorComponent": 8,
+		"armorComponentRear": 8,
 		"invalidMechParts": [
 			"Head",
 			"LeftArm",
@@ -32,7 +32,7 @@
 		"rarity": 0.05
 	},
 	"MODULAR_ARMOR_MK2_REAR": {
-		"maxArmorComponent": 16,
+		"armorComponentRear": 16,
 		"invalidMechParts": [
 			"Head",
 			"LeftArm",
@@ -43,7 +43,7 @@
 		"rarity": 0.05
 	},
 	"MODULAR_ARMOR_MK3_REAR": {
-		"maxArmorComponent": 24,
+		"armorComponentRear": 24,
 		"invalidMechParts": [
 			"Head",
 			"LeftArm",
@@ -54,7 +54,7 @@
 		"rarity": 0.05
 	},
 	"MODULAR_ARMOR_MK4_REAR": {
-		"maxArmorComponent": 32,
+		"armorComponentRear": 32,
 		"invalidMechParts": [
 			"Head",
 			"LeftArm",
@@ -156,20 +156,17 @@
 	"PATCHWORK_T1": {
 		"rarity": 0.04,
 		"installCost": 30000,
-		"removeCost": 3000,
-		"componentArmorWeightMulti": 0.85
+		"removeCost": 3000
 	},
 	"PATCHWORK_T2": {
 		"rarity": 0.03,
 		"installCost": 45000,
-		"removeCost": 4500,
-		"componentArmorWeightMulti": 0.7
+		"removeCost": 4500
 	},
 	"PATCHWORK_T3": {
 		"rarity": 0.02,
 		"installCost": 60000,
-		"removeCost": 6000,
-		"componentArmorWeightMulti": 0.55
+		"removeCost": 6000
 	},
 	"BLACK_CARAPACE": {
 		"loreAccurate": false,
