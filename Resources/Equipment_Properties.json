@@ -150,7 +150,10 @@
 		"mechPartConflicts": [
 			"PATCHWORK_T1",
 			"PATCHWORK_T2",
-			"PATCHWORK_T3"
+			"PATCHWORK_T3",
+			"PATCHWORK_T1_FERRO",
+			"PATCHWORK_T2_FERRO",
+			"PATCHWORK_T3_FERRO"
 		]
 	},
 	"PATCHWORK_T1": {
@@ -167,6 +170,27 @@
 		"rarity": 0.02,
 		"installCost": 60000,
 		"removeCost": 6000
+	},
+	"PATCHWORK_T1_FERRO": {
+		"rarity": 0.04,
+		"installCost": 30000,
+		"removeCost": 3000,
+		"maxArmorComponent": 12,
+		"componentArmorWeightMulti": 0.88
+	},
+	"PATCHWORK_T2_FERRO": {
+		"rarity": 0.03,
+		"installCost": 45000,
+		"removeCost": 4500,
+		"maxArmorComponent": 24,
+		"componentArmorWeightMulti": 0.88
+	},
+	"PATCHWORK_T3_FERRO": {
+		"rarity": 0.02,
+		"installCost": 60000,
+		"removeCost": 6000,
+		"maxArmorComponent": 36,
+		"componentArmorWeightMulti": 0.88
 	},
 	"BLACK_CARAPACE": {
 		"loreAccurate": false,
