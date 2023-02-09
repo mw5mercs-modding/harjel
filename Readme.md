@@ -122,6 +122,8 @@ YAML by itself already provides the following properties:
 |`armorComponentRearMulti`|A multiplier that is applied to the rear armor of the mech part the equipment is installed in.|`"1.2"`|E|W||
 |`armorMulti`|A multiplier that is applied to the entire mech's armor.|`"2.0"`|E|W|M|
 |`armorBonus`|Absolute armor bonus values for each mech surface. The value is a json object which can contain one entry for each surface (`Head`, `CenterTorso`, `RearCenterTorso`, etc).|`{ "RightTorso": 20 }`|||M|
+|`maxArmorComponent`|An absolute value that is added to the max armor of the mech part the equipment is installed in.|`"35"`|E|W||
+|`maxArmorBonus`|Absolute max armor bonus values for each mech component. The value is a json object which can contain one entry for each component (`Head`, `CenterTorso`, etc).|`{ "RightTorso": 20 }`|E|W|M|
 |`structureComponent`|An absolute value that is added to the structure of the mech part the equipment is installed in.|`"35"`|E|W||
 |`structureComponentMulti`|A multiplier that is applied to the structure of the mech part the equipment is installed in.|`"1.1"`|E|W||
 |`structureMulti`|A multiplier that is applied to the entire mech's structure.|`"2.0"`|E|W|M|
@@ -133,10 +135,18 @@ YAML by itself already provides the following properties:
 ##### Movement and Mobility Properties
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
-|`torsoTwistAngleMulti`|Changes the torso twist angle (how far can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
-|`torsoTwistRateMulti`|Changes the torso twist rate (how fast can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
-|`armTwistAngleMulti`|Changes the arm twist angle (how far can the arms turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
-|`armTwistRateMulti`|Changes the arm twist rate (how fast can the arms turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`torsoTwistAngleMulti`|Changes the torso twist yaw and pitch angle (how far can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`torsoTwistAngleYawMulti`|Changes the torso twist yaw angle (how far can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`torsoTwistAnglePitchMulti`|Changes the torso twist pitch angle (how far can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`torsoTwistRateMulti`|Changes the torso twist yaw and pitch rate (how fast can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`torsoTwistRateYawMulti`|Changes the torso twist yaw rate (how fast can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`torsoTwistRatePitchMulti`|Changes the torso twist pitch rate (how fast can the torso turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`armTwistAngleMulti`|Changes the arm twist yaw and pitch angle (how far can the arms turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`armTwistAngleYawMulti`|Changes the arm twist yaw angle (how far can the arms turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`armTwistAnglePitchMulti`|Changes the arm twist pitch angle (how far can the arms turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`armTwistRateMulti`|Changes the arm twist yaw and pitch rate (how fast can the arms turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`armTwistRateYawMulti`|Changes the arm twist yaw rate (how fast can the arms turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
+|`armTwistRatePitchMulti`|Changes the arm twist pitch rate (how fast can the arms turn) via a multiplier. This is typically used on Gyros.|`1.10`|E||M|
 |`topSpeedMulti`|Change the top speed of the mech by this multiplier.|`1.1`|E||M|
 |`topSpeedReverseMulti`|Change the top reverse speed of the mech by this multiplier (or slower).|`1.1`|E||M|
 |`accelerationMulti`|Change the acceleration for the mech by this multiplier. Get fast faster (or slower).|`1.1`|E||M|
@@ -179,6 +189,8 @@ YAML by itself already provides the following properties:
 #### Misc Properties
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
+|`engineHeatsinkEfficiency`|Sets the efficiency of engine heat sinks (0.1 by default). Only relevant for heat sink kits.|`0.2`|E|||
+|`engineHeatsinkCapacity`|Sets the capycity of engine heat sinks (1 by default). Only relevant for heat sink kits.|`2`|E|||
 |`engineHeatsinkMulti`|Normally any engine above a 250 comes with external engine heatsinks (one per every 25 engine rating - 275 has one, 300 two, etc). This multiplier can be used to modify that number.|`0`|E||M|
 |`internalHeatsinkBonus`|Adds (or removes) internal engine heatsinks. This is typically used to strip heatsinks from the engine to save weight.|`-1`|E||M|
 |`heatCapacityBonus`|A bonus to the mech's total heat capacity.|`0.3`|E||M|
@@ -352,7 +364,8 @@ Groups have the following properties:
 |---|---|
 |`weaponGroupName`|The human-readable name of the weapon group which is also used for labelling the bonuses in the UI. Typically this would be something like "Laser" or "MRM".|
 |`tags`|An array of weapon tags which the modifiers apply for. The simplest value would be `["Weapon"]` which would cause the modifiers to be applied to all incoming weapons. See the examples below for more.|
-|`scope`|Can be either `mech` (default) or `component`. In the latter case the modifiers only apply to incoming damage in the same location. This property is ignored for mech quirks.|
+|`scope`|Can be either `mech` (default) or `component`. In the latter case the modifiers only apply to incoming damage in the same location. This property is ignored for mech quirks which always apply to the entire mech (unless `mechParts` is specified).|
+|`mechParts`|An optional array of mech parts the bonuses apply for. If specified overrides the `scope`. An example would be `["LeftArm", "RightArm"]`.|
 |`armorDamageMulti`|A multiplier for the damage caused to armor.|
 |`structureDamageMulti`|A multiplier for the damage caused to structure.|
 
