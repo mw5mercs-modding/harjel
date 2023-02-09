@@ -20,50 +20,6 @@
 		"maxArmorComponent": 32,
 		"rarity": 0.05
 	},
-	"MODULAR_ARMOR_MK1_REAR": {
-		"maxArmorComponent": 8,
-		"invalidMechParts": [
-			"Head",
-			"LeftArm",
-			"RightArm",
-			"LeftLeg",
-			"RightLeg"
-		],
-		"rarity": 0.05
-	},
-	"MODULAR_ARMOR_MK2_REAR": {
-		"maxArmorComponent": 16,
-		"invalidMechParts": [
-			"Head",
-			"LeftArm",
-			"RightArm",
-			"LeftLeg",
-			"RightLeg"
-		],
-		"rarity": 0.05
-	},
-	"MODULAR_ARMOR_MK3_REAR": {
-		"maxArmorComponent": 24,
-		"invalidMechParts": [
-			"Head",
-			"LeftArm",
-			"RightArm",
-			"LeftLeg",
-			"RightLeg"
-		],
-		"rarity": 0.05
-	},
-	"MODULAR_ARMOR_MK4_REAR": {
-		"maxArmorComponent": 32,
-		"invalidMechParts": [
-			"Head",
-			"LeftArm",
-			"RightArm",
-			"LeftLeg",
-			"RightLeg"
-		],
-		"rarity": 0.025
-	},
 	"Equipment.Harjel": {
 		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
 		"category": "equipment.internal",
@@ -159,41 +115,35 @@
 	"PATCHWORK_T1": {
 		"rarity": 0.04,
 		"installCost": 30000,
-		"removeCost": 3000,
-		"componentArmorWeightMulti": 0.85
+		"removeCost": 3000
 	},
 	"PATCHWORK_T2": {
 		"rarity": 0.03,
 		"installCost": 45000,
-		"removeCost": 4500,
-		"componentArmorWeightMulti": 0.7
+		"removeCost": 4500
 	},
 	"PATCHWORK_T3": {
 		"rarity": 0.02,
 		"installCost": 60000,
-		"removeCost": 6000,
-		"componentArmorWeightMulti": 0.55
+		"removeCost": 6000
 	},
 	"PATCHWORK_T1_FERRO": {
 		"rarity": 0.04,
 		"installCost": 30000,
 		"removeCost": 3000,
-		"maxArmorComponent": 12,
 		"componentArmorWeightMulti": 0.88
 	},
 	"PATCHWORK_T2_FERRO": {
 		"rarity": 0.03,
 		"installCost": 45000,
 		"removeCost": 4500,
-		"maxArmorComponent": 24,
-		"componentArmorWeightMulti": 0.88
+		"componentArmorWeightMulti": 0.76
 	},
 	"PATCHWORK_T3_FERRO": {
 		"rarity": 0.02,
 		"installCost": 60000,
 		"removeCost": 6000,
-		"maxArmorComponent": 36,
-		"componentArmorWeightMulti": 0.88
+		"componentArmorWeightMulti": 0.64
 	},
 	"BLACK_CARAPACE": {
 		"loreAccurate": false,
