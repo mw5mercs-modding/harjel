@@ -2,7 +2,9 @@
 	"DHS_KIT_QS": {
 		"loreAccurate": false,
 		"rarity": 0.1,
-		"module": "Quikcsell"
+		"module": "Quikcsell",
+		"engineHeatsinkEfficiency": 0.15,
+		"engineHeatsinkCapacity": 1.5
 	},
 	"DHS_QS": {
 		"loreAccurate": false,
@@ -235,7 +237,9 @@
 		"mechConflicts": [
 			"HARJEL_I",
 			"HARJEL_II",
-			"HARJEL_III"
+			"HARJEL_III",
+			"HARDENED_FERRO",
+			"BLACK_CARAPACE"
 		],
 		"invalidMechParts": [
 			"Head"
