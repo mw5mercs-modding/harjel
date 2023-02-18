@@ -1388,22 +1388,21 @@
 		"noEjectionSystem": true,
 		"pilotDeathPercMult": 3,
 		"installCostScaling": 15,
-		"removeCost": 25000,
-		"removeDays": 5
+		"removeCost": 150000,
+		"removeDays": 30
 	},
 	"SENSORS_PRIMITIVE": {
 		"sensorRangeMulti": 0.8,
-		"installCostScaling": 15,
-		"removeCost": 22000,
-		"removeDays": 4
+		"removeCost": 320000,
+		"removeDays": 20
 	},
 	"ARMOR_PRIMITIVE": {
-		"armorWeightMulti": 1.33,
+		"armorWeightMulti": 1.495,
 		"armorRepairCostMulti": 0.5,
 		"armorRepairDaysMulti": 0.5,
 		"installCostScaling": 15,
-		"removeCost": 85000,
-		"removeDays": 8
+		"removeCost": 400000,
+		"removeDays": 50
 	},
 	"PPC_CAPACITOR": {
 		"rarity": 0.04,
