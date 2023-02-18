@@ -1191,6 +1191,46 @@
 		],
 		"maxJumpJetsMulti": 1.5
 	},
+	"PrototypeImpJumpJet_Class1_Equipment":	{
+		"rarity": 0.05,
+		"mechConflicts": [
+			"JumpJet_Class1_Equipment",
+			"ImprovedJumpJet_Class1_Equipment"
+		],
+		"maxJumpJetsMulti": 1.5
+	},
+	"PrototypeImpJumpJet_Class2_Equipment":	{
+		"rarity": 0.05,
+		"mechConflicts": [
+			"JumpJet_Class2_Equipment",
+			"ImprovedJumpJet_Class2_Equipment"
+		],
+		"maxJumpJetsMulti": 1.5
+	},
+	"PrototypeImpJumpJet_Class3_Equipment":	{
+		"rarity": 0.05,
+		"mechConflicts": [
+			"JumpJet_Class3_Equipment",
+			"ImprovedJumpJet_Class3_Equipment"
+		],
+		"maxJumpJetsMulti": 1.5
+	},
+	"PrototypeImpJumpJet_Class4_Equipment":	{
+		"rarity": 0.05,
+		"mechConflicts": [
+			"JumpJet_Class4_Equipment",
+			"ImprovedJumpJet_Class4_Equipment"
+		],
+		"maxJumpJetsMulti": 1.5
+	},
+	"PrototypeImpJumpJet_Class5_Equipment":	{
+		"rarity": 0.05,
+		"mechConflicts": [
+			"JumpJet_Class5_Equipment",
+			"ImprovedJumpJet_Class5_Equipment"
+		],
+		"maxJumpJetsMulti": 1.5
+	},
 	"COMMAND_CONSOLE": {
 		"description": "All 'Mechs come equipped with a stock cockpit configuration, which can be upgraded for improved performance. The Console adds a complete set of controls for a second MechWarrior with added command and control facilities, allowing for better Lance coordination.\nAdds low-tier ECM functionality, a boost to sensor range and reduced weapon cycle times due to the better coordination of two mech warriors.\nThe Command Console system can only be added to Heavy or Assault class 'Mechs; it is too large to fit into smaller 'Mechs.",
 		"color": "(R=0.625,G=1,B=0,A=1)",
