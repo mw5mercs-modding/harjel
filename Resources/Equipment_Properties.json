@@ -1192,15 +1192,16 @@
 		"maxJumpJetsMulti": 1.5
 	},
 	"PrototypeImpJumpJet_Class1_Equipment":	{
-		"rarity": 0.05,
+		"rarity": 0.01,
 		"mechConflicts": [
 			"JumpJet_Class1_Equipment",
 			"ImprovedJumpJet_Class1_Equipment"
 		],
-		"maxJumpJetsMulti": 1.5
+		"maxJumpJetsMulti": 1.5,
+		"module": "prototype"
 	},
 	"PrototypeImpJumpJet_Class2_Equipment":	{
-		"rarity": 0.05,
+		"rarity": 0.01,
 		"mechConflicts": [
 			"JumpJet_Class2_Equipment",
 			"ImprovedJumpJet_Class2_Equipment"
@@ -1208,28 +1209,31 @@
 		"maxJumpJetsMulti": 1.5
 	},
 	"PrototypeImpJumpJet_Class3_Equipment":	{
-		"rarity": 0.05,
+		"rarity": 0.01,
 		"mechConflicts": [
 			"JumpJet_Class3_Equipment",
 			"ImprovedJumpJet_Class3_Equipment"
 		],
-		"maxJumpJetsMulti": 1.5
+		"maxJumpJetsMulti": 1.5,
+		"module": "prototype"
 	},
 	"PrototypeImpJumpJet_Class4_Equipment":	{
-		"rarity": 0.05,
+		"rarity": 0.01,
 		"mechConflicts": [
 			"JumpJet_Class4_Equipment",
 			"ImprovedJumpJet_Class4_Equipment"
 		],
-		"maxJumpJetsMulti": 1.5
+		"maxJumpJetsMulti": 1.5,
+		"module": "prototype"
 	},
 	"PrototypeImpJumpJet_Class5_Equipment":	{
-		"rarity": 0.05,
+		"rarity": 0.01,
 		"mechConflicts": [
 			"JumpJet_Class5_Equipment",
 			"ImprovedJumpJet_Class5_Equipment"
 		],
-		"maxJumpJetsMulti": 1.5
+		"maxJumpJetsMulti": 1.5,
+		"module": "prototype"
 	},
 	"COMMAND_CONSOLE": {
 		"description": "All 'Mechs come equipped with a stock cockpit configuration, which can be upgraded for improved performance. The Console adds a complete set of controls for a second MechWarrior with added command and control facilities, allowing for better Lance coordination.\nAdds low-tier ECM functionality, a boost to sensor range and reduced weapon cycle times due to the better coordination of two mech warriors.\nThe Command Console system can only be added to Heavy or Assault class 'Mechs; it is too large to fit into smaller 'Mechs.",
@@ -1504,7 +1508,8 @@
 		},
 		"rarity": 0.01,
 		"armorRepairCostMulti": 1.4,
-		"armorRepairDaysMulti": 1.4
+		"armorRepairDaysMulti": 1.4,
+		"module": "prototype"
 	},
 	"ENDO_PROTOTYPE": {
 		"fillerSlots": {
@@ -1512,7 +1517,8 @@
 		},
 		"rarity": 0.01,
 		"structureRepairCostMulti": 1.8,
-		"structureRepairDaysMulti": 1.8
+		"structureRepairDaysMulti": 1.8,
+		"module": "prototype"
 	},
 	"TURRET_MOUNT": {
 		"rarity": 0.01,
