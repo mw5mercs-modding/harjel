@@ -5,20 +5,64 @@
 		"installCostScaling": 10
 	},
 	"MODULAR_ARMOR_MK1_FRONT": {
-		"maxArmorComponent": 8,
+		"armorComponentFront": 8,
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK2_FRONT": {
-		"maxArmorComponent": 16,
+		"armorComponentFront": 16,
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK3_FRONT": {
-		"maxArmorComponent": 24,
+		"armorComponentFront": 24,
 		"rarity": 0.1
 	},
 	"MODULAR_ARMOR_MK4_FRONT": {
-		"maxArmorComponent": 32,
+		"armorComponentFront": 32,
 		"rarity": 0.05
+	},
+	"MODULAR_ARMOR_MK1_REAR": {
+		"armorComponentRear": 8,
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"rarity": 0.05
+	},
+	"MODULAR_ARMOR_MK2_REAR": {
+		"armorComponentRear": 16,
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"rarity": 0.05
+	},
+	"MODULAR_ARMOR_MK3_REAR": {
+		"armorComponentRear": 24,
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"rarity": 0.05
+	},
+	"MODULAR_ARMOR_MK4_REAR": {
+		"armorComponentRear": 32,
+		"invalidMechParts": [
+			"Head",
+			"LeftArm",
+			"RightArm",
+			"LeftLeg",
+			"RightLeg"
+		],
+		"rarity": 0.025
 	},
 	"Equipment.Harjel": {
 		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
