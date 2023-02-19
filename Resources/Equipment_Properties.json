@@ -1,8 +1,7 @@
 {
 	"Equipment.Upgrades.Armor": {
 		"color": "(R=0.59,G=0.03,B=0.11,A=1)",
-		"category": "equipment.internal",
-		"installCostScaling": 10
+		"category": "equipment.internal"
 	},
 	"MODULAR_ARMOR_MK1_FRONT": {
 		"armorComponentFront": 8,
@@ -63,6 +62,78 @@
 			"RightLeg"
 		],
 		"rarity": 0.025
+	},
+	"MODULAR_FERRO_MK1": {
+		"maxArmorComponent": 8,
+		"rarity": 0.1,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_FRONT",
+			"MODULAR_ARMOR_MK2_FRONT",
+			"MODULAR_ARMOR_MK3_FRONT",
+			"MODULAR_ARMOR_MK4_FRONT",
+			"MODULAR_ARMOR_MK1_REAR",
+			"MODULAR_ARMOR_MK2_REAR",
+			"MODULAR_ARMOR_MK3_REAR",
+			"MODULAR_ARMOR_MK4_REAR"
+		]
+	},
+	"MODULAR_FERRO_MK2": {
+		"maxArmorComponent": 16,
+		"rarity": 0.08,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_FRONT",
+			"MODULAR_ARMOR_MK2_FRONT",
+			"MODULAR_ARMOR_MK3_FRONT",
+			"MODULAR_ARMOR_MK4_FRONT",
+			"MODULAR_ARMOR_MK1_REAR",
+			"MODULAR_ARMOR_MK2_REAR",
+			"MODULAR_ARMOR_MK3_REAR",
+			"MODULAR_ARMOR_MK4_REAR"
+		]
+	},
+	"MODULAR_FERRO_MK3": {
+		"maxArmorComponent": 24,
+		"rarity": 0.06,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_FRONT",
+			"MODULAR_ARMOR_MK2_FRONT",
+			"MODULAR_ARMOR_MK3_FRONT",
+			"MODULAR_ARMOR_MK4_FRONT",
+			"MODULAR_ARMOR_MK1_REAR",
+			"MODULAR_ARMOR_MK2_REAR",
+			"MODULAR_ARMOR_MK3_REAR",
+			"MODULAR_ARMOR_MK4_REAR"
+		]
+	},
+	"MODULAR_FERRO_MK4": {
+		"maxArmorComponent": 32,
+		"rarity": 0.05,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_FRONT",
+			"MODULAR_ARMOR_MK2_FRONT",
+			"MODULAR_ARMOR_MK3_FRONT",
+			"MODULAR_ARMOR_MK4_FRONT",
+			"MODULAR_ARMOR_MK1_REAR",
+			"MODULAR_ARMOR_MK2_REAR",
+			"MODULAR_ARMOR_MK3_REAR",
+			"MODULAR_ARMOR_MK4_REAR"
+		]
 	},
 	"Equipment.Harjel": {
 		"color": "(R=0.11,G=0.19,B=0.77,A=0.5)",
