@@ -383,7 +383,8 @@
 			"LeftArm": 1,
 			"RightArm": 1,
 			"LeftLeg": 1,
-			"RightLeg": 1
+			"RightLeg": 1,
+			"CenterTorso": 1
 		},
 		"mechRequirements": [
 			"Equipment.ECM"
@@ -397,8 +398,8 @@
 				"heatMulti": 1.15
 			}]
 		},
-		"armorRepairCostMulti": 1.4,
-		"armorRepairDaysMulti": 1.4
+		"armorRepairCostMulti": 1.8,
+		"armorRepairDaysMulti": 1.6
 	},
 	"ARMOR_BALLISTIC_REINFORCED":{
 		"armorPerTon": 24,
