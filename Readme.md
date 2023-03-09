@@ -508,6 +508,7 @@ Once quirks have been defined they also need to be applied to mechs. This is don
 |`aiMechRole`|Set the default AI mech role from the TTRulez_AI mod. This will only take effect if that mod is active. For possible values see below.|
 |`mechType`|The type of mech which can be `bipedal` (default) or `quad` for now. Only has an impact on quad mechs which will then have their arm slots replaced with leg slots.|
 |`autoconv`|An object defining details for YAML's automatic vanilla mech conversion (see below).|
+|`salvageInto`|An optional reference which indicates the MDA to use when generating V2 mech salvage. This is useful for custom loadouts of lore mechs to avoid clutter in the salvage screen. Example: `MWMechDataAsset:AS7_MDA`|
 
 ##### TTRulez_AI Mech Roles
 
