@@ -427,6 +427,27 @@
 		},
 		"rarity": 0.1
 	},
+	"FCS_MELEE": {
+		"weapons": {
+			"groups": [{
+				"weaponGroupName": "Melee",
+				"tags": [ "Weapon.Melee" ],
+				"cooldownMulti": 0.9
+			}]
+		},
+		"rarity": 0.1
+	},
+	"FCS_BLOODSPORT": {
+		"weapons": {
+			"groups": [{
+				"weaponGroupName": "Melee",
+				"tags": [ "Weapon.Melee" ],
+				"cooldownMulti": 0.85,
+				"damageMulti": 1.05
+			}]
+		},
+		"rarity": 0.05
+	},
 	"COMPOSITE_STRUCTURE": {
 		"structureMulti": 0.5,
 		"structureWeightMulti": "0.5",

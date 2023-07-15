@@ -1,0 +1,17 @@
+{
+	"ENGINE_PIRATE": {
+		"loreAccurate": false,
+		"rarity": 0.01,
+		"fillerSlots": {
+			"LeftTorso": 2,
+			"RightTorso": 2
+		},
+		"engineHealthType": "light",
+		"installCostScaling": 12,
+		"installCost": 35000,
+		"removeCost": 10000,
+		"mascHeat": 3.5,
+		"engineRelativeWeight": -0.15,
+		"module": "Pirate"
+	}
+}

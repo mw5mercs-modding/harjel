@@ -13,6 +13,9 @@
 	"heat": {
 		"label": "Heat/sec"
 	},
+	"mascHeat": {
+		"label": "Heat/sec when masc or sc active"
+	},
 	"activeProperties/heat": {
 		"label": "Heat/sec when active"
 	},
