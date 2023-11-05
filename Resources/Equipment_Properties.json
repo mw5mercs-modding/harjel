@@ -612,13 +612,15 @@
 	},
 	"SHOULDER_ARMORED": {
 		"relativeWeight": 0.01,
-		"rarity": 0.02,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 3,
 		"armorComponentFrontMulti": 1.25,
 		"loreAccurate": false
 	},
 	"UPPER_MELEE": {
 		"relativeWeight": 0.01,
 		"rarity": 0.02,
+		"requiredMechlabLevel": 3,
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -637,7 +639,8 @@
 	},
 	"UPPER_SPIKED": {
 		"relativeWeight": 0.01,
-		"rarity": 0.01,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 3,
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -699,7 +702,8 @@
 	},
 	"UPPER_ARMORED": {
 		"relativeWeight": 0.01,
-		"rarity": 0.02,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 3,
 		"armorComponentFrontMulti": 1.2,
 		"loreAccurate": false,
 		"caseLevel": 2,
@@ -707,7 +711,8 @@
 	},
 	"UPPER_HARD_ENED": {
 		"relativeWeight": 0.01,
-		"rarity": 0.01,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 3,
 		"incomingDamage": {
 			"groups": [{
 				"weaponGroupName": "Weapon",
@@ -740,8 +745,9 @@
 	},
 	"WEAPON_MOUNT": {
 		"relativeWeight": 0.01,
-		"rarity": 0.01,
+		"rarity": 0.04,
 		"loreAccurate": false,
+		"requiredMechlabLevel": 2,
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -768,8 +774,9 @@
 	},
 	"WEAPON_MOUNT_RECOIL": {
 		"relativeWeight": 0.01,
-		"rarity": 0.01,
+		"rarity": 0.04,
 		"loreAccurate": false,
+		"requiredMechlabLevel": 2,
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -787,8 +794,9 @@
 	},
 	"WEAPON_MOUNT_HEAT": {
 		"relativeWeight": 0.01,
-		"rarity": 0.01,
+		"rarity": 0.04,
 		"loreAccurate": false,
+		"requiredMechlabLevel": 1,
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -798,20 +806,16 @@
 						"Weapon"
 					],
 					"heatMulti": 0.95
-				},
-				{
-					"weaponGroupName": "Melee",
-					"tags": [
-						"Weapon.Melee"
-					],
-					"damageMulti": 0.85
 				}
 			]
-		}
+		},
+		"armTwistAngleMulti": 0.95,
+		"armTwistRateMulti": 0.95
 	},
 	"COOLING_JACKET": {
-		"rarity": 0.01,
+		"rarity": 0.05,
 		"loreAccurate": false,
+		"requiredMechlabLevel": 2,
 		"weapons": {
 			"scope": "component",
 			"groups": [
@@ -1180,6 +1184,7 @@
 	"RE_INFORCED_LEGS": {
 		"rarity": 0.01,
 		"loreAccurate": false,
+		"requiredMechlabLevel": 3,
 		"relativeWeight": 0.01,
 		"armorComponentFrontMulti": 1.1,
 		"structureComponentMulti": 1.1,
@@ -1196,8 +1201,9 @@
 		"caseLevel": 1
 	},
 	"HIP_ARMORED": {
-		"rarity": 0.01,
+		"rarity": 0.05,
 		"loreAccurate": false,
+		"requiredMechlabLevel": 3,
 		"relativeWeight": 0.01,
 		"armorComponentFrontMulti": 1.1,
 		"structureComponentMulti": 1.1,
@@ -1755,14 +1761,16 @@
 	"INTERLINKED_MYOMER_LEG": {
 		"loreAccurate": false,
 		"relativeWeight": 0.01,
+		"requiredMechlabLevel": 4,
 		"accelerationMulti": 1.05,
-		"rarity": 0.1
+		"rarity": 0.03
 	},
 	"MACHINED_PIVOT_POINT": {
 		"loreAccurate": false,
 		"relativeWeight": 0.01,
+		"requiredMechlabLevel": 1,
 		"turnSpeedMulti": 1.05,
-		"rarity": 0.1
+		"rarity": 0.05
 	},
 	"COOLING_LINES": {
 		"loreAccurate": false,
@@ -1780,6 +1788,7 @@
 	"IMPROVED_ACTUATORS": {
 		"loreAccurate": false,
 		"rarity": 0.04,
+		"requiredMechlabLevel": 1,
 		"armTwistAngleMulti": 1.2,
 		"armTwistRateMulti": 1.15
 	},
@@ -1807,6 +1816,7 @@
 	},
 	"IMPROVED_LIFE_SUPPORT": {
 		"rarity": 0.05,
+		"requiredMechlabLevel": 0,
 		"armorComponentFront": 2,
 		"pilotDeathPercMult": 0.7,
 		"category": "equipment.misc"
@@ -1815,18 +1825,24 @@
 		"loreAccurate": false,
 		"rarity": 0.02,
 		"category": "equipment.misc",
-		"evasionSkillBonus": 2
+		"requiredMechlabLevel": 2,
+		"evasionSkillBonus": 2,
+		"pilotDeathPercMult": 0.9
 	},
 	"SHIELDING_SUPPORT_1": {
 		"loreAccurate": false,
 		"rarity": 0.02,
+		"requiredMechlabLevel": 2,
 		"category": "equipment.misc",
-		"shieldingSkillBonus": 2
+		"shieldingSkillBonus": 2,
+		"pilotDeathPercMult": 0.9
 	},
 	"HEAT_MANAGEMENT_SUPPORT_1": {
 		"loreAccurate": false,
 		"rarity": 0.02,
 		"category": "equipment.misc",
+		"requiredMechlabLevel": 2,
+		"pilotDeathPercMult": 0.9,
 		"heatManagementSkillBonus": 2
 	},
 	"FERRO_LAMELLOR_CLAN": {
