@@ -200,22 +200,23 @@ YAML by itself already provides the following properties:
 |`caseLevel`|The level of C.A.S.E. protection provided. Can be either `1` (ammo explosion damage does not spread to other components) or `2` (ammo explosion damage is reduced to `2` points of damage).|`1`|E||M|
 |`caseScope`|States which parts of the mech are protected by the `caseLevel`. Can be either `component` or `mech`.|`component`|E|||
 |`case2MaxDmg`|Sets the maximum damage an ammo explosion can cause if `caseLevel` is 2. Defaults to `2.0` .|`5.0`|E||M|
+|`pilotDeathPercMult`|A multiplier for the chance the pilot will die on mech destruction. A value below 1 will increase the pilot's chance for survival.|`0.9`|E||M|
 
 ##### Special Properties
 |Property|Description|Example|E|W|M|
 |---|---|---|---|---|---|
 |`predictiveTargeting`|A boolean property which can be used to enable predictive targeting, ie. a target recticle which points to where one has to shoot, accouting for things like drop-off and target speed.|`true`|E||M|
 |`antiAirTargeting`|Same as above, but only applies to VTOLs (other units won't have the reticle unless a Predictive TC or quirk is installed).|`true`|E||M|
-|`hasBasicUAV`|Integer number to add to Ammo.Consumable.UAV to any 'Mech. They will have this many norma UAVs plus whatever is equipped. Advanced UAV upgrades all to the increased stats.|`4`|M|
+|`hasBasicUAV`|Integer number to add to Ammo.Consumable.UAV to any 'Mech. They will have this many norma UAVs plus whatever is equipped. Advanced UAV upgrades all to the increased stats.|`4`|||M|
 
 ##### Weapon Modifier Properties
 |Property|Description| Example |E|W|M|
 |---|---|---|---|---|---|
 |`weapons`|A json object containing weapon bonus properties as described below.||E||M|
-|`armorDamageMulti`|A multiplier for the damage dealt to armor. This allows to create weapons that do more or less damage to armor.||W||
-|`structureDamageMulti`|A multiplier for the damage dealt to structure. This allows to create weapons that do more or less damage to structure.||W||
-|`jamChance`|A chance (0 to 1) for the weapon to jam on fireing. This works on any weapon and has no relation to the fire while in cooldown that UACs use. Should be combined with a proper value for `jamDuration`.||W||
-|`jamDuration`|The time in seconds that a weapon is jammed. Does only make sense in combination with `jamDuration`. Defaults to 2.5 times the cooldown time of the weapon.||W||
+|`armorDamageMulti`|A multiplier for the damage dealt to armor. This allows to create weapons that do more or less damage to armor.|||W||
+|`structureDamageMulti`|A multiplier for the damage dealt to structure. This allows to create weapons that do more or less damage to structure.|||W||
+|`jamChance`|A chance (0 to 1) for the weapon to jam on fireing. This works on any weapon and has no relation to the fire while in cooldown that UACs use. Should be combined with a proper value for `jamDuration`.|||W||
+|`jamDuration`|The time in seconds that a weapon is jammed. Does only make sense in combination with `jamDuration`. Defaults to 2.5 times the cooldown time of the weapon.|||W||
 
 The special property `weapons` allows to define a multitude of weapon modifiers ranging from a simple PPC range upgrade to cooldown modifiers for SRM6 launchers.
 
