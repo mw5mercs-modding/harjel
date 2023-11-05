@@ -1898,5 +1898,152 @@
 				"scope": "mech"
 			}]
 		}
+	},
+	"THERMAL_TRANSFER_DUCT": {
+		"loreAccurate": false,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 1,
+		"coolingMulti": 1.025,
+		"structureComponentMulti": 0.85,
+		"caseLevel": 1,
+		"caseScope": "component"
+	},
+	"EFFICIENT_AMMO_FEEDWAY": {
+		"loreAccurate": false,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 4,
+		"color": "(R=1.0,G=0.26,B=0,A=1)",
+		"category": "equipment.electronics",
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Ballistic",
+					"tags": [
+						"Weapon.Ballistic"
+					],
+					"cooldownMulti": 0.975,
+					"jamChanceMulti": 0.95
+				}
+			]
+		},
+		"mechPartConflicts": [
+			"EFFICIENT_AMMO_FEEDWAY"
+		]
+	},
+	"KLYSTRON_ACCELERATOR": {
+		"loreAccurate": false,
+		"rarity": 0.03,
+		"requiredMechlabLevel": 5,
+		"color": "(R=1.0,G=0.26,B=0,A=1)",
+		"category": "equipment.electronics",
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Energy",
+					"tags": [
+						"Weapon.Energy"
+					],
+					"cooldownMulti": 0.975,
+					"durationMulti": 0.9
+				}
+			]
+		},
+		"mechPartConflicts": [
+			"KLYSTRON_ACCELERATOR"
+		]
+	},
+	"FIRESTROM_AUTOLOADER": {
+		"loreAccurate": false,
+		"rarity": 0.05,
+		"color": "(R=1.0,G=0.26,B=0,A=1)",
+		"category": "equipment.electronics",
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "LRM & MRM",
+					"tags": [
+						"Weapon.Missile.LRM",
+						"Weapon.Missile.MRM",
+						"Weapon.ArtemisMissile.LRM"
+					],
+					"cooldownMulti": 0.85,
+					"heatMulti": 1.1
+				}
+			],
+			"lockonTimeMulti": 0.8
+		},
+		"mechPartConflicts": [
+			"FIRESTROM_AUTOLOADER"
+		]
+	},
+	"HYDRAZINE_HOTSHOT": {
+		"loreAccurate": false,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 0,
+		"color": "(R=1.0,G=0.26,B=0,A=1)",
+		"category": "equipment.electronics",
+		"jumpJetFuelBurnTimeMulti": 1.15,
+		"mechPartConflicts": [
+			"HYDRAZINE_HOTSHOT"
+		],
+		"invalidMechParts": [
+			"LeftArm",
+			"RightArm",
+			"Head"
+		],
+		"mechPartRequirements": [
+			"Equipment.JumpJets"
+		]
+	},
+	"AES_CDP": {
+		"loreAccurate": false,
+		"rarity": 0.02,
+		"requiredMechlabLevel": 6,
+		"shieldingSkillBonus": 1,
+		"description": "A.E.S. or Actuator Enhancement System is a defensive relay between the hip and the knee pivot points that allows for faster response time against incoming fire this translates to a slight bonus to the mechs ability to reduce damage. This is acchieved by forcing incoming hits to glance rather than fully penetrate.\nC.D.P. or Chaff Deployment Pods are several pods designed to be a physical means of avoiding missles much like those on a fighter jet. Firing ribbons of metal and other electronic noisemakers to interfere with guidance systems on Missiles."
+	},
+	"CONDENSED_MYOMER": {
+		"loreAccurate": false,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 3,
+		"caseLevel": 1,
+		"caseScope": "component",
+		"topSpeedMulti": 0.9,
+		"structureComponent": -5
+	},
+	"GUIDED_TELEMETRY": {
+		"loreAccurate": false,
+		"rarity": 0.02,
+		"requiredMechlabLevel": 5,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "SRM/SSRM/ATM/MML",
+					"tags": [
+						"Weapon.Missile.SRM",
+						"Weapon.Missile.MRM",
+						"Weapon.ArtemisMissile.SRM",
+						"Weapon.ArtemisMissile.ATM",
+						"Weapon.ArtemisMissile.MML"
+					],
+					"spreadRadiusMulti": 0.95
+				},
+				{
+					"weaponGroupName": "SRM Streak",
+					"tags": [
+						"Weapon.Missile.SRM.Streak"
+					],
+					"maxRangeMulti": 1.3,
+					"optimalRangeMulti": 1.3
+				}
+			]
+		},
+		"mechPartConflicts": [
+			"GUIDED_TELEMETRY"
+		]
 	}
 }

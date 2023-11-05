@@ -298,7 +298,8 @@
 			"RightLeg",
 			"LeftTorso",
 			"RightTorso"
-		]
+		],
+		"category": "equipment.cooling"
 	},
 	"THERMAL_MASS_SMALL_QS": {
 		"loreAccurate": false,
