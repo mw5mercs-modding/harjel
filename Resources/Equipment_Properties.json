@@ -1487,6 +1487,21 @@
 		"engineHeatsinkEfficiency": 0.2,
 		"engineHeatsinkCapacity": 2
 	},
+	"ROYAL_DHS_KIT": {
+		"rarity": 0.01,
+		"weapons": {
+			"scope": "mech",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"heatMulti": 0.92
+				}
+			]
+		}
+	},
 	"SENSORS_ARMORED": {
 		"armorComponentFront": 12,
 		"structureComponent": 8,

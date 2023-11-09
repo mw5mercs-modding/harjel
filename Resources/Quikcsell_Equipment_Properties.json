@@ -25,6 +25,20 @@
 		"engineRelativeWeight": -0.45,
 		"module": "Quikcsell"
 	},
+	"ENGINE_LIGHT_QS": {
+		"loreAccurate": false,
+		"rarity": 0.1,
+		"fillerSlots": {
+			"LeftTorso": 3,
+			"RightTorso": 3
+		},
+		"engineHealthType": "light",
+		"installCostScaling": 10,
+		"installCost": 25000,
+		"removeCost": 8000,
+		"engineRelativeWeight": -0.15,
+		"module": "Quikcsell"
+	},
 	"ENGINE_IC_XL_QS": {
 		"loreAccurate": false,
 		"rarity": 0.01,
