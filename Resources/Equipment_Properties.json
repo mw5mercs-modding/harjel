@@ -2034,7 +2034,8 @@
 		"rarity": 0.02,
 		"requiredMechlabLevel": 6,
 		"shieldingSkillBonus": 1,
-		"description": "A.E.S. or Actuator Enhancement System is a defensive relay between the hip and the knee pivot points that allows for faster response time against incoming fire this translates to a slight bonus to the mechs ability to reduce damage. This is acchieved by forcing incoming hits to glance rather than fully penetrate.\nC.D.P. or Chaff Deployment Pods are several pods designed to be a physical means of avoiding missles much like those on a fighter jet. Firing ribbons of metal and other electronic noisemakers to interfere with guidance systems on Missiles."
+		"description": "A.E.S. or Actuator Enhancement System is a defensive relay between the hip and the knee pivot points that allows for faster response time against incoming fire this translates to a slight bonus to the mechs ability to reduce damage. This is acchieved by forcing incoming hits to glance rather than fully penetrate.\nC.D.P. or Chaff Deployment Pods are several pods designed to be a physical means of avoiding missles much like those on a fighter jet. Firing ribbons of metal and other electronic noisemakers to interfere with guidance systems on Missiles.",
+		"color": "(R=0.006049,G=0.445201,B=0.445201,A=1.0)"
 	},
 	"CONDENSED_MYOMER": {
 		"loreAccurate": false,
