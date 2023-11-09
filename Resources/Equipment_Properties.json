@@ -1489,6 +1489,8 @@
 	},
 	"ROYAL_DHS_KIT": {
 		"rarity": 0.01,
+		"engineHeatsinkEfficiency": 0.2,
+		"engineHeatsinkCapacity": 2,
 		"weapons": {
 			"scope": "mech",
 			"groups": [
@@ -2077,5 +2079,39 @@
 		"mechPartConflicts": [
 			"GUIDED_TELEMETRY"
 		]
+	},
+	"ENGINE_LIGHT_PROTO": {
+		"loreAccurate": false,
+		"rarity": 0.05,
+		"fillerSlots": {
+			"LeftTorso": 2,
+			"RightTorso": 2
+		},
+		"engineHealthType": "light",
+		"installCostScaling": 10,
+		"installCost": 65000,
+		"removeCost": 20000,
+		"engineRelativeWeight": -0.4,
+		"engineHeatsinkMulti": 0
+	},
+	"ENGINE_XL_PROTO": {
+		"loreAccurate": false,
+		"rarity": 0.05,
+		"installCostScaling": 12,
+		"installCost": 75000,
+		"removeCost": 25000,
+		"engineRelativeWeight": -0.5,
+		"weapons": {
+			"scope": "mech",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"heatMulti": 1.2
+				}
+			]
+		}
 	}
 }

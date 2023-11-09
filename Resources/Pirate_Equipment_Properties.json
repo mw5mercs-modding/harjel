@@ -13,5 +13,39 @@
 		"mascHeat": 3.5,
 		"engineRelativeWeight": -0.15,
 		"module": "Pirate"
+	},
+	"ENGINE_FUEL_CELL_PIRATE": {
+		"loreAccurate": false,
+		"rarity": 0.01,
+		"fillerSlots": {
+			"LeftTorso": 2,
+			"RightTorso": 2
+		},
+		"engineHealthType": "light",
+		"installCostScaling": 10,
+		"installCost": 55000,
+		"removeCost": 10000,
+		"engineRelativeWeight": 0.4,
+		"weapons": {
+			"scope": "mech",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"heatMulti": 0.2
+				}
+			]
+		},
+		"mechConflicts": [
+			"EXCHANGER",
+			"EXCHANGER_CLAN",
+			"EXCHANGER_MK2",
+			"HeatBank179",
+			"HeatBank279",
+			"HeatBank379"
+		],
+		"module": "Pirate"
 	}
 }
