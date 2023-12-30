@@ -34,7 +34,7 @@
 					"tags": [
 						"Weapon"
 					],
-					"heatMulti": 0.2
+					"heatMulti": 0.3
 				}
 			]
 		},
@@ -44,7 +44,12 @@
 			"EXCHANGER_MK2",
 			"HeatBank179",
 			"HeatBank279",
-			"HeatBank379"
+			"HeatBank379",
+			"BC_HEAT",
+			"PROTO_DHS",
+			"TCOMP_HEAT",
+			"TCOMP_NOVA",
+			"COOLING_JACKET"
 		],
 		"module": "Pirate"
 	}
