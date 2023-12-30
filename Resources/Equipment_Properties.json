@@ -787,7 +787,8 @@
 					],
 					"jamChanceMulti": 0.75,
 					"spreadRadiusMulti": 0.9,
-					"spreadDistanceMulti": 1.1
+					"spreadDistanceMulti": 1.1,
+					"recoil": -1
 				}
 			]
 		}
@@ -959,7 +960,8 @@
 					"tags": [
 						"Weapon"
 					],
-					"jamChanceMulti": 0.85
+					"jamChanceMulti": 0.85,
+					"recoil": -1
 				}
 			]
 		},
