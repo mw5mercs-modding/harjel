@@ -1391,9 +1391,6 @@
 		"rarity": 0.08,
 		"module": "Clan"
 	},
-	"CompactHeatSink79": {
-		"rarity": 0.1
-	},
 	"PROTO_DHS": {
 		"weapons": {
 			"groups": [
@@ -1421,11 +1418,6 @@
 	"CLAN_DHS_KIT": {
 		"rarity": 0.08,
 		"module": "Clan",
-		"engineHeatsinkEfficiency": 0.2,
-		"engineHeatsinkCapacity": 2
-	},
-	"COMPACT_HS_KIT": {
-		"rarity": 0.08,
 		"engineHeatsinkEfficiency": 0.2,
 		"engineHeatsinkCapacity": 2
 	},
