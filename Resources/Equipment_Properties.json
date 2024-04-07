@@ -526,12 +526,15 @@
 			"Equipment.ECM"
 		],
 		"rarity": 0.02,
-		"heat": 0.35,
+		"stealthToggle": "YamlToggleStealth",
+		"enabledHeat": 0.0,
+		"enabledStealthHeatMulti": 0.8,
+		"enabledStealthDamageEvasionChance": 0.6,
 		"weapons": {
 			"groups": [{
 				"weaponGroupName": "Weapon",
 				"tags": [ "Weapon" ],
-				"heatMulti": 1.15
+				"heatMulti": 1.25
 			}]
 		},
 		"armorRepairCostMulti": 1.8,
