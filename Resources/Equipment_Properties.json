@@ -483,23 +483,6 @@
 		},
 		"module": "Clan"
 	},
-	"STEALTH_ARMOR": {
-		"stealth": true,
-		"armorPerTon": 32,
-		"fillerSlots": {
-			"LeftTorso": 2,
-			"RightTorso": 2,
-			"LeftLeg": 2,
-			"RightLeg": 2,
-			"LeftArm": 2,
-			"RightArm": 2
-		},
-		"mechRequirements": [
-			"GuardianECM"
-		],
-		"color": "(R=0.27,G=0.3176,B=0.3216,A=1)",
-		"rarity": 0.05
-	},
 	"SENSORS_PROBE": {
 		"rarity": 0.1,
 		"color": "(R=1,G=0.115883,B=0,A=1)"
