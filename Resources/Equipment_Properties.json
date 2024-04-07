@@ -512,7 +512,6 @@
 		"stealthToggle": "YamlToggleStealth",
 		"enabledHeat": 0.0,
 		"enabledStealthHeatMulti": 0.8,
-		"enabledStealthDamageEvasionChance": 0.6,
 		"weapons": {
 			"groups": [{
 				"weaponGroupName": "Weapon",
