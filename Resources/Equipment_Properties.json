@@ -1451,7 +1451,8 @@
 		"heatDamageOnFailure": 1,
 		"damageOnFailure": 8,
 		"engineHeatsinkEfficiency": 0.133,
-		"engineHeatsinkCapacity": 1.33
+		"engineHeatsinkCapacity": 1.33,
+		"requiredMechlabLevel": 6
 	},
 	"RADICAL_DHS_KIT": {
 		"description": "Converts the engine to use double heat sinks. Allows the mech to equip double heat sinks.\n\nAt high temperatures the Radical Heat Sink Kit's safeguards activate and provide additional heat dissipation until temperatures drop to safe levels. Prolonged activation risks failure, causing internal damage and additional heat buildup.",
@@ -1464,7 +1465,23 @@
 		"heatDamageOnFailure": 0.6,
 		"damageOnFailure": 6,
 		"engineHeatsinkEfficiency": 0.2,
-		"engineHeatsinkCapacity": 2
+		"engineHeatsinkCapacity": 2,
+		"requiredMechlabLevel": 6
+	},
+	"RADICAL_COMPACT_KIT": {
+		"description": "Converts the engine to use compact heat sinks. Allows the mech to equip compact heat sinks.\n\nAt high temperatures the Radical Heat Sink Kit's safeguards activate and provide additional heat dissipation until temperatures drop to safe levels. Prolonged activation risks failure, causing internal damage and additional heat buildup.",
+		"loreAccurate": false,
+		"rarity": 0.02,
+		"heatActivationThreshold": 0.85,
+		"heatDeactivationThreshold": 0.4,
+		"heatDissWhenActive": 1.2,
+		"heatFailureChancePerSec": 0.003,
+		"heatDamageOnFailure": 0.6,
+		"damageOnFailure": 6,
+		"engineHeatsinkEfficiency": 0.1,
+		"engineHeatsinkCapacity": 1,
+		"requiredMechlabLevel": 6,
+		"bundledHeatsinks": 2
 	},
 	"ROYAL_DHS_KIT": {
 		"rarity": 0.01,
@@ -1482,6 +1499,23 @@
 				}
 			]
 		}
+	},
+	"TUNED_SHS_KIT": {
+		"rarity": 0.1,
+		"coolingMulti": 1.1,
+		"mechConflicts": [
+			"CompactHeatSink79",
+			"DoubleHeatSink",
+			"PROTO_DHS",
+			"DHS_QS",
+			"ClanLHS79",
+			"DoubleHeatSinkC",
+			"DoubleHeatSinkC1",
+			"DoubleHeatSinkC2",
+			"DoubleHeatSinkP",
+			"DoubleHeatSinkR",
+			"CorrosiveHeatSink"
+		]
 	},
 	"SENSORS_ARMORED": {
 		"armorComponentFront": 12,
@@ -1774,7 +1808,10 @@
 		"coolingMulti": 1.4,
 		"coolingMultiScope": "component",
 		"mechPartConflicts": [
-			"COOLING_LINES"
+			"COOLING_LINES",
+			"Coolinglines",
+			"Coolinglines1",
+			"Coolinglines2"
 		],
 		"invalidMechParts": [
 			"CenterTorso"
