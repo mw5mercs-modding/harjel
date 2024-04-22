@@ -66,6 +66,7 @@ YAML by itself already provides the following properties:
 |`fillerSlots`|Allows to define the dynamic and fixed fillers an equipment requires. The value is a map which contains any of the following keys: `dynamic` refers to the number of dynamic fillers which can be placed anywhere (a typical example is endo). `Head`, `LeftArm`, `LeftTorso`, `LeftLeg`, etc. refer to the fixed fillers required in specific mech parts. One example is 2 slots in the center torso for an XL Gyro.|`{ "CenterTorso": 2 }`|E|W||
 |`fixed`|If `true` the equipment cannot be removed and is considered a fixed equipment. It will not show up in the inventory. This should be combined with autoamtic repair for the equipment asset. The salvage probability can either be set to 0 to prevent salvage completely or the salvaged item can be changed via `salvageInto`. Fixed items can be used to create custom mech variants.|`true`|E|W||
 |`introYear`|Override the introduction year of an equipment. This is mostly interesting for mods which support both vanilla and YAML to hide equipment in vanilla.|`3078`|E|||
+|`obsoleteYear`|Set the year in which a weapon or equipment becomes obsolete, meaning it will no longer be available in markets. This has to be combined with `introYear`, otherwise it will not work. And, yes, `introYear` normally does not work for weapons but for this special case, it does.|`3078`|E|W||
 |`slots`|Override the slot count of an equipment.|`3`|E|||
 |`features`|A list of features the equipment or entire mech supports. This can either be one of the pre-defined ones (See below for a list of supported features) or a random string which acts as a value for the `requiredFeatures` property.|`3`|E||M|
 
@@ -222,6 +223,7 @@ YAML by itself already provides the following properties:
 |`structureDamageMulti`|A multiplier for the damage dealt to structure. This allows to create weapons that do more or less damage to structure.|||W||
 |`jamChance`|A chance (0 to 1) for the weapon to jam on fireing. This works on any weapon and has no relation to the fire while in cooldown that UACs use. Should be combined with a proper value for `jamDuration`.|||W||
 |`jamDuration`|The time in seconds that a weapon is jammed. Does only make sense in combination with `jamDuration`. Defaults to 2.5 times the cooldown time of the weapon.|||W||
+|`jamAtMoveSpeed`|If set will make the weapon jam as soon as the mech goes faster than the given value in KPH. The value can also be 0. In that case the weapon can only be fired if standing still.|||W||
 
 The special property `weapons` allows to define a multitude of weapon modifiers ranging from a simple PPC range upgrade to cooldown modifiers for SRM6 launchers.
 
