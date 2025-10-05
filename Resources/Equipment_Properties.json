@@ -191,8 +191,8 @@
 		"armorRepairDaysMulti": 1.15
 	},
 	"HARJEL_III": {
-		"armorComponentFrontMulti": 1.1,
-		"armorComponentRearMulti": 1.1,
+		"armorComponentFrontMulti": 1.2,
+		"armorComponentRearMulti": 1.2,
 		"selfRepairArmor": 2,
 		"selfRepairStructure": 0.8,
 		"selfRepairDuration": 7,
