@@ -494,34 +494,6 @@
 		],
 		"sensorRangeBonus": 80
 	},
-	"ARMOR_NSS": {
-		"armorPerTon": 32,
-		"fillerSlots": {
-			"LeftTorso": 1,
-			"RightTorso": 1,
-			"LeftArm": 1,
-			"RightArm": 1,
-			"LeftLeg": 1,
-			"RightLeg": 1,
-			"CenterTorso": 1
-		},
-		"mechRequirements": [
-			"Equipment.ECM"
-		],
-		"rarity": 0.02,
-		"stealthToggle": "YamlToggleStealth",
-		"enabledHeat": 0.0,
-		"enabledStealthHeatMulti": 0.8,
-		"weapons": {
-			"groups": [{
-				"weaponGroupName": "Weapon",
-				"tags": [ "Weapon" ],
-				"heatMulti": 1.25
-			}]
-		},
-		"armorRepairCostMulti": 1.8,
-		"armorRepairDaysMulti": 1.6
-	},
 	"ARMOR_BALLISTIC_REINFORCED":{
 		"armorPerTon": 24,
 		"rarity": 0.15,
