@@ -4,22 +4,67 @@
 		"category": "equipment.internal"
 	},
 	"MODULAR_ARMOR_MK1_FRONT": {
+		"description": "Modular Armor was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module adds a fixed amount of armor to installed location (front facing if torso-mounted).\n\nOnly one piece of Modular Armor can be installed per location (front and rear torso are treated as different locations). Cannot be installed with Modular Ferro in the same location.",
 		"armorComponentFront": 8,
-		"rarity": 0.04
+		"rarity": 0.04,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_FRONT",
+			"MODULAR_ARMOR_MK2_FRONT",
+			"MODULAR_ARMOR_MK3_FRONT",
+			"MODULAR_ARMOR_MK4_FRONT"
+		]
 	},
 	"MODULAR_ARMOR_MK2_FRONT": {
+		"description": "Modular Armor was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module adds a fixed amount of armor to installed location (front facing if torso-mounted).\n\nOnly one piece of Modular Armor can be installed per location (front and rear torso are treated as different locations). Cannot be installed with Modular Ferro in the same location.",
 		"armorComponentFront": 16,
-		"rarity": 0.03
+		"rarity": 0.03,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_FRONT",
+			"MODULAR_ARMOR_MK2_FRONT",
+			"MODULAR_ARMOR_MK3_FRONT",
+			"MODULAR_ARMOR_MK4_FRONT"
+		]
 	},
 	"MODULAR_ARMOR_MK3_FRONT": {
+		"description": "Modular Armor was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module adds a fixed amount of armor to installed location (front facing if torso-mounted).\n\nOnly one piece of Modular Armor can be installed per location (front and rear torso are treated as different locations). Cannot be installed with Modular Ferro in the same location.",
 		"armorComponentFront": 24,
-		"rarity": 0.02
+		"rarity": 0.02,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_FRONT",
+			"MODULAR_ARMOR_MK2_FRONT",
+			"MODULAR_ARMOR_MK3_FRONT",
+			"MODULAR_ARMOR_MK4_FRONT"
+		]
 	},
 	"MODULAR_ARMOR_MK4_FRONT": {
+		"description": "Modular Armor was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module adds a fixed amount of armor to installed location (front facing if torso-mounted).\n\nOnly one piece of Modular Armor can be installed per location (front and rear torso are treated as different locations). Cannot be installed with Modular Ferro in the same location.",
 		"armorComponentFront": 32,
-		"rarity": 0.01
+		"rarity": 0.01,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_FRONT",
+			"MODULAR_ARMOR_MK2_FRONT",
+			"MODULAR_ARMOR_MK3_FRONT",
+			"MODULAR_ARMOR_MK4_FRONT"
+		]
 	},
 	"MODULAR_ARMOR_MK1_REAR": {
+		"description": "Modular Armor was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module adds a fixed amount of rear armor to installed torso location.\n\nOnly one piece of Modular Armor can be installed per location (front and rear torso are treated as different locations). Cannot be installed with Modular Ferro in the same location.",
 		"armorComponentRear": 8,
 		"invalidMechParts": [
 			"Head",
@@ -28,9 +73,20 @@
 			"LeftLeg",
 			"RightLeg"
 		],
-		"rarity": 0.01
+		"rarity": 0.01,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_REAR",
+			"MODULAR_ARMOR_MK2_REAR",
+			"MODULAR_ARMOR_MK3_REAR",
+			"MODULAR_ARMOR_MK4_REAR"
+		]
 	},
 	"MODULAR_ARMOR_MK2_REAR": {
+		"description": "Modular Armor was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module adds a fixed amount of rear armor to installed torso location.\n\nOnly one piece of Modular Armor can be installed per location (front and rear torso are treated as different locations). Cannot be installed with Modular Ferro in the same location.",
 		"armorComponentRear": 16,
 		"invalidMechParts": [
 			"Head",
@@ -39,9 +95,20 @@
 			"LeftLeg",
 			"RightLeg"
 		],
-		"rarity": 0.01
+		"rarity": 0.01,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_REAR",
+			"MODULAR_ARMOR_MK2_REAR",
+			"MODULAR_ARMOR_MK3_REAR",
+			"MODULAR_ARMOR_MK4_REAR"
+		]
 	},
 	"MODULAR_ARMOR_MK3_REAR": {
+		"description": "Modular Armor was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module adds a fixed amount of rear armor to installed torso location.\n\nOnly one piece of Modular Armor can be installed per location (front and rear torso are treated as different locations). Cannot be installed with Modular Ferro in the same location.",
 		"armorComponentRear": 24,
 		"invalidMechParts": [
 			"Head",
@@ -50,9 +117,20 @@
 			"LeftLeg",
 			"RightLeg"
 		],
-		"rarity": 0.01
+		"rarity": 0.01,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_REAR",
+			"MODULAR_ARMOR_MK2_REAR",
+			"MODULAR_ARMOR_MK3_REAR",
+			"MODULAR_ARMOR_MK4_REAR"
+		]
 	},
 	"MODULAR_ARMOR_MK4_REAR": {
+		"description": "Modular Armor was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module adds a fixed amount of rear armor to installed torso location.\n\nOnly one piece of Modular Armor can be installed per location (front and rear torso are treated as different locations). Cannot be installed with Modular Ferro in the same location.",
 		"armorComponentRear": 32,
 		"invalidMechParts": [
 			"Head",
@@ -61,9 +139,21 @@
 			"LeftLeg",
 			"RightLeg"
 		],
-		"rarity": 0.01
+		"rarity": 0.01,
+		"mechPartConflicts": [
+			"MODULAR_FERRO_MK1",
+			"MODULAR_FERRO_MK2",
+			"MODULAR_FERRO_MK3",
+			"MODULAR_FERRO_MK4",
+			"MODULAR_ARMOR_MK1_REAR",
+			"MODULAR_ARMOR_MK2_REAR",
+			"MODULAR_ARMOR_MK3_REAR",
+			"MODULAR_ARMOR_MK4_REAR"
+		]
 	},
 	"MODULAR_FERRO_MK1": {
+		"description": "Modular Ferro was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module increases the maximum amount of armor that may be installed on the location.\n\nOnly one piece of Modular Ferro can be installed per location. Cannot be installed with Modular Armor in the same location.",
+		"loreAccurate": false,
 		"maxArmorComponent": 8,
 		"rarity": 0.1,
 		"mechPartConflicts": [
@@ -82,6 +172,8 @@
 		]
 	},
 	"MODULAR_FERRO_MK2": {
+		"description": "Modular Ferro was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module increases the maximum amount of armor that may be installed on the location.\n\nOnly one piece of Modular Ferro can be installed per location. Cannot be installed with Modular Armor in the same location.",
+		"loreAccurate": false,
 		"maxArmorComponent": 16,
 		"rarity": 0.08,
 		"mechPartConflicts": [
@@ -100,6 +192,8 @@
 		]
 	},
 	"MODULAR_FERRO_MK3": {
+		"description": "Modular Ferro was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module increases the maximum amount of armor that may be installed on the location.\n\nOnly one piece of Modular Ferro can be installed per location. Cannot be installed with Modular Armor in the same location.",
+		"loreAccurate": false,
 		"maxArmorComponent": 24,
 		"rarity": 0.06,
 		"mechPartConflicts": [
@@ -118,6 +212,8 @@
 		]
 	},
 	"MODULAR_FERRO_MK4": {
+		"description": "Modular Ferro was created as a stopgap measure by ComStar engineers while researching Hardened Armor the engineers stumbled across an ancient idea: By mounting a special frame on the unit, it could support additional armor protection on a Location beyond what the internal frame would normally allow. This module increases the maximum amount of armor that may be installed on the location.\n\nOnly one piece of Modular Ferro can be installed per location. Cannot be installed with Modular Armor in the same location.",
+		"loreAccurate": false,
 		"maxArmorComponent": 32,
 		"rarity": 0.05,
 		"mechPartConflicts": [
@@ -144,7 +240,6 @@
 		"armorComponentFrontMulti": 1.1,
 		"armorComponentRearMulti": 1.1,
 		"selfRepairArmor": 0.5,
-		"selfRepairStructure": 0.2,
 		"selfRepairDuration": 7,
 		"selfRepairInterval": 1,
 		"selfRepairDegradation": 0.98,
@@ -169,7 +264,6 @@
 		"armorComponentFrontMulti": 1.1,
 		"armorComponentRearMulti": 1.1,
 		"selfRepairArmor": 1,
-		"selfRepairStructure": 0.4,
 		"selfRepairDuration": 7,
 		"selfRepairInterval": 1,
 		"selfRepairDegradation": 0.98,
@@ -194,7 +288,6 @@
 		"armorComponentFrontMulti": 1.2,
 		"armorComponentRearMulti": 1.2,
 		"selfRepairArmor": 2,
-		"selfRepairStructure": 0.8,
 		"selfRepairDuration": 7,
 		"selfRepairInterval": 1,
 		"selfRepairDegradation": 0.98,
@@ -513,7 +606,10 @@
 			}]
 		},
 		"armorRepairCostMulti": 2,
-		"armorRepairDaysMulti": 2
+		"armorRepairDaysMulti": 2,
+		"fillerSlots": {
+			"dynamic": 10
+		}
 	},
 	"ARMOR_SPALL_LINER": {
 		"loreAccurate": false,
@@ -791,6 +887,7 @@
 	},
 	"COCKPIT_SMALL_ADVANCED": {
 		"rarity": 0.05,
+		"requiredMechlabLevel": 5,
 		"loreAccurate": false
 	},
 	"COCKPIT_HOTSEAT": {
@@ -940,6 +1037,7 @@
 	},
 	"TCOMP_MODULAR_BC": {
 		"loreAccurate": false,
+		"description": "The modular Fire Control System allows Battle Computer upgrades to be installed on the mech.\n\nWhile a 'Mech may mount any number of Battle Computers, only one of each type may be mounted on a 'Mech.",
 		"rarity": 0.03,
 		"features": [
 			"modularTc"
@@ -968,7 +1066,8 @@
 			]
 		},
 		"mechConflicts": [
-			"BC_HEAT"
+			"BC_HEAT",
+			"TCOMP_HEAT"
 		]
 	},
 	"BC_RANGE": {
@@ -1006,7 +1105,10 @@
 			]
 		},
 		"mechConflicts": [
-			"BC_ENERGY"
+			"BC_ENERGY",
+			"TCOMP",
+			"TCOMP_TRACE_ADVANCED",
+			"TCOMP_NOVA"
 		]
 	},
 	"BC_PPC": {
@@ -1026,7 +1128,9 @@
 			]
 		},
 		"mechConflicts": [
-			"BC_PPC"
+			"BC_PPC",
+			"TCOMP3PREDICTIVE",
+			"TCOMP_PPC_ADVANCED"
 		]
 	},
 	"BC_MISSILE": {
@@ -1048,7 +1152,9 @@
 			"lockonTimeMulti": 0.9
 		},
 		"mechConflicts": [
-			"BC_MISSILE"
+			"BC_MISSILE",
+			"TCOMP2",
+			"TCOMP_MISSLE_ADVANCED"
 		]
 	},
 	"BC_BALLISTIC": {
@@ -1068,7 +1174,10 @@
 			]
 		},
 		"mechConflicts": [
-			"BC_BALLISTIC"
+			"BC_BALLISTIC",
+			"TCOMP3PREDICTIVE",
+			"TCOMP1",
+			"TCOMP_BALLISTIC_ADVANCED"
 		]
 	},
 	"BC_ARTEMIS_V": {
@@ -1091,7 +1200,9 @@
 			"lockonTimeMulti": 0.9
 		},
 		"mechConflicts": [
-			"BC_ARTEMIS_V"
+			"BC_ARTEMIS_V",
+			"TCOMP2",
+			"TCOMP_MISSLE_ADVANCED"
 		],
 		"mechRequirements": [
 			"Weapon.ArtemisMissile"
@@ -1107,9 +1218,10 @@
 	},
 	"BC_PREDICTIVE": {
 		"mechConflicts": [
-			"BC_PREDICTIVE"
+			"BC_PREDICTIVE",
+			"TCOMP3PREDICTIVE"
 		],
-		"description": "Battle Computers are Modular Pieces that can be added to a Targeting Computer Modular, greatly enhancing the Combat capabilities of any Mech it is installed on.\n\nPredicts projectile trajectory and drop of the actually selected ballistic weapon (Autocannons, PPCs, Gauss, etc) and selected enemy unit movement for pinpoint accuracy while in combat, by drawing a crosshair on the HUD at the optimal aim location.",
+		"description": "Battle Computers are Modular Pieces that can be added to a Targeting Computer Modular, greatly enhancing the Combat capabilities of any Mech it is installed on.\n\nPredicts projectile trajectory and drop of the selected ballistic weapon (Autocannons, PPCs, Gauss, etc) and selected enemy unit movement for pinpoint accuracy while in combat, by drawing a crosshair on the HUD at the optimal aim location.",
 		"weapons": {
 			"scope": "mech",
 			"groups": [
@@ -1171,7 +1283,7 @@
 		"caseScope": "component"		
 	},
 	"EXCHANGER": {
-		"description": "Thermal Exchangers reduce the overall heat generated by a fixed percentage.\n\nExplodes for 8 damage when destroyed.",
+		"description": "Thermal Exchangers reduce the overall heat generated by a fixed percentage.\n\nOnly one Exchanger may be installed on a 'Mech.\n\nExplodes for 8 damage when destroyed.",
 		"rarity": 0.01,
 		"loreAccurate": false,
 		"weapons": {
@@ -1193,7 +1305,7 @@
 		]
 	},
 	"EXCHANGER_CLAN": {
-		"description": "Thermal Exchangers reduce the overall heat generated by a fixed percentage.\n\nExplodes for 8 damage when destroyed.",
+		"description": "Thermal Exchangers reduce the overall heat generated by a fixed percentage.\n\nOnly one Exchanger may be installed on a 'Mech.\n\nExplodes for 8 damage when destroyed.",
 		"rarity": 0.01,
 		"loreAccurate": false,
 		"weapons": {
@@ -1216,7 +1328,7 @@
 		"module": "Clan"
 	},
 	"EXCHANGER_MK2": {
-		"description": "Thermal Exchangers reduce the overall heat generated by a fixed percentage.\n\nExplodes for 16 damage when destroyed.",
+		"description": "Thermal Exchangers reduce the overall heat generated by a fixed percentage.\n\nOnly one Exchanger may be installed on a 'Mech.\n\nExplodes for 16 damage when destroyed.",
 		"rarity": 0.005,
 		"loreAccurate": false,
 		"weapons": {
@@ -1239,6 +1351,7 @@
 	},
 	"ImprovedJumpJet_Class1_Equipment":	{
 		"rarity": 0.05,
+		"maxTonnage": 100,
 		"mechConflicts": [
 			"JumpJet_Class1_Equipment"
 		],
@@ -1274,6 +1387,7 @@
 	},
 	"PrototypeImpJumpJet_Class1_Equipment":	{
 		"rarity": 0.01,
+		"maxTonnage": 100,
 		"mechConflicts": [
 			"JumpJet_Class1_Equipment",
 			"ImprovedJumpJet_Class1_Equipment"
@@ -1317,11 +1431,14 @@
 		"module": "prototype"
 	},
 	"COMMAND_CONSOLE": {
-		"description": "All 'Mechs come equipped with a stock cockpit configuration, which can be upgraded for improved performance. The Console adds a complete set of controls for a second MechWarrior with added command and control facilities, allowing for better Lance coordination.\nAdds low-tier ECM functionality, a boost to sensor range and reduced weapon cycle times due to the better coordination of two mech warriors.\nThe Command Console system can only be added to Heavy or Assault class 'Mechs; it is too large to fit into smaller 'Mechs.",
+		"description": "All 'Mechs come equipped with a stock cockpit configuration, which can be upgraded for improved performance. The Console adds a complete set of controls for a second MechWarrior with added command and control facilities, allowing for better Lance coordination.",
 		"color": "(R=0.625,G=1,B=0,A=1)",
 		"rarity": 0.02,
+		"fillerSlots": {
+			"Head": 1
+		},
 		"installCostScaling": 10,
-		"minTonnage": 60,
+		"requiredMechlabLevel": 5,
 		"weapons": {
 			"scope": "mech",
 			"groups": [
@@ -1336,6 +1453,9 @@
 		},
 		"sensorRangeMultiLance": 1.6,
 		"sensorFovLance": 360,
+		"mechConflicts": [
+			"TCOMP_MODULAR_BC"
+		],
 		"features": [
 			"modularTc"
 		]
@@ -1503,7 +1623,7 @@
 		"fillerSlots": {
 			"dynamic": 6
 		},
-		"armorWeightMulti": 1.1,
+		"armorPerTon": 20,
 		"rarity": 0.1,
 		"incomingDamage": {
 			"heatMulti": 0.5
@@ -1707,6 +1827,7 @@
 	},
 	"PARTIAL_WING_SYSTEM": {
 		"category": "equipment.mobility",
+		"description": "The partial wing system offers increased jump capability. In addition, its large surface area allows a 'Mech to more efficiently radiate excess heat.\n\nRequires at least one JumpJet to be installed.\n\n(Note from technicians: install this module into the 'Mechs Right Torso, Fahad will sort out the 3 critical slots it requires in the Left Torso.)",
 		"relativeWeight": 0.07,
 		"jumpJetXyAccelMulti": 1.5,
 		"gravityScale": 0.4,
@@ -1734,6 +1855,7 @@
 	},
 	"PARTIAL_WING_SYSTEM_C": {
 		"category": "equipment.mobility",
+		"description": "The partial wing system offers increased jump capability. In addition, its large surface area allows a 'Mech to more efficiently radiate excess heat.\n\nRequires at least one JumpJet to be installed.\n\n(Note from technicians: install this module into the 'Mechs Right Torso, Fahad will sort out the 3 critical slots it requires in the Left Torso.)",
 		"relativeWeight": 0.05,
 		"jumpJetXyAccelMulti": 1.5,
 		"gravityScale": 0.4,
@@ -1775,6 +1897,7 @@
 		"rarity": 0.05
 	},
 	"COOLING_LINES": {
+		"description": "Cooling lines considerably improve the way heat is transported through the 'mech component using a complex multi-layer tubing system. This allows for a considerable uplift in heat sinking performance. Due to the complexity of the design cooling lines cannot be installed on the center torso to benefit engine heatsinks.\n\n(Improves the cooling efficiency of gear like heatsinks in the same location as this module.)",
 		"loreAccurate": false,
 		"category": "equipment.cooling",
 		"coolingMulti": 1.4,
@@ -1859,16 +1982,25 @@
 		"rarity": 0.01,
 		"installCost": 20000,
 		"installCostScaling": 10,
-		"armorMulti": 1.25,
 		"structureMulti": 1.2,
 		"armorRepairCostMulti": 2,
 		"armorRepairDaysMulti": 2,
 		"incomingDamage": {
 			"groups": [{
+				"weaponGroupName": "Weapon",
+				"tags": [
+					"Weapon"
+				],
+				"armorDamageMulti": 0.8,
+				"scope": "mech"
+			},{
 				"weaponGroupName": "Re-Engineered Laser",
 				"tags": [
 					"Weapon.Energy.Laser.RELaser",
-					"Weapon.Energy.Laser.Re"
+					"Weapon.Energy.Laser.Re",
+					"Weapon.Energy.Laser.Pulse.Large.RE",
+					"Weapon.Energy.Laser.Pulse.Medium.RE",
+					"Weapon.Energy.Laser.Pulse.Small.RE"
 				],
 				"armorDamageMulti": 1.25,
 				"scope": "mech"
@@ -2101,5 +2233,190 @@
 				}
 			]
 		}
+	},
+	"SH_COOLING_JACKET": {
+		"rarity": 0.05,
+		"minTonnage": 105,
+		"loreAccurate": false,
+		"requiredMechlabLevel": 2,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"heatMulti": 0.9
+				}
+			]
+		},
+		"armTwistAngleMulti": 0.9,
+		"armTwistRateMulti": 0.85
+	},
+	"SH_HIP_ARMORED": {
+		"rarity": 0.05,
+		"minTonnage": 105,
+		"loreAccurate": false,
+		"requiredMechlabLevel": 3,
+		"relativeWeight": 0.02,
+		"armorComponentFrontMulti": 1.1,
+		"structureComponentMulti": 1.1,
+		"caseLevel": 2,
+		"case2MaxDmg": 4,
+		"caseScope": "component"		
+	},
+	"SH_IMPROVED_ACTUATORS": {
+		"loreAccurate": false,
+		"minTonnage": 105,
+		"rarity": 0.04,
+		"requiredMechlabLevel": 1,
+		"armTwistAngleMulti": 1.2,
+		"armTwistRateMulti": 1.15
+	},
+	"SH_INTERLINKED_MYOMER_LEG": {
+		"loreAccurate": false,
+		"minTonnage": 105,
+		"relativeWeight": 0.02,
+		"requiredMechlabLevel": 4,
+		"accelerationMulti": 1.05,
+		"rarity": 0.03
+	},
+	"SH_MACHINED_PIVOT_POINT": {
+		"loreAccurate": false,
+		"minTonnage": 105,
+		"relativeWeight": 0.02,
+		"requiredMechlabLevel": 1,
+		"turnSpeedMulti": 1.05,
+		"rarity": 0.05
+	},
+	"SH_RE_INFORCED_LEGS": {
+		"rarity": 0.01,
+		"minTonnage": 105,
+		"loreAccurate": false,
+		"requiredMechlabLevel": 3,
+		"relativeWeight": 0.02,
+		"armorComponentFrontMulti": 1.1,
+		"structureComponentMulti": 1.1,
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Melee",
+				"tags": ["Weapon.Melee"],
+				"armorDamageMulti": 0.95,
+				"structureDamageMulti": 0.95,
+				"scope": "component"
+			}]
+		},
+		"caseScope": "component",
+		"caseLevel": 1
+	},
+	"SH_SHOULDER_ARMORED": {
+		"relativeWeight": 0.02,
+		"minTonnage": 105,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 3,
+		"armorComponentFrontMulti": 1.25,
+		"loreAccurate": false
+	},
+	"SH_UPPER_ARMORED": {
+		"relativeWeight": 0.02,
+		"minTonnage": 105,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 3,
+		"armorComponentFrontMulti": 1.2,
+		"loreAccurate": false,
+		"caseLevel": 2,
+		"case2MaxDmg": 5
+	},
+	"SH_UPPER_HARD_ENED": {
+		"relativeWeight": 0.02,
+		"minTonnage": 105,
+		"rarity": 0.05,
+		"requiredMechlabLevel": 3,
+		"incomingDamage": {
+			"groups": [{
+				"weaponGroupName": "Weapon",
+				"tags": ["Weapon"],
+				"armorDamageMulti": 0.9,
+				"structureDamageMulti": 0.9,
+				"scope": "component"
+			}]
+		},
+		"loreAccurate": false,
+		"caseLevel": 2,
+		"case2MaxDmg": 5
+	},
+	"SH_WEAPON_MOUNT": {
+		"relativeWeight": 0.02,
+		"minTonnage": 105,
+		"rarity": 0.04,
+		"loreAccurate": false,
+		"requiredMechlabLevel": 2,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon.Energy",
+						"Weapon.Ballistic",
+						"Weapon.Missile",
+						"Weapon.ArtemisMissile"
+					],
+					"cooldownMulti": 0.9,
+					"damageMulti": 1.05
+				},
+				{
+					"weaponGroupName": "Melee",
+					"tags": [
+						"Weapon.Melee"
+					],
+					"damageMulti": 0.85
+				}
+			]
+		}
+	},
+	"SH_WEAPON_MOUNT_RECOIL": {
+		"relativeWeight": 0.02,
+		"minTonnage": 105,
+		"rarity": 0.04,
+		"loreAccurate": false,
+		"requiredMechlabLevel": 2,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"jamChanceMulti": 0.75,
+					"spreadRadiusMulti": 0.9,
+					"spreadDistanceMulti": 1.1,
+					"recoil": -1
+				}
+			]
+		}
+	},
+	"SH_WEAPON_MOUNT_HEAT": {
+		"relativeWeight": 0.02,
+		"minTonnage": 105,
+		"rarity": 0.04,
+		"loreAccurate": false,
+		"requiredMechlabLevel": 1,
+		"weapons": {
+			"scope": "component",
+			"groups": [
+				{
+					"weaponGroupName": "Weapon",
+					"tags": [
+						"Weapon"
+					],
+					"heatMulti": 0.95
+				}
+			]
+		},
+		"armTwistAngleMulti": 0.95,
+		"armTwistRateMulti": 0.95
 	}
 }
