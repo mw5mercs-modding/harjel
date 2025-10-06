@@ -4,9 +4,50 @@
 		"rarity": 0.1,
 		"module": "Quikcsell",
 		"engineHeatsinkEfficiency": 0.15,
-		"engineHeatsinkCapacity": 1.5
+		"engineHeatsinkCapacity": 1.5,
+		"mechConflicts": [
+			"SingleHeatSink",
+			"CompactHeatSink79",
+			"ClanLHS79",
+			"ClanDHS79",
+			"ClanDoubleHeatSink",
+			"DoubleHeatSink",
+			"PROTO_DHS",
+			"DoubleHeatSinkC",
+			"DoubleHeatSinkC1",
+			"DoubleHeatSinkC2",
+			"DoubleHeatSinkP",
+			"DoubleHeatSinkR",
+			"CorrosiveHeatSink"
+		]
 	},
 	"DHS_QS": {
+		"mechRequirements": [
+			"DHS_KIT_QS"
+		],
+		"mechConflicts": [
+			"Cooling_diss100",
+			"ROYAL_DHS_KIT",
+			"RADICAL_DHS_KIT",
+			"CLAN_DHS_KIT",
+			"COMPACT_HS_KIT",
+			"RADICAL_COMPACT_KIT",
+			"PROTO_DHS_KIT",
+			"RADICAL_PROTO_DHS_KIT",
+			"SingleHeatSink",
+			"CompactHeatSink79",
+			"ClanLHS79",
+			"ClanDHS79",
+			"ClanDoubleHeatSink",
+			"DoubleHeatSink",
+			"PROTO_DHS",
+			"DoubleHeatSinkC",
+			"DoubleHeatSinkC1",
+			"DoubleHeatSinkC2",
+			"DoubleHeatSinkP",
+			"DoubleHeatSinkR",
+			"CorrosiveHeatSink"
+		],
 		"loreAccurate": false,
 		"rarity": 0.1,
 		"module": "Quikcsell"
