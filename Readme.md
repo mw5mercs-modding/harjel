@@ -511,12 +511,36 @@ Once quirks have been defined they also need to be applied to mechs. This is don
 |Property|Description|
 |---|---|
 |`quirks`|An array of quirk ids which have been defined as detailed above.|
+|`pilotQuirks`|Defines a list of pilot quirk (affinities) for the mech (MDL or variant name). Each pilot quirk is an object as defined below.|
 |`scale`|A scaling vector for the mech which is applied in DerivedMech. Example: `X=1.1 Y=1.1 Z=1.1`|
 |`useSkinsFrom`|An optional gameplay tag indicating the mech variant from which this mech use the skins. This is useful for introducing new mech types without the need to manually update all skins.|
 |`aiMechRole`|Set the default AI mech role from the TTRulez_AI mod. This will only take effect if that mod is active. For possible values see below.|
 |`mechType`|The type of mech which can be `bipedal` (default) or `quad` for now. Only has an impact on quad mechs which will then have their arm slots replaced with leg slots.|
 |`autoconv`|An object defining details for YAML's automatic vanilla mech conversion (see below).|
 |`salvageInto`|An optional reference which indicates the MDA to use when generating V2 mech salvage. This is useful for custom loadouts of lore mechs to avoid clutter in the salvage screen. Example: `MWMechDataAsset:AS7-D_MDA`|
+
+#### Pilot Quirks (Affinities)
+
+A mech (MDL or variant name) can define a set of pilot quirks or affinities. These are quirks which only come into play if the pilot of the mech has a certain number of missions or kills under their belt. As such, these quirks will never apply in instant action matches.
+
+A pilot quirk has the following properties:
+
+|Property|Description|
+|---|---|
+|`quirk`|The quirk which will be applied once the pilot fulfills the conditions. A simple string identifier which references a quirk as defined above.|
+|`missions`|The number of missions the pilot needs to have been piloting the mech or variant in question for the quirk to apply. Cannot be combined with `kills`.|
+|`kills`|The number of mech kills the pilot needs to have achieved while piloting the mech or variant in question for the quirk to be applied. Cannot be combined with `missions`|
+
+The following example requires pilots to have been piloting the Annihilator in 30 missions for the `SUPERMAN` (just an example, quirk does not really exist) quirk to apply:
+
+```json
+"Annihilator_MDL": {
+	"pilotQuirks": [{
+		"missions": 30,
+		"quirk": "SUPERMAN"
+	}]
+}
+```
 
 ##### TTRulez_AI Mech Roles
 
