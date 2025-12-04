@@ -297,8 +297,7 @@ Weapon groups are the most flexible way of defining weapon modifiers. Each group
 |`excludeTags`|An optional array of weapon tags and/or weapon asset ids which the bonuses do not apply for.|
 |`mechParts`|An optional array of mech parts the bonuses apply for. This is only really useful for 'mech quirks and allows to restrict the bonuses to specific parts. A typical example would be arm-mounted weapons. In that case the value would be `["LeftArm", "RightArm"]`.|
 | `durationMulti`          | Only applies to trace weapons |
-| `spreadRadiusMulti`      ||
-| `spreadDistanceMulti`    ||
+| `spreadMulti`            |A multiplier for the spread angle of different weapons like SRM or AC-BF. Currently does not work for LRMs.|
 | `speedMulti`             ||
 | `damageMulti`            ||
 | `heatDamageMulti`        | Only applies to trace and melee weapons for now. |
